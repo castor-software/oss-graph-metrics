@@ -1,0 +1,10 @@
+"0","```r
+dplot <- ddata %>% 
+  filter(DUsages > 10) %>% 
+  diversity(type=\"entropy\")
+dplot %>% 
+  ggplot(aes(x= \"\", y=entropy)) +
+  geom_violin() +
+  xlab(\"Artifacts\") +
+  ylab(\"Entropy\")
+```"

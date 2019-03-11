@@ -1,0 +1,9 @@
+"0","```r
+ddata <- data
+ddata$Artifact <- paste(data$GroupId, data$ArtifactId, sep = \":\")
+ddata <- ddata %>% 
+  select(Artifact, Version, DUsages)
+
+cat(\"number of unique artifacts A is\", nrow(distinct(ddata, Artifact)), \"if we don't consider the version\")
+
+```"

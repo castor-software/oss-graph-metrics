@@ -1,0 +1,24 @@
+"0","tmp <- metrics %>%
+  filter(is.na(isPassive) == F) %>% 
+mutate(Type = ifelse(isPassive == ""true"", ""passive"", ""active"")) %>% 
+  filter(Type == ""passive"")
+summary(tmp$lifespan)
+"
+"1","   Min. "
+"1","1st Qu. "
+"1"," Median "
+"1","   Mean "
+"1","3rd Qu. "
+"1","   Max. "
+"1","   NA's "
+"1","
+"
+"1","   0.00 "
+"1","   3.00 "
+"1","  14.00 "
+"1","  57.61 "
+"1","  49.00 "
+"1","4146.00 "
+"1","   4032 "
+"1","
+"

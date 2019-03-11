@@ -1,0 +1,41 @@
+"0","```r
+
+datatmp <- data %>% 
+  mutate(Artifact = paste(as.character(GroupId), as.character(ArtifactId), as.character(Version), sep=\":\")) %>% 
+  group_by(Artifact) %>% 
+  summarise(TUsages= sum(TUsages)) %>%
+  arrange(desc(TUsages)) %>%
+  slice(1:10) 
+
+datatmp$Artifact <- factor(datatmp$Artifact, levels = datatmp$Artifact[order(datatmp$TUsages)])
+datatmp %>%
+  ggplot(aes(x=Artifact, y=TUsages)) + 
+  geom_point(size=3) + 
+  geom_segment(aes(x=Artifact, 
+                   xend=Artifact, 
+                   y=0, 
+                   yend=TUsages)) +
+  coord_flip() +
+    ylab(\"Transitive Usages\") +
+  xlab(\"\")
+
+datatmp <- data %>% 
+  mutate(Artifact = paste(as.character(GroupId), as.character(ArtifactId), as.character(Version), sep=\":\")) %>% 
+  group_by(Artifact) %>% 
+  summarise(DUsages= sum(DUsages)) %>%
+  arrange(desc(DUsages)) %>%
+  slice(1:10) 
+
+datatmp$Artifact <- factor(datatmp$Artifact, levels = datatmp$Artifact[order(datatmp$DUsages)])
+datatmp %>%
+  ggplot(aes(x=Artifact, y=DUsages)) + 
+  geom_point(size=3) + 
+  geom_segment(aes(x=Artifact, 
+                   xend=Artifact, 
+                   y=0, 
+                   yend=DUsages)) +
+  coord_flip() +
+    ylab(\"Direct Usages\") +
+  xlab(\"\")
+
+```"

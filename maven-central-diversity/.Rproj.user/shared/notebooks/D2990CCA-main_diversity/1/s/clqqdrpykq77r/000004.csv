@@ -1,0 +1,19 @@
+"0","```r
+summary(dplot$entropy)
+```"
+"1","   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.3955  0.7343  1.1657  6.2797 
+"
+"0","```r
+dplot <- dplot %>% 
+  rownames_to_column(\"Artifact\")
+# %>% 
+#   filter(entropy > 0.5) 
+dplot$NArtifact <- c(1:16718)
+dplot$Artifact <- factor(dplot$Artifact, levels = dplot$Artifact[order(dplot$entropy, decreasing = T)])
+dplot %>%
+  ggplot(aes(NArtifact, entropy)) + 
+  geom_point() +
+  xlab(\"Artifacts\") +
+  ylab(\"Entropy\")
+```"

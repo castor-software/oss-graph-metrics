@@ -1,0 +1,4 @@
+"0","```r
+usage_data <- read.csv(\"Data2M/usages.csv\")
+summary(usage_data)
+```"

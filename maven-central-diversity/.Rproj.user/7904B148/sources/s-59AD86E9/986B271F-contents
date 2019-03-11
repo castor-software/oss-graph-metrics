@@ -1,0 +1,327 @@
+---
+title: "RQ5: How timely are the active and passive library versions in Maven Central?"
+output: html_notebook
+---
+
+```{r}
+library(tidyverse)
+library(latex2exp)
+library(scales)
+theme_set(theme_bw())
+```
+
+
+```{r}
+library(tidyverse)
+metrics <- read_csv("Data/artifacts_metrics_all.csv")
+data <- read_csv("Data/data.csv")
+fitness_values <- read_csv("Data/fitness.csv") %>%
+  filter(fitness >= 0)
+
+metrics_all_filtered <- metrics_all %>%
+  mutate(Library = paste(groupId, artifactId, sep = ":"))
+
+mysubset <- libraries_betw5and200_versions %>% 
+  select(Library)
+
+metrics <- inner_join(mysubset, metrics_all_filtered, by = "Library")
+
+additional_variables <- data %>% 
+  mutate(coordinates= paste(GroupId, ArtifactId, Version, sep = ":")) %>% 
+  select(coordinates, DUsages, Dependencies) %>% 
+  rename(usages = DUsages, dependencies = Dependencies)
+
+metrics <- inner_join(metrics, additional_variables)
+
+
+```
+
+### Plot the stacked bar plot
+
+```{r}
+metrics <- inner_join(fitness_values, metrics, by = "coordinates") %>% 
+  rename(fitness = fitness.x)
+
+df <- metrics %>% 
+  filter(is.na(fitness) == F & fitness >= 0) %>% 
+  select(fitness)
+
+df$fitnessGroup <- as.factor(ifelse(df$fitness < 1, "under-timely", ifelse(df$fitness == 1, "timely", "over-timely")))
+
+tmp <- plyr::count(df$fitnessGroup) %>%
+  mutate(percent = freq / sum(freq)) 
+
+data.frame(Groups = c("under-timely", "timely", "over-timely" ), Groups = c("under-timely", "timely", "over-timely" ), percent = c( 0.70599791, 0.19812926, 0.09587283)) %>% 
+  ggplot(aes(x = "versions", y = percent, fill = Groups)) +
+  geom_bar(stat = "identity", position = "fill") +
+  scale_y_continuous(labels = percent_format()) +
+  scale_fill_grey(start = .2, end = .8) +
+  xlab(NULL) +
+  ylab(NULL) +
+  theme(legend.position="top", legend.title = element_blank()) +
+  coord_flip()
+
+ggsave(filename = "Figures/versions_timeliness_all.pdf", device="pdf", height = 2, width = 4,  units = c("in"))
+
+table(df$timeless, df$status)
+
+data.frame(Status=c("active", "active", "active", "passive", "passive", "passive"), Groups = c("under-timely", "timely", "over-timely","under-timely", "timely", "over-timely"), Groups = c("under-timely", "timely", "over-timely" ), percent = c(0.553, 0.20, 0.247, 0.456, 0.4, 0.144), cpercent = c("55.3%", "20%", "24.7%", "45.6%", "40%", "14.4%")) %>% 
+  ggplot(aes(x = Status, y = percent, fill = Groups)) +
+  geom_bar(stat = "identity", position = "fill") +
+  geom_text(aes(y=percent, label=cpercent), color = "white", position=position_fill(vjust=0.5)) +
+  scale_y_continuous(labels = percent_format()) +
+  scale_fill_grey(start = .2, end = .8) +
+  xlab(NULL) +
+  ylab(NULL) +
+  theme(legend.position="top", legend.title = element_blank()) +
+  coord_flip() 
+ 
+ggsave(filename = "Figures/versions_timeliness_fill.pdf", device="pdf", height = 2, width = 5,  units = c("in"))
+```
+
+```{r}
+time_to_release_raw <- read_csv("Figures/time_to_release_raw.csv")
+colnames(time_to_release_raw)
+
+time_to_release_raw$artifact_release <- as.Date(format(as.Date(str_sub(time_to_release_raw$artifact_release, 1, 10)),'%Y-%m-%d'), '%Y-%m-%d')
+time_to_release_raw$next_date <- as.Date(format(as.Date(str_sub(time_to_release_raw$next_date, 1, 10)),'%Y-%m-%d'), '%Y-%m-%d')
+time_to_release_raw$time_to_release<- as.numeric(difftime(time_to_release_raw$next_date, time_to_release_raw$artifact_release, units = c("days")))
+
+
+summary(time_to_release_raw$time_to_release)
+
+tmp <- time_to_release_raw %>% 
+  select(`next`, time_to_release) %>% 
+  rename(coordinates = `next`)
+
+```
+
+
+```{r}
+library(rpart)
+library(rpart.plot)
+library(party)
+
+metrics <- inner_join(metrics, tmp, by="coordinates")
+
+train <- metrics %>% filter(is.na(fitness) == F & validity !=-2) 
+
+xxx <- train %>% 
+  mutate(class = ifelse(fitness < 1, "under-timely", ifelse(fitness==1, "timely", "over-timely"))) %>% 
+  select(Library, class) %>% 
+  group_by(Library) %>% 
+  summarise(classes = list(class))
+
+xxx <- inner_join(data_versions, xxx, by="Library") %>% select(Library, PageRank, classes)
+# Calculate the percentages of 
+percentT <- c()
+percentO <- c()
+percentU <- c()
+for (i in 1:length(xxx$classes)) {
+  print(length(xxx$classes) - i)
+  TotalT <- 0
+  TotalO <- 0
+  TotalU <- 0
+  for (j in 1:length(xxx$classes[[i]])) {
+    if (xxx$classes[[i]][j] == "timely") {
+      TotalT <- TotalT + 1
+    } else if (xxx$classes[[i]][j] == "over-timely") {
+      TotalO <- TotalO + 1
+    } else if (xxx$classes[[i]][j] == "under-timely") {
+      TotalU <- TotalU + 1
+    } 
+  }
+  numver <- length(xxx$classes[[i]])
+  percentT <- c(percentT, TotalT * 100 / numver)
+  percentO <- c(percentO, TotalO * 100 / numver)
+  percentU <- c(percentU, TotalU  * 100 / numver)
+}
+xxx$percentT <- percentT
+xxx$percentO <- percentO
+xxx$percentU <- percentU
+
+corr_df <- xxx %>% select(percentT , percentO , percentU)
+library(ggcorrplot)
+corr <- round(cor(corr_df), 1)
+p.mat <- cor_pmat(corr_df)
+ggcorrplot(corr, lab = TRUE)
+
+
+train <- train %>% select(validity, usages, isPassive, lifespan, pagerank, dependencies, fitness, time_to_release) %>% mutate(class = ifelse(fitness < 1, "under-timely", ifelse(fitness==1, "timely", "over-timely"))) %>% 
+  select(-c(fitness))
+
+train$class <- as.factor(train$class)
+train$isPassive <- as.factor(train$isPassive)
+train$isLast <- ifelse(train$validity == -1, "true", "false")
+
+
+tree <- rpart(class ~  lifespan + time_to_release +validity, data=train, method="class")
+rpart.plot(tree, extra = 4, type = 5)
+plot()
+
+
+corr_df <- train %>% select(lifespan , time_to_release , usages , validity, pagerank, dependencies, fitness)
+library(ggcorrplot)
+corr <- round(cor(corr_df), 1)
+p.mat <- cor_pmat(corr_df)
+ggcorrplot(corr, lab = TRUE)
+
+library("factoextra")
+library(cluster)
+fviz_nbclust(corr_df, kmeans,
+             method = "gap_stat")
+
+km.res <- kmeans(corr_df, 3, nstart = 25)
+
+fviz_cluster(km.res, data = corr_df, 
+             ellipse.type = "convex",
+             palette = "jco",
+             labelsize = 0,
+             ggtheme = theme_minimal())
+
+corr_df %>% ggplot(aes(percentO, percentU)) +
+  geom_point(alpha = 0.2) +
+  xlab("percentage of over-timely versions") +
+  ylab("percentage of under-timely versions") +
+  scale_x_continuous(labels = function(x) paste0(x, "%")) +
+  scale_y_continuous(labels = function(x) paste0(x, "%")) 
+
+corr_df %>% ggplot(aes(x = "", percentU)) +
+  geom_boxplot() 
+
+
+# Plot in 3D
+library(scatterplot3d)
+x <- corr_df$percentT
+y <- corr_df$percentU
+z <- corr_df$percentO
+scatterplot3d(
+  corr_df$percentT,
+  corr_df$percentU,
+  corr_df$percentO,
+  angle = -160,
+  col.axis = "black",
+  col.grid = "lightblue",
+  cex.axis = 1.3,
+  cex.lab = 1.2,
+  main = NULL,
+  pch = 20,
+  color = "black",
+  highlight.3d = F,
+  xlab = "percentage of timely versions",
+  ylab = "percentage of under-timely versions",
+  zlab = "percentage of over-timely versions"
+)
+
+# Plot in 2D
+xxx %>% mutate(OT = percentO + percentT) %>% 
+  filter(PageRank < 200) %>% 
+  ggplot(aes(OT, PageRank)) +
+  geom_point() +
+  geom_smooth()
+
+xxx %>% ggplot(aes(percentU, PageRank)) +
+  geom_smooth() +
+  geom_point() +
+  xlab("percentage of under-timely versions") +
+  ylab("popularity of libraries")
+
+xxx %>% ggplot(aes(percentU, PageRank)) +
+  geom_smooth() +
+  geom_point() +
+  xlab("percentage of under-timely versions") +
+  ylab("popularity of libraries")
+  
+xxx %>% ggplot(aes(percentT, PageRank)) +
+  geom_smooth() +
+  geom_point() +
+  xlab("percentage of timely versions") +
+  ylab("popularity of libraries")
+
+xxx %>%  
+  ggplot() +
+  geom_point(aes(percentT, PageRank))+
+  geom_smooth(aes(percentO, PageRank), colour = "red") +
+  geom_smooth(aes(percentT, PageRank), colour = "darkgreen") +
+  geom_smooth(aes(percentU, PageRank), colour = "blue", linetype=7) +
+  xlab("percentage of versions") +
+  ylab("popularity of libraries") +
+  scale_x_continuous(labels = function(x) paste0(x, "%")) +
+  scale_y_log10(breaks = scales::trans_breaks("log10", function(x) 10 ^ x),
+                labels = scales::trans_format("log10", scales::math_format(10 ^ .x))
+  )
+
+
+ggscatter(xxx, x = "percentT", y = "PageRank", 
+          add = "reg.line", conf.int = TRUE, 
+          cor.coef = TRUE, cor.method = "spearman",
+          xlab = "percentage of timely versions", ylab = "popularity of libraries")
+```
+
+
+
+```{r}
+tmp1 <- libraries_betw5and200_versions %>% select(Library)
+
+tmp2 <- data %>%
+  mutate(
+  Library = paste(GroupId, ArtifactId, sep = ":"),
+  coordinates = paste(paste(GroupId, ArtifactId, sep = ":"), Version, sep = ":")
+  ) %>%
+  dplyr::select(Library, coordinates, DUsages)
+
+tmp3 <- inner_join(tmp1, tmp2, by = "Library")
+
+tmp4 <- inner_join(fitness_values, tmp3, by = "coordinates")
+
+df <- inner_join(tmp4, metrics, by = "coordinates") %>% 
+  dplyr::select(c(coordinates, Library.x, isPassive, fitness.x, DUsages)) %>% 
+  rename(fitness = fitness.x, Library = Library.x) %>% 
+  mutate(timeless = ifelse(fitness < 1, "under-timely", ifelse(fitness == 1, "timely", "over-timely"))) %>% 
+  mutate(status = ifelse(isPassive == "true" & DUsages == 0, "dormant", ifelse(isPassive == "true", "passive", "active")))
+
+
+df %>% 
+  filter(is.na(status) == FALSE) %>% 
+  ggplot(aes(status, fitness, fill = timeless)) +
+  geom_boxplot() +
+  scale_y_log10(breaks = scales::trans_breaks("log10", function(x) 10 ^ x),
+                labels = scales::trans_format("log10", scales::math_format(10 ^ .x))
+  )
+
+
+df %>% 
+  filter(is.na(status) == FALSE) %>% 
+  ggplot(aes(status, fitness, fill = timeless)) +
+  geom_boxplot() +
+  scale_y_log10(breaks = scales::trans_breaks("log10", function(x) 10 ^ x),
+                labels = scales::trans_format("log10", scales::math_format(10 ^ .x))
+  )
+
+
+df %>%
+  filter(is.na(status) == FALSE) %>% 
+  filter(status != "dormant") %>% 
+  group_by(timeless, status) %>% 
+  summarise(count = n()) %>% 
+  ggplot(aes(x = status, y = count, fill = timeless)) +
+  geom_bar(stat = "identity") +
+  coord_flip()
+
+df %>%
+  filter(is.na(status) == FALSE) %>%
+  filter(status != "dormant") %>%
+  # group_by(timeless, status) %>% 
+  # summarise(count = n()) %>%   
+  ggplot(aes(x= timeless,  group=status)) + 
+    geom_bar(aes(y = ..prop.., fill = factor(..x..)), stat="count") +
+    geom_text(aes( label = scales::percent(..prop..),
+                   y= ..prop.. ), stat= "count", vjust = -.5) +
+    labs(y = "Percent", fill="timeless") +
+    facet_grid(~status) +
+    scale_y_continuous(labels = scales::percent, limits=c(0,0.6)) +
+  theme(legend.position = "blank") +
+  scale_fill_grey(start = .2, end = .8) + 
+  xlab(NULL) +
+  ylab("percent of versions") 
+```

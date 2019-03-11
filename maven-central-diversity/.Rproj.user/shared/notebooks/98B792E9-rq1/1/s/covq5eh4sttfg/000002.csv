@@ -1,0 +1,33 @@
+"0","```r
+# distribution between libraries and number of versions for all the data
+libraries_more100_versions %>% ggplot(aes(x=\"\", y=MeanDiff)) +
+  geom_violin() +
+  xlab(\"libraries\") +
+  ylab(\"MeanDiff\")
+
+
+
+libraries_betw1and100_versions %>% ggplot(aes(x=\"\", y=MeanDiff)) +
+  geom_violin() +
+  xlab(\"libraries\") +
+  ylab(\"MeanDiff\")
+
+libraries_betw1and9_versions %>% 
+  ggplot(aes(x = MeanDiff, y = NumVersions)) +
+  geom_point() +
+  scale_y_log10(breaks = scales::trans_breaks(\"log10\", function(x) 10^x),
+   labels = scales::trans_format(\"log10\", scales::math_format(10^.x))) +
+  scale_x_log10(breaks = scales::trans_breaks(\"log10\", function(x) 10^x),
+   labels = scales::trans_format(\"log10\", scales::math_format(10^.x))) 
+
+data_versions %>% 
+  ggplot(aes(x = \"\", y = NumVersions))+
+  geom_violin() +
+  geom_boxplot(width = 0.025) +
+  scale_y_log10(breaks = scales::trans_breaks(\"log10\", function(x) 10^x),
+   labels = scales::trans_format(\"log10\", scales::math_format(10^.x))) 
+
+summary(data_versions$NumVersions)
+summary(data_versions$MeanDiff)
+  
+```"

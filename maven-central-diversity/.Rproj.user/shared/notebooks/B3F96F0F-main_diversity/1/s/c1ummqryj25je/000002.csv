@@ -1,0 +1,47 @@
+"0","```r
+
+# // artifact -> release date 
+# CALL apoc.export.csv.query(\"MATCH (artifact:Artifact) RETURN artifact.coordinates as artifact, artifact.release_date as release\", \"/home/cesarsv/Desktop/release_all.csv\", {})
+release_all <- read.csv(\"DatasetFinal/release_all.csv\")
+
+# // artifactX -> artifactY
+# CALL apoc.export.csv.query(\"MATCH (artifactX:Artifact) - [depends:DEPENDS_ON] -> (artifactY:Artifact) RETURN artifactX.coordinates AS x, artifactY.coordinates AS y\", \"/home/cesarsv/Desktop/links_all.csv\", {})
+links_all <- read.csv(\"DatasetFinal/links_all.csv\")
+
+# // pagerank score for each node in the graph
+# CALL apoc.export.csv.query(\"CALL algo.pageRank.stream('Artifact', 'DEPENDS_ON', {iterations:20, dampingFactor:0.85}) YIELD nodeId, score MATCH (node) WHERE id(node) = nodeId RETURN node.coordinates AS artifact, score AS page_rank ORDER BY score DESC\", \"/home/cesarsv/Desktop/pagerank_all.csv\", {})
+page_rank <- read.csv(\"DatasetFinal/pagerank_all.csv\")
+
+# // louvain all
+# CALL apoc.export.csv.query(\"CALL algo.louvain.stream('Artifact', 'DEPENDS_ON', {}) YIELD nodeId, community MATCH (node) WHERE id(node) = nodeId RETURN node.coordinates AS artifact, community\", \"/home/cesarsv/Desktop/louvain_all.csv\", {})
+louvain <- read.csv(\"DatasetFinal/louvain_all.csv\")
+
+# // betweenness centrality all
+# CALL apoc.export.csv.query(\"CALL algo.betweenness.stream('Artifact','DEPENDS_ON',{direction:'out'}) YIELD nodeId, centrality MATCH (user:Artifact) WHERE id(user) = nodeId RETURN user.coordinates AS artifact, centrality AS betweenness_centrality ORDER BY centrality DESC\",\"/home/cesarsv/Desktop/betweenness_centrality_all.csv\", {})
+betweenness_centrality <- read.csv(\"DatasetFinal/betweenness_centrality_all.csv\")
+
+# // harmonic centrality all
+# CALL apoc.export.csv.query(\"CALL algo.closeness.harmonic.stream('Artifact', 'DEPENDS_ON') YIELD nodeId, centrality MATCH (node) WHERE id(node) = nodeId RETURN node.coordinates as artifact, centrality AS harmonic_centrality ORDER BY centrality DESC\",\"/home/cesarsv/Desktop/harmonic_centrality_all.csv\", {})
+harmonic_centrality <- read.csv(\"DatasetFinal/harmonic_centrality_all.csv\") 
+
+# // label propagation all
+# CALL apoc.export.csv.query(\"CALL algo.labelPropagation.stream('Artifact', 'DEPENDS_ON', {direction: \"OUTGOING\", iterations: 10}) YIELD nodeId, label MATCH (node) WHERE id(node) = nodeId RETURN node.coordinates as artifact, label\",\"/home/cesarsv/Desktop/label_propagation.csv\", {})
+label_propagation <- read.csv(\"DatasetFinal/label_propagation.csv\")
+
+# // union find all
+# CALL apoc.export.csv.query(\"CALL algo.unionFind.stream('Artifact', 'DEPENDS_ON', {}) YIELD nodeId, setId MATCH (artifact:Artifact) WHERE id(artifact) = nodeId RETURN artifact.coordinates AS artifact, setId AS union_find\",\"/home/cesarsv/Desktop/union_find.csv\", {})
+union_find <- read.csv(\"DatasetFinal/union_find.csv\")
+
+# // direct usages
+# CALL apoc.export.csv.query(\"MATCH (n)-[r:DEPENDS_ON]->(artifact) RETURN artifact.coordinates AS artifact, count(n) as direct_usages ORDER BY direct_usages DESC\",\"/home/cesarsv/Desktop/direct_usages.csv\", {})
+direct_usages <- read.csv(\"DatasetFinal/direct_usages.csv\")
+
+# // direct dependencies
+# CALL apoc.export.csv.query(\"MATCH (n)<-[r:DEPENDS_ON]-(artifact) RETURN artifact.coordinates AS artifact, count(r) as direct_dependencies ORDER BY direct_dependencies DESC\",\"/home/cesarsv/Desktop/direct_dependencies.csv\", {})
+direct_dependencies <- read.csv(\"DatasetFinal/direct_dependencies.csv\")
+
+# // transitive usages all
+# CALL apoc.export.csv.query(\"MATCH (artifactX:Artifact)<-[*..10000]-(artifactY:Artifact) RETURN artifactX.coordinates AS artifact, count(artifactY) as transitive_usages ORDER BY transitive_usages DESC\",\"/home/cesarsv/Desktop/trans_usages.csv\", {})
+trans_usages <- read.csv(\"DatasetFinal/trans_usages.csv\")
+
+```"

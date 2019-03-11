@@ -1,0 +1,19 @@
+"0","```r
+data %>% 
+  select(GroupId, Release, PageRank, Version) %>%
+  filter(GroupId %in% c(\"org.slf4j\", \"commons-logging\", \"asm\", \"junit\", \"antlr\")) %>%
+  ggplot(aes(Release, PageRank, color = GroupId, shape = GroupId)) +
+  geom_line() +
+  geom_point(size = 2) +
+  geom_text(
+    aes(label = ifelse(PageRank > 5, as.character(Version), '')),
+    hjust = 0,
+    vjust = 0,
+    show.legend = FALSE
+  ) +
+  xlab(\"Release Date\") +
+  theme(legend.position = \"top\") +
+  # scale_color_manual(values = wes_palette(n = 5, name = \"GrandBudapest1\")) +
+  theme(legend.title = element_blank())
+
+```"

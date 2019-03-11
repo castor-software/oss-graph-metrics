@@ -1,0 +1,43 @@
+"0","```r
+time_to_release <- read.csv(\"DatasetFinal/timeToRelease.csv\")
+time_to_release$durations <- as.character(time_to_release$durations)
+durations <- time_to_release$durations
+durations_gsub <- gsub(\"]\", \",\", durations)
+durations_gsub2 <- gsub(\"\\[\", \"\", durations_gsub)
+durations_gsub3 <- str_split(durations_gsub2, \",\")
+
+# Calculate the mean time between releases
+sol <- c()
+for (i in 1:length(durations_gsub3)) {
+  mean <- mean(as.numeric(durations_gsub3[[i]]), na.rm = T)
+  sol <- c(sol, mean)
+}
+time_to_release$Mean <- sol
+
+# Calculate the standard deviation between releases
+sol <- c()
+versions <- c()
+for (i in 1:length(durations_gsub3)) {
+  sd <- sd(as.numeric(durations_gsub3[[i]]), na.rm = T)
+  sol <- c(sol, sd)
+  versions <- c(versions, length(durations_gsub3[[i]]) - 1)
+}
+time_to_release$SD <- sol
+time_to_release$Versions <- versions
+
+time_to_release[is.na(time_to_release)] <- 0
+time_to_release <- time_to_release %>% 
+  unite(Library, groupId, artifactId, sep = \":\", remove = T)
+
+df_usage_libraries <- data %>%
+  dplyr::select(GroupId, ArtifactId, DUsages, Dependencies) %>% 
+  unite(Library, GroupId, ArtifactId, sep = \":\", remove = T) %>% 
+  group_by(Library) %>% 
+  summarise(SumUsages = sum(DUsages), SumDependencies = sum(Dependencies)) %>% 
+  dplyr::select(Library, SumUsages, SumDependencies) %>% 
+  arrange(desc(SumUsages))
+
+time_releases_all <- inner_join(time_to_release, df_usage_libraries, by = \"Library\")
+write_csv(time_releases_all, \"DatasetFinal/time_releases_all.csv\")
+
+```"

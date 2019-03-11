@@ -1,0 +1,21 @@
+"0","```r
+
+# GDU, num of versions, and a list of all release-dates
+
+tmp <- data %>% group_by(GroupId, ArtifactId) %>%
+                   summarise(versions=n(), Releases=list(Release))
+
+
+fun <- function(Releases){
+  result <- NULL
+  for(i in Releases){
+    i <- as.Date(i, origin =\"1970-01-01\")
+    result <- paste(result, format(i, format=\"%Y-%m-%d\"), sep = \",\")
+  }
+  return(result)
+}
+
+tmp <- data %>% group_by(GroupId, ArtifactId) %>% do(summarize(., Releases = fun(.$Release)))
+
+
+```"

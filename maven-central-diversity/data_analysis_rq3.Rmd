@@ -1,0 +1,759 @@
+---
+title: "Among the active versions of a library, is there one or several versions that are significantly more used than the others?"
+output: html_notebook
+---
+
+```{r}
+library(tidyverse)
+library(latex2exp)
+library(scales)
+theme_set(theme_bw())
+```
+
+
+### Load the tidy data
+
+```{r}
+load("Data/data_versions.RData")
+```
+
+### Prepare the data visualization
+
+```{r}
+# function to get the position of the version with the maximun number of usages
+list_maxs <- function(x) {
+  vector <- x[[1]]
+  maxs <- which(vector == max(vector))
+  return(ifelse(length(maxs) == 1, maxs/length(vector), NA))
+}
+
+# Analyze w.r.t number of usages
+usages <- libraries_betw5and200_versions$Usages
+PosMaxUsages <- c()
+for(i in 1:length(usages)){
+  PosMaxUsages <- c(PosMaxUsages, list_maxs(usages[i]))
+}
+
+# add the colum with the positions to the df
+libraries_betw5and200_versions$PosMaxUsages <- PosMaxUsages 
+
+libraries_betw5and200_versions %>%
+  ggplot(aes(PosMaxUsages)) +
+  geom_histogram(aes(y = ..count.. / sum(..count..)), color="black", fill="white") +
+  scale_y_continuous(labels = percent_format()) +
+  xlab("relative position of the most used version") +
+  ylab("percentage of libraries")
+
+# function to get the number of outliers
+findOutliers <- function(x) {
+  lowerq  <-  quantile(x)[2]
+  upperq  <-  quantile(x)[4]
+  iqr  <-  upperq - lowerq
+  # we identify extreme outliers
+  extreme.threshold.upper  <-  (iqr * 3) + upperq
+  result <- which(x > extreme.threshold.upper)
+  return(result)
+}
+
+# Analyze w.r.t number of outliers
+pageranks <- libraries_betw5and200_versions$PageRanks
+NumOutliers <- c()
+for(i in 1:length(pageranks)){
+  NumOutliers <- c(NumOutliers, length(findOutliers(pageranks[i][[1]])))
+}
+
+# see the groups
+dim(libraries_betw5and200_versions %>%
+  filter(NumOutliers == 1) %>%
+  select(Library, MeanPageranks, NumVersions, NumOutliers))
+
+dim(libraries_betw5and200_versions %>%
+  filter(NumOutliers == 0) %>%
+  select(Library, MeanPageranks, NumVersions, NumOutliers))
+
+dim(libraries_betw5and200_versions %>%
+  filter(NumOutliers > 1) %>%
+  select(Library, MeanPageranks, NumVersions, NumOutliers))
+
+
+# Plot the three exampes of cases (outliers == 0)
+outlier0 <- data %>% 
+  select(GroupId, ArtifactId, Version, PageRank, Release) %>% 
+   # filter(grepl("^commons", GroupId)) %>% 
+  filter(GroupId == "xml-apis" & ArtifactId == "xml-apis") 
+
+x <- outlier0$PageRank
+lowerq  <-  quantile(x)[2]
+upperq  <-  quantile(x)[4]
+iqr  <-  upperq - lowerq
+# we identify extreme outliers
+extreme.threshold.upper  <-  (iqr * 3) + upperq
+
+# Page Rank
+outlier0 %>% 
+  ggplot(aes(Release, PageRank, shape = GroupId)) +
+  geom_line(aes(type = GroupId)) +
+  geom_point(size = 3) +
+  # scale_shape(solid = FALSE) +
+  geom_text(aes(label=ifelse(PageRank>50,as.character(Version),'')),hjust=0,vjust=-0.5,show.legend = FALSE) +
+  xlab("Release Date") +
+  theme(legend.position="top", legend.title=element_blank()) +
+  scale_fill_brewer(palette="Dark2") + 
+  ylab("PageRank")  + 
+  geom_hline(yintercept = 714.6435, linetype="dashed", color = "red") +
+  # scale_y_continuous(limits=c(0, 1000)) +
+  scale_x_date(date_breaks = "2 year", date_labels =  "%Y") +
+  xlab(NULL) +
+  scale_fill_manual("legend_title") 
+
+
+# Plot the three exampes of cases (outliers == 1)
+outlier1 <- data %>% 
+  select(GroupId, ArtifactId, Version, PageRank, Release) %>% 
+   # filter(grepl("^commons", GroupId)) %>% 
+  filter(GroupId == "commons-io" & ArtifactId == "commons-io") 
+
+x <- outlier1$PageRank
+lowerq  <-  quantile(x)[2]
+upperq  <-  quantile(x)[4]
+iqr  <-  upperq - lowerq
+# we identify extreme outliers
+extreme.threshold.upper  <-  (iqr * 3) + upperq
+
+# Page Rank
+outlier1 %>% 
+  ggplot(aes(Release, PageRank, shape = GroupId)) +
+  geom_line(aes(type = GroupId)) +
+  geom_point(size = 3) +
+  # scale_shape(solid = FALSE) +
+  geom_text(aes(label=ifelse(PageRank>50,as.character(Version),'')),hjust=0,vjust=-0.5,show.legend = FALSE) +
+  xlab("Release Date") +
+  theme(legend.position="top", legend.title=element_blank()) +
+  scale_fill_brewer(palette="Dark2") + 
+  ylab("PageRank")  + 
+  geom_hline(yintercept = 427.2772, linetype="dashed", color = "red") +
+  scale_y_continuous(limits=c(0, 1000)) +
+  scale_x_date(date_breaks = "2 year", date_labels =  "%Y") +
+  xlab(NULL) +
+  scale_fill_manual("legend_title") 
+
+# Plot the three exampes of cases (outliers > 1)
+outliermore1 <- data %>% 
+  select(GroupId, ArtifactId, Version, PageRank, Release) %>% 
+   # filter(grepl("^commons", GroupId)) %>% 
+  filter(GroupId == "junit" & ArtifactId == "junit") 
+
+x <- outliermore1$PageRank
+lowerq  <-  quantile(x)[2]
+upperq  <-  quantile(x)[4]
+iqr  <-  upperq - lowerq
+# we identify extreme outliers
+extreme.threshold.upper  <-  (iqr * 3) + upperq
+
+# Page Rank
+outliermore1 %>% 
+  ggplot(aes(Release, PageRank, shape = GroupId)) +
+  geom_line(aes(type = GroupId)) +
+  geom_point(size = 3) +
+  # scale_shape(solid = FALSE) +
+  geom_text(aes(label=ifelse(PageRank>50,as.character(Version),'')),hjust=0,vjust=-0.5,show.legend = FALSE) +
+  xlab("Release Date") +
+  theme(legend.position="top", legend.title=element_blank()) +
+  scale_fill_brewer(palette="Dark2") + 
+  ylab("PageRank")  + 
+  geom_hline(yintercept = 403.6066, linetype="dashed", color = "red") +
+  # scale_y_continuous(limits=c(0, 1000)) +
+  scale_x_date(date_breaks = "2 year", date_labels =  "%Y") +
+  xlab(NULL) +
+  scale_fill_manual("legend_title") 
+
+
+outlierall <- rbind(outliermore1,rbind(outlier1, outlier0))
+outlierall$GroupId <- as.factor(outlierall$GroupId)
+
+lines <- data.frame(GroupId = levels(outlierall$GroupId), Z = c(490.2772, 427.2772, 724.6435))
+
+outlierall %>% 
+  ggplot(aes(Release, PageRank)) +
+  geom_line(aes(type = GroupId)) +
+  geom_point(size = 2.5) +
+  # scale_shape(solid = FALSE) +
+  geom_text(aes(label=ifelse(PageRank>75,as.character(Version),'')),hjust=0,vjust=-0.5,show.legend = FALSE) +
+  xlab("Release Date") +
+  theme(legend.position="top", legend.title=element_blank()) +
+  scale_fill_brewer(palette="Dark2") + 
+  ylab("popularity")  + 
+  # geom_hline(yintercept = 403.6066, linetype="dashed", color = "red") +
+  scale_y_continuous(limits=c(0, 1050)) +
+  scale_x_date(date_breaks = "2 year", date_labels =  "%Y") +
+  xlab(NULL) +
+  scale_fill_manual("legend_title") +
+  facet_grid(GroupId ~ .) +
+  geom_hline(data = lines, aes(yintercept = Z), linetype="dashed", color = "red") +
+  theme(legend.position="none")
+
+
+# Analyze w.r.t number of usages
+pageranks <- libraries_betw5and200_versions$PageRanks
+PosOutliers <- c()
+for(i in 1:length(pageranks)){
+  outliers <- findOutliers(pageranks[i][[1]])
+  if(length(outliers) != 0){
+    PosOutliers <- c(PosOutliers, outliers/length(pageranks[i][[1]]))
+  }
+}
+
+df <- data.frame(PosOutliers =PosOutliers)
+
+df %>%
+  ggplot(aes(PosOutliers)) +
+  geom_histogram(aes(y = ..count.. / sum(..count..)), color="black", fill = "#CCCCCC") +
+   scale_y_continuous(limits=c(0, 0.1), labels = percent_format()) +
+  xlab("relative position of popular versions") +
+  ylab("percentage of libraries")
+
+ggsave(filename = "Figures/position_most_used_version.pdf", 
+       height = 2.5, width = 4,  units = c("in"), device = "pdf")
+
+```
+
+```{r}
+# take the firt peak 
+x <- libraries_betw10and200_versions %>%
+  filter(PosMaxUsages > 0.95 & PosMaxUsages <=1) %>%
+  select(Library, Usages, PosMaxUsages) 
+  
+# normalized the data
+concat <- c()
+for (i in 1:length(x$Usages)) {
+  vect <- x$Usages[[i]]
+  x$Usages[[i]] <- (vect  / max(vect))
+  concat <- c(concat, x$Usages[[i]])
+}
+
+df <- data.frame(concat)
+df %>% 
+  ggplot(aes(concat)) +
+  geom_density()
+
+
+tmp <- x %>% 
+  mutate(Range = (length(Usages[[1]]) >= 20 & length(Usages[[1]] <= 50))    ) 
+
+x$Range <- (length(x$Usages[[1]]) >= 20 & length(x$Usages[[1]] <= 50))
+
+x$Usages[[1]]
+table(tmp$Range)
+
+# Function that interpolates a series to a length n
+interpolate_serie <- function(serie, n) {
+  # define the standardized x values of the output
+  #
+  output_x_vals <- seq(0, 1, length.out = n)
+  #
+  # compute the interpolated values; this would be done for each input time series
+  #
+  interpolated <-
+    approx(x = seq(0, 1, length.out = length(serie)),
+           y = serie,
+           xout = output_x_vals)
+  return(interpolated$y)
+}
+
+x$Usages2 <- x$Usages
+
+sol <- list()
+for(i in 1:length(x$Usages)){
+  x$Usages2[[i]] <- interpolate_serie(x$Usages[[i]], 200)
+}
+x$Interpolated <- sol
+  
+# Stack overflow example
+# example data:
+dat <- x$Usages2
+# get plotting:
+plot(unlist(dat), type = "n", xlim = c(1, max(sapply(dat, length))), xlab = "relative positions of the most used library", ylab = "number of usages (normalized)" )
+mapply(lines, dat, col = alpha(seq_along(dat), 0.1))
+# legend("topleft", names(dat), lty = 2, col = seq_along(dat))
+
+# with ggplot
+dat <- x$Usages
+dat <- lapply(dat, function(x) cbind(x = seq_along(x), y = x))
+
+list.names <- names(dat)
+lns <- sapply(dat, nrow)
+dat <- as.data.frame(do.call("rbind", dat))
+dat$group <- rep(list.names, lns)
+
+library(ggplot2)
+
+ggplot(dat, aes(x = x, y = y)) +
+    theme_bw() +
+    geom_line(alpha = 0.1)
+
+
+
+
+
+# plot density
+libraries_betw10and200_versions %>% 
+
+# get subsets of artifacts positions
+a <- libraries_betw10and200_versions %>% 
+  select(Library, NumVersions, PosMaxUsages) %>% 
+  filter(PosMaxUsages <= 0.25) %>% 
+  mutate(Group = 1) %>% 
+  slice(1:2000)
+
+b <- libraries_betw10and200_versions %>% 
+  select(Library, NumVersions, PosMaxUsages) %>% 
+  filter(PosMaxUsages > 0.09 & PosMaxUsages <= 0.12) %>% 
+  mutate(Group = 2) %>% 
+  slice(1:2000)
+
+c <- libraries_betw10and200_versions %>% 
+  select(Library, NumVersions, PosMaxUsages) %>% 
+  filter(PosMaxUsages > 0.5 & PosMaxUsages <= 0.75) %>% 
+  mutate(Group = 3) %>% 
+  slice(1:2000)
+
+d <- libraries_betw10and200_versions %>% 
+  select(Library, NumVersions, PosMaxUsages) %>% 
+  filter(PosMaxUsages > 0.75) %>% 
+  mutate(Group = 4) %>% 
+  slice(1:2000)
+
+e <- bind_rows(a, bind_rows(b, bind_rows(c, d)))
+
+write.csv(e, "Data/sample_positions.csv")
+
+
+# Analyze w.r.t number of PageRank
+pageranks <- libraries_betw5and200_versions$PageRanks
+PosMaxPR <- c()
+for(i in 1:length(pageranks)){
+  PosMaxPR <- c(PosMaxPR, list_maxs(pageranks[i]))
+}
+
+# add the coulum with the positions to the df
+libraries_betw10and200_versions$PosMaxPR <- PosMaxPR 
+
+libraries_betw10and200_versions %>% ggplot(aes(PosMaxPR)) +
+  geom_histogram(aes(y = ..count.. / sum(..count..)), color="black", fill="white") +
+  scale_y_continuous(labels = percent_format()) +
+  xlab("relative position of the most popular version") +
+  ylab("percentage of libraries")
+```
+
+
+### Plot the libraries PageRank
+```{r}
+
+data$GroupId <- as.character(data$GroupId)
+datatmp <- data %>% 
+   # filter(grepl("^commons", GroupId)) %>% 
+  filter(GroupId == "commons-io" | GroupId == "commons-codec" | GroupId == "commons-collections")
+
+# Page Rank
+datatmp %>% 
+  ggplot(aes(Release, PageRank, shape = GroupId)) +
+  geom_line(aes(type = GroupId)) +
+  geom_point(size = 3) +
+  # scale_shape(solid = FALSE) +
+  geom_text(aes(label=ifelse(PageRank>50,as.character(Version),'')),hjust=0,vjust=-0.5,show.legend = FALSE) +
+  xlab("Release Date") +
+  theme(legend.position="top", legend.title=element_blank()) +
+  scale_fill_brewer(palette="Dark2") + 
+  ylab("PageRank")  + 
+  scale_y_continuous(limits=c(0, 1000)) +
+  scale_x_date(date_breaks = "2 year", date_labels =  "%Y") +
+  xlab(NULL) +
+  scale_fill_manual("legend_title") 
+
+# View(data %>% filter(GroupId == "commons-collections"))
+
+```
+
+
+### Plot the page rank of libraries
+
+```{r}
+ga_graph <- read_csv("Data/ga_graph.csv")
+ga_graph <- ga_graph %>% 
+  unite(Library, groupId, artifactId, sep = ":", remove = T) %>% 
+  rename(PageRank = pagerank, Community = community)
+ga_graph$versions <- NULL
+
+data_versions <- inner_join(ga_graph, data_versions, by = "Library")
+
+data_versions %>% 
+  filter(NumVersions > 1) %>% 
+  # group_by(NumVersions) %>% 
+  # summarise(MeanPageranks = mean(PageRank)) %>% 
+  ggplot(aes(x = NumVersions, y = PageRank)) +
+  # geom_smooth(se = F, method="loess", size=1, formula = y ~ x, span = 1) +
+  # geom_smooth(se = F, method = "lm", span = 1) +
+   geom_point(alpha = 0.25) +
+
+  scale_y_log10(breaks = scales::trans_breaks("log10", function(x) 10^x),
+   labels = scales::trans_format("log10", scales::math_format(10^.x))) +
+ 
+  scale_x_log10(breaks = scales::trans_breaks("log10", function(x) 10^x),
+   labels = scales::trans_format("log10", scales::math_format(10^.x))) +
+  xlab("number of versions (log scale)") +
+  ylab("Weighted PageRank (log scale)") +
+  annotation_logticks(sides = "l") +
+  annotation_logticks(sides = "b") +
+  geom_vline(xintercept=5, linetype="dashed", color = "red", size = 1.25) +
+  geom_vline(xintercept=200, linetype="dashed", color = "red", size = 1.25) 
+
+
+
+filtered %>% 
+  ggplot(aes(x = NumVersions, y = PageRank)) +
+  # geom_smooth(se = F, method="loess", size=1, formula = y ~ x, span = 1) +
+  # geom_smooth(se = F, method = "lm", span = 1) +
+   geom_point(alpha = 0.15) +
+
+  scale_y_log10(breaks = scales::trans_breaks("log10", function(x) 10^x),
+   labels = scales::trans_format("log10", scales::math_format(10^.x))) +
+
+  scale_x_log10(breaks = scales::trans_breaks("log10", function(x) 10^x),
+   labels = scales::trans_format("log10", scales::math_format(10^.x))) +
+  xlab(TeX("number of versions ($log_{10}$ scale)")) +
+  ylab(TeX("page rank score ($log_{10}$ scale)")) +
+  annotation_logticks(sides = "l") +
+  annotation_logticks(sides = "b") +
+  geom_vline(xintercept=10, linetype="dashed", color = "red") +
+  geom_vline(xintercept=200, linetype="dashed", color = "red") 
+  
+  
+
+```
+
+
+
+### Plot distributions
+
+```{r}
+# distribution between libraries and number of versions for all the data
+libraries_more100_versions %>% ggplot(aes(x="", y=MeanDiff)) +
+  geom_violin() +
+  xlab("libraries") +
+  ylab("MeanDiff")
+
+
+
+libraries_betw1and100_versions %>% ggplot(aes(x="", y=MeanDiff)) +
+  geom_violin() +
+  xlab("libraries") +
+  ylab("MeanDiff")
+
+libraries_betw1and9_versions %>% 
+  ggplot(aes(x = MeanDiff, y = NumVersions)) +
+  geom_point() +
+  scale_y_log10(breaks = scales::trans_breaks("log10", function(x) 10^x),
+   labels = scales::trans_format("log10", scales::math_format(10^.x))) +
+  scale_x_log10(breaks = scales::trans_breaks("log10", function(x) 10^x),
+   labels = scales::trans_format("log10", scales::math_format(10^.x))) 
+
+data_versions %>% 
+  ggplot(aes(x = "", y = NumVersions))+
+  geom_violin() +
+  geom_boxplot(width = 0.025) +
+  scale_y_log10(breaks = scales::trans_breaks("log10", function(x) 10^x),
+   labels = scales::trans_format("log10", scales::math_format(10^.x))) 
+
+summary(data_versions$NumVersions)
+summary(data_versions$MeanDiff)
+  
+```
+
+
+
+# Frequency between all the releases
+
+Put all the release timespan together and make a density plot from it.
+
+```{r}
+time_to_release$durations <- as.character(time_to_release$durations)
+durations <- time_to_release$durations
+durations_conc <- paste(durations, collapse = '')
+durations_gsub <- gsub("]", ",", durations_conc)
+durations_gsub2 <- gsub("\\[", "", durations_gsub)
+durations_gsub3 <- str_split(durations_gsub2, ",")
+dataframe <- data.frame(durations_gsub3[[1]])
+colnames(dataframe) <- c("Releases")
+dataframe$Releases <- as.numeric(dataframe$Releases)
+
+# make the density plot
+dataframe %>% 
+  ggplot(aes(Releases)) +
+  geom_freqpoly(bins = 30) +
+  xlab("timespan between releases (days)") +
+  ylab("number of libraries")
+
+# make the box plot
+ggplot(stack(dataframe), aes(x = ind, y = values)) +
+  xlab(NULL) +
+  # geom_violin(fill = "deepskyblue") +
+  geom_violin() +
+  ylab("timespan between releases (days)")
+
+# put in a table
+# - Libraries that release on the same day
+# - Libraries that have only one verision
+# - Libraries that released more than less than 100 versions
+# - Libraries that released more than 100 versions
+
+```
+
+# RQ1 v2 with the mean (data preparation)
+
+```{r}
+time_to_release <- read.csv("Data/timeToRelease.csv")
+time_to_release$durations <- as.character(time_to_release$durations)
+durations <- time_to_release$durations
+durations_gsub <- gsub("]", ",", durations)
+durations_gsub2 <- gsub("\\[", "", durations_gsub)
+durations_gsub3 <- str_split(durations_gsub2, ",")
+
+# Calculate the mean time between releases
+sol <- c()
+for (i in 1:length(durations_gsub3)) {
+  mean <- mean(as.numeric(durations_gsub3[[i]]), na.rm = T)
+  sol <- c(sol, mean)
+}
+time_to_release$Mean <- sol
+
+# Calculate the standard deviation between releases
+sol <- c()
+versions <- c()
+for (i in 1:length(durations_gsub3)) {
+  sd <- sd(as.numeric(durations_gsub3[[i]]), na.rm = T)
+  sol <- c(sol, sd)
+  versions <- c(versions, length(durations_gsub3[[i]]) - 1)
+}
+time_to_release$SD <- sol
+time_to_release$Versions <- versions
+
+time_to_release[is.na(time_to_release)] <- 0
+time_to_release <- time_to_release %>% 
+  unite(Library, groupId, artifactId, sep = ":", remove = T)
+
+df_usage_libraries <- data %>%
+  dplyr::select(GroupId, ArtifactId, DUsages, Dependencies) %>% 
+  unite(Library, GroupId, ArtifactId, sep = ":", remove = T) %>% 
+  group_by(Library) %>% 
+  summarise(SumUsages = sum(DUsages), SumDependencies = sum(Dependencies)) %>% 
+  dplyr::select(Library, SumUsages, SumDependencies) %>% 
+  arrange(desc(SumUsages))
+
+time_releases_all <- inner_join(time_to_release, df_usage_libraries, by = "Library")
+write_csv(time_releases_all, "Data/time_releases_all.csv")
+
+```
+
+# data analysis
+
+```{r}
+
+read_csv("Data/time_releases_all.csv")
+
+# Filter different kind of projects
+unique_release <- time_releases_all %>% filter(Versions == 1)
+dim(junk_projects)
+
+medium_release <- time_releases_all %>% filter(Versions > 1 & Versions <= 10)
+dim(useful_projects)
+
+large_release <- time_releases_all %>% filter(Versions > 10)
+dim(useful_projects)
+
+# make the density plot
+useful_projects %>%
+  ggplot(aes(Mean)) +
+  geom_density() +
+  # geom_freqpoly(bins = 30) +
+  xlab("timespan between releases (days)") +
+  ylab("number of libraries")
+
+# make the box plot
+large_release %>% ggplot(aes(x = "", y = Mean)) +
+  xlab("Projects") +
+  # geom_violin(fill = "deepskyblue") +
+  geom_violin() +
+  geom_boxplot(width=0.1, outlier.shape = NA) +
+  # stat_summary(fun.y=mean, geom="point", size=3, color="red") +
+  ylab("timespan between releases (days)")
+
+medium_release %>% ggplot(aes(x = "", y = Mean)) +
+  xlab("Projects") +
+  # geom_violin(fill = "deepskyblue") +
+  geom_violin() +
+  geom_boxplot(width=0.1, outlier.shape = NA) +
+  # stat_summary(fun.y=mean, geom="point", size=3, color="red") +
+  ylab("timespan between releases (days)")
+
+
+# plot versions vs usages
+useful_projects %>% 
+  ggplot(aes(x=SumUsages, y = Versions)) +
+  # geom_text(aes(label=Library), check_overlap = T, vjust = -1, hjust=1) +
+  geom_point() +
+  xlab("sum of library usages") +
+  ylab("number of versions")
+
+
+```
+
+
+# Ridgeline plots
+
+```{r}
+time_to_release <- read.csv("Data/timeToRelease.csv")
+flink <- time_to_release %>% filter(groupId == "org.apache.flink")
+time_to_release <- flink
+time_to_release$durations <- as.character(time_to_release$durations)
+durations <- time_to_release$durations
+durations_conc <- paste(durations, collapse = '')
+durations_gsub <- gsub("]", ",", durations_conc)
+durations_gsub2 <- gsub("\\[", "", durations_gsub)
+durations_gsub3 <- str_split(durations_gsub2, ",")
+datafame <- data.frame(durations_gsub3[[1]])
+colnames(datafame) <- c("Releases")
+datafame$Releases <- as.numeric(datafame$Releases)
+flink <- datafame
+flink$GroupID <- "flink"
+
+time_to_release <- read.csv("Data/timeToRelease.csv")
+commons <- time_to_release %>% filter(groupId == "org.apache.commons")
+time_to_release <- commons
+time_to_release$durations <- as.character(time_to_release$durations)
+durations <- time_to_release$durations
+durations_conc <- paste(durations, collapse = '')
+durations_gsub <- gsub("]", ",", durations_conc)
+durations_gsub2 <- gsub("\\[", "", durations_gsub)
+durations_gsub3 <- str_split(durations_gsub2, ",")
+datafame <- data.frame(durations_gsub3[[1]])
+colnames(datafame) <- c("Releases")
+datafame$Releases <- as.numeric(datafame$Releases)
+commons <- datafame
+commons$GroupID <- "commons"
+
+time_to_release <- read.csv("Data/timeToRelease.csv")
+lucene <- time_to_release %>% filter(groupId == "org.apache.lucene")
+time_to_release <- lucene
+time_to_release$durations <- as.character(time_to_release$durations)
+durations <- time_to_release$durations
+durations_conc <- paste(durations, collapse = '')
+durations_gsub <- gsub("]", ",", durations_conc)
+durations_gsub2 <- gsub("\\[", "", durations_gsub)
+durations_gsub3 <- str_split(durations_gsub2, ",")
+datafame <- data.frame(durations_gsub3[[1]])
+colnames(datafame) <- c("Releases")
+datafame$Releases <- as.numeric(datafame$Releases)
+lucene <- datafame
+lucene$GroupID <- "lucene"
+
+time_to_release <- read.csv("Data/timeToRelease.csv")
+streams <- time_to_release %>% filter(groupId == "org.apache.streams")
+time_to_release <- streams
+time_to_release$durations <- as.character(time_to_release$durations)
+durations <- time_to_release$durations
+durations_conc <- paste(durations, collapse = '')
+durations_gsub <- gsub("]", ",", durations_conc)
+durations_gsub2 <- gsub("\\[", "", durations_gsub)
+durations_gsub3 <- str_split(durations_gsub2, ",")
+datafame <- data.frame(durations_gsub3[[1]])
+colnames(datafame) <- c("Releases")
+datafame$Releases <- as.numeric(datafame$Releases)
+streams <- datafame
+streams$GroupID <- "streams"
+
+time_to_release <- read.csv("Data/timeToRelease.csv")
+ignite <- time_to_release %>% filter(groupId == "org.apache.ignite")
+time_to_release <- ignite
+time_to_release$durations <- as.character(time_to_release$durations)
+durations <- time_to_release$durations
+durations_conc <- paste(durations, collapse = '')
+durations_gsub <- gsub("]", ",", durations_conc)
+durations_gsub2 <- gsub("\\[", "", durations_gsub)
+durations_gsub3 <- str_split(durations_gsub2, ",")
+datafame <- data.frame(durations_gsub3[[1]])
+colnames(datafame) <- c("Releases")
+datafame$Releases <- as.numeric(datafame$Releases)
+ignite <- datafame
+ignite$GroupID <- "ignite"
+
+ridgeline <- bind_rows(flink, commons, lucene, streams, ignite)
+
+# library
+library(ggridges)
+
+ridgeline %>% filter(Releases == 1)
+
+# basic example
+ridgeline %>% ggplot(aes(x = Releases, y = GroupID, fill = GroupID)) +
+  geom_density_ridges() +
+  theme_ridges() + 
+  theme(legend.position = "none") +
+  xlab("Time between releases (in days)")
+
+```
+
+# Distribution of the number of versions for libraries with more than one version
+
+```{r}
+versions_count <- read.csv("Data/versions_count.csv")
+
+versions_count$versions <- as.factor(versions_count$versions)
+versions_count <- versions_count %>%
+  dplyr::select(versions) %>%
+  group_by(versions) %>%
+  summarise(count = n())
+
+versions_count$versions <- as.numeric(versions_count$versions)
+
+versions_count %>% filter(count>1) %>% 
+  ggplot(aes(x = versions, y = count)) +
+   geom_point(alpha = 0.35) +
+  # stat_smooth(method = lm, formula = y ~ poly(x, 10), se = FALSE) +
+  # geom_smooth(method="loess", size=1, formula = y ~ x, span = 1) +
+  geom_smooth(se = FALSE, method = "gam", formula = y ~ s(log(x)), color = "blue") +
+ 
+   scale_y_log10(breaks = scales::trans_breaks("log10", function(x) 10^x),
+   labels = scales::trans_format("log10", scales::math_format(10^.x))) +
+ 
+   scale_x_continuous(breaks = c(0, 100, 200, 300, 400, 500, 600)) +
+   xlab("number of versions ") +
+   ylab("number of libraries (log sacale)") 
+   # ggtitle("Distribution of the number of versions for libraries with more than one version")
+
+distribution <- filtered %>% 
+  group_by(NumVersions) %>%
+  summarise(Count = n())
+  
+distribution$NumVersions <- as.numeric((distribution$NumVersions))
+  
+distribution %>% 
+  ggplot(aes(x = NumVersions, y = Count)) +
+  geom_smooth(se = FALSE, method="loess", size=1, formula = y ~ x, span = 1) +
+   geom_point(alpha = 0.35) +
+  # stat_smooth(method = lm, formula = y ~ poly(x, 10), se = FALSE) +
+   # geom_smooth(se = FALSE, method = "gam", formula = y ~ s(log(x)), color = "blue") +
+ 
+   scale_y_log10(breaks = scales::trans_breaks("log10", function(x) 10^x),
+   labels = scales::trans_format("log10", scales::math_format(10^.x))) +
+  annotation_logticks(sides = "l") +
+  annotation_logticks(sides = "b") +
+ 
+  scale_x_log10(breaks = scales::trans_breaks("log10", function(x) 10^x),
+   labels = scales::trans_format("log10", scales::math_format(10^.x))) +
+   # scale_x_continuous(breaks = c(0, 100, 200, 300, 400, 500, 600)) +
+  geom_vline(xintercept=10, linetype="dashed", color = "red") +
+  geom_vline(xintercept=200, linetype="dashed", color = "red") +
+   xlab(TeX("number of versions ($log_{10}$ scale)")) +
+   ylab(TeX("number of libraries ($log_{10}$ scale)")) 
+
+```

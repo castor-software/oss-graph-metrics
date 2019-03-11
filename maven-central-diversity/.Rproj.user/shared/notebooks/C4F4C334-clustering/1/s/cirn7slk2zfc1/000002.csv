@@ -1,0 +1,28 @@
+"0","library(""dtwclust"")"
+"2","Loading required package: proxy
+"
+"2","
+Attaching package: ‘proxy’
+
+"
+"2","The following objects are masked from ‘package:stats’:
+
+    as.dist, dist
+
+"
+"2","The following object is masked from ‘package:base’:
+
+    as.matrix
+
+"
+"2","Loading required package: dtw
+"
+"2","Loaded dtw v1.20-1. See ?dtw for help, citation(""dtw"") for use in publication.
+
+"
+"2","dtwclust:
+Setting random number generator to L'Ecuyer-CMRG (see RNGkind()).
+To read the included vignettes type: browseVignettes(""dtwclust"").
+See news(package = ""dtwclust"") after package updates.
+"
+"0","data(""uciCT"")"

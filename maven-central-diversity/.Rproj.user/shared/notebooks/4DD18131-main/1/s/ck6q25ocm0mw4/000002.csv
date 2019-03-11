@@ -1,0 +1,13 @@
+"0","```r
+
+# Page Rank Table
+table_pagerank <- data %>% select(GroupId, ArtifactId, Version, Dependencies, DUsages, TUsages, PageRank) %>% slice(1:10)
+print(xtable(table_pagerank, type = \"latex\"), file = \"TexTables/table_pagerank.tex\")
+# Betweenness Centrality Table
+table_betw <- data %>% select(GroupId, ArtifactId, Version, Dependencies, DUsages, TUsages, BetwCentrality) %>% arrange(desc(BetwCentrality)) %>% slice(1:10)
+print(xtable(table_betw, type = \"latex\"), file = \"TexTables/table_betw.tex\")
+# Harmonic Centrality Table
+table_harm <- data %>% select(GroupId, ArtifactId, Version, Dependencies, DUsages, TUsages, HarmCentrality) %>% arrange(desc(HarmCentrality)) %>% slice(1:10)
+print(xtable(table_harm, type = \"latex\"), file = \"TexTables/table_harm.tex\")
+
+```"

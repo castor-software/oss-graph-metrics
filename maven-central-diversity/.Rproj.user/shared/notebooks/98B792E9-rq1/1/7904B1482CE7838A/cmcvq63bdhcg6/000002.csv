@@ -1,0 +1,18 @@
+"0","library(tidyverse)"
+"0","library(latex2exp)"
+"0","library(scales)"
+"2","
+Attaching package: ‘scales’
+
+"
+"2","The following object is masked from ‘package:purrr’:
+
+    discard
+
+"
+"2","The following object is masked from ‘package:readr’:
+
+    col_factor
+
+"
+"0","theme_set(theme_bw())"

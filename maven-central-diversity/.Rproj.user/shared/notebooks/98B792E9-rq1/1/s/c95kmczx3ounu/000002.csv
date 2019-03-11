@@ -1,0 +1,6 @@
+"0","```r
+data <- read_csv(\"DatasetFinal/data.csv\")
+```"
+"1","Error in read_csv(\"DatasetFinal/data.csv\") : 
+  could not find function \"read_csv\"
+"

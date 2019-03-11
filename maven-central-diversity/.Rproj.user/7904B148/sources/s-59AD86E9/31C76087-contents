@@ -1,0 +1,217 @@
+---
+title: "RQ1: To what extent are the different versions of all libraries actively used?"
+output: html_notebook
+---
+
+### Import required libraries
+
+```{r}
+library(tidyverse)
+library(latex2exp)
+library(scales)
+theme_set(theme_bw())
+```
+
+### Read the data
+
+```{r}
+data <- read_csv("Data/data.csv")
+time_to_release <- read.csv("Data/timeToRelease.csv")
+versions <- read_csv("Data/upgrades-new.csv")
+metrics_all <- read_csv("Data/artifacts_metrics_all.csv")
+latest<- read_csv("Data/latest_versions.csv")
+uptd <- read_csv("Data/areUpToDate_all.csv")
+```
+
+```{r}
+metrics_all <- read_csv("Data/artifacts_metrics_all.csv")
+latest<- read_csv("Data/latest_versions.csv")
+latest <- latest %>% rename(coordinates = artifact)
+
+# select the studied subset from metrics_all
+metrics_all_filtered <- metrics_all %>%
+  mutate(Library = paste(groupId, artifactId, sep = ":"))
+mysubset <- libraries_betw5and200_versions %>% select(Library)
+metrics <- inner_join(mysubset, metrics_all_filtered, by = "Library")
+additional_variables <- data %>% 
+  mutate(coordinates= paste(GroupId, ArtifactId, Version, sep = ":")) %>% 
+  select(coordinates, DUsages, Dependencies) %>% 
+  rename(usages = DUsages, dependencies = Dependencies)
+metrics <- inner_join(metrics, additional_variables)
+
+are_latest <- inner_join(metrics, latest, by = "coordinates")
+
+# compute the table passive vs active
+table(metrics$isPassive)[2] / (table(metrics$isPassive)[2] + table(metrics$isPassive)[1])
+summary(metrics$validityPeriod)
+summary(metrics$lifespan)
+
+# dormant
+metrics %>% filter(isPassive == "true" & usages == 0) %>% dim()
+
+# latest
+# a <- metrics %>% filter(isPassive == "false" & validityPeriod != -1) %>% dim()
+# table(a$isPassive)
+
+metrics %>%
+  select(groupId, artifactId, version, release) %>%
+  arrange(release) %>%
+  group_by(groupId, artifactId) %>%
+  dplyr::mutate(first = dplyr::first(release),
+                last = dplyr::last(release))
+
+# plot lifespan distribution of passive and active versions 
+metrics %>%
+  filter(is.na(isPassive) == F) %>%
+  mutate(Type = ifelse(isPassive == "true", "passive", "active")) %>% 
+  # filter(Type == "passive") %>% 
+  # filter(validityPeriod > 0) %>% 
+  ggplot(aes(Type, lifespan)) +
+  geom_violin(trim = FALSE, fill = "#CCCCCC") +
+  geom_boxplot(width = 0.1) +
+  scale_y_log10(
+    breaks = scales::trans_breaks("log10", function(x)
+      10 ^ x),
+    labels = scales::trans_format("log10", scales::math_format(10 ^ .x))
+  ) +
+  coord_flip() +
+  theme(legend.position = "none") +
+  xlab(NULL) +
+  ylab(TeX("lifespan (log_{10} scale)"))
+
+ggsave(filename = "Figures/dist_lifespan.pdf", height = 2.5, width = 4,  units = c("in"), device = "pdf")
+
+# Obtain the mean
+tmp <- metrics %>%
+  filter(is.na(isPassive) == F) %>% 
+mutate(Type = ifelse(isPassive == "true", "passive", "active")) %>% 
+  filter(validityPeriod > 0) %>% 
+  filter(Type == "active")
+summary(tmp$lifespan)
+
+```
+
+```{r}
+# Distribution dormant libraries
+dormant_libraries %>%
+  ggplot(aes(x = "dormant", y = n)) +
+  geom_violin(aes(fill = "")) +
+  geom_boxplot(width = 0.05) +
+  coord_flip() +
+  scale_fill_manual(values = c("#CCCCCC")) +
+  xlab(NULL) +
+  ylab("number of versions") +
+  ylim(5, 200) +
+  theme(legend.position = "blank")
+
+ggsave(
+  filename = "Figures/dorlib_vs_numver.pdf",
+  height = 2,
+  width = 5,
+  units = c("in"),
+  device = "pdf"
+)
+
+# evolution of active, passive and dormant versions
+metrics %>%
+  filter(is.na(isPassive) == F) %>%
+  mutate(Type = ifelse(isPassive == "true", "passive", "active")) %>%
+  filter(validity > 0) %>%
+  # filter(Type == "passive") %>%
+  group_by(month = floor_date(releaseDate, unit = "year")) %>%
+  summarize(MontlyReleases = n()) %>%
+  ggplot(aes(x = month, y = MontlyReleases)) +
+  geom_line(aes(colour = Type)) +
+  scale_x_date(date_breaks = "2 year", date_labels = "%Y") +
+  scale_y_log10(
+    breaks = scales::trans_breaks("log10", function(x)
+      10 ^ x),
+    labels = scales::trans_format("log10", scales::math_format(10 ^.x))
+  ) +
+  ylab(TeX("number of new versions ($log_{10}$ scale)")) +
+  annotation_logticks(sides = "l") +
+  xlab(NULL)
+
+ggplot(aes(x = month, y = MontlyReleases)) +
+  df_new_versions <- data %>%
+  select(GroupId, ArtifactId, Version, Release) %>%
+  group_by(month = floor_date(Release, unit = "month")) %>%
+  summarize(MontlyReleases = n())
+
+df_bind %>% ggplot(aes(x = month, y = MontlyReleases)) +
+  geom_line(aes(linetype = Type), size = 0.9) +
+  scale_x_date(date_breaks = "2 year", date_labels = "%Y") +
+  scale_y_log10(
+    breaks = scales::trans_breaks("log10", function(x)
+      10 ^ x),
+    labels = scales::trans_format("log10", scales::math_format(10 ^ .x))
+  ) +
+  ylab(TeX("number of releases ($log_{10}$ scale)")) +
+  annotation_logticks(sides = "l") +
+  scale_color_manual(values = c("red", "blue")) +
+  scale_shape_manual(values = c(1, 2)) +
+  xlab(NULL) +
+  theme(
+    legend.title = element_blank(),
+    legend.box.background = element_rect(colour = "black"),
+    legend.justification = c(1, -0.3),
+    legend.position = c(0.95, 0)
+  )
+
+View(active_libraries)
+active_libraries %>%
+  ggplot(aes(n)) +
+  # geom_freqpoly() +
+  geom_histogram(color = "black", fill = "#CCCCCC") +
+  # scale_x_continuous(labels = percent_format()) +
+  scale_y_log10(
+    breaks = scales::trans_breaks("log10", function(x)
+      10 ^ x),
+    labels = scales::trans_format("log10", scales::math_format(10 ^ .x))
+  ) +
+  xlab("number of active versions") +
+  ylab("number of active libraries") +
+  xlim(0, 150) +
+  ylab(TeX("number of libraries ($log_{10}$ scale)"))
+
+ggsave(
+  filename = "Figures/numactlib_vs_numactver.pdf",
+  height = 2.5,
+  width = 4,
+  units = c("in"),
+  device = "pdf"
+)
+
+active_libraries %>%
+  filter(n != 1) %>%
+  dim()
+
+passive <-
+  inner_join(passive_libraries, data_versions, by = "Library") %>%
+  select(Library, PageRank) %>%
+  rename(popularity = PageRank) %>%
+  arrange(desc(popularity))
+passive$Status <- "passive"
+write_csv(dormant, "passive_libs")
+
+dormant <-
+  inner_join(dormant_libraries, data_versions, by = "Library") %>% select(Library, PageRank) %>% rename(popularity =                                                                                                          PageRank)
+dormant$Status <- "dormant"
+
+write_csv(passive[1:387], "passive_non_dormant_libs.csv")
+
+pass_dorm <- inner_join(passive, dormant, by = "Library")
+pass_dorm <-
+  pass_dorm %>% mutate(status_lib = ifelse(Status == "dormant", "dormant", "passive")) %>%
+  select(Library, popularity.y, status_lib)
+
+View(dormant)
+
+View(dplyr::setdiff(passive, dormant, by = "Library"))
+
+colnames(dormant)
+colnames(passive)
+
+```
+
+

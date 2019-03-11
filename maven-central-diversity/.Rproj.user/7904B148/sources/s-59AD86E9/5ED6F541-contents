@@ -1,0 +1,163 @@
+---
+title: "Study subjects"
+output: html_notebook
+---
+
+### Import required libraries
+
+```{r}
+library(tidyverse)
+library(latex2exp)
+library(scales)
+theme_set(theme_bw())
+```
+
+### Read the data
+
+```{r}
+data <- read_csv("DatasetFinal/data.csv")
+time_to_release <- read.csv("DatasetFinal/timeToRelease.csv")
+versions <- read_csv("DatasetFinal/upgrades-new.csv")
+metrics_all <- read_csv("DatasetFinal/artifacts_metrics_all.csv")
+latest<- read_csv("DatasetFinal/latest_versions.csv")
+uptd <- read_csv("DatasetFinal/areUpToDate_all.csv")
+summary(data$Dependencies)
+```
+
+### Tidy the data
+
+```{r}
+# Preprocess the data to get the libraries and its versions
+data_versions <- data %>% 
+  dplyr::select(GroupId, ArtifactId, Version, DUsages, PageRank, Dependencies, Release) %>% 
+  unite(Library, GroupId, ArtifactId, sep = ":", remove = F) %>% 
+  dplyr::select(Library, Version, DUsages, PageRank, Dependencies, Release) %>%
+  arrange(Release) %>% 
+  group_by(Library) %>% 
+  summarise(NumVersions = n(), Usages = list(DUsages), PageRanks = list(PageRank), Dependencies = list(Dependencies), Releases = list(Release)) %>%
+  arrange(desc(NumVersions))
+
+# Calculate the difference between releases (lag)
+tmp <- data_versions$Releases
+sol_diff <- c()
+for(i in 1:length(tmp)){
+ print(length(tmp) - i)
+ list <- as.vector(difftime(tmp[i][[1]], lag(tmp[i][[1]]), units = "days"))
+ list <- list(x=list)
+ sol_diff <- c(sol_diff, list)
+}
+data_versions$DiffReleases <- sol_diff
+
+# Calculate the mean time between releases
+sol_mean <- c()
+for (i in 1:length(sol)) {
+  print(length(sol) - i)
+  mean <- mean(as.numeric(sol[[i]]), na.rm = T)
+  sol_mean <- c(sol_mean, mean)
+}
+data_versions$MeanDiff <- sol_mean
+
+# Calculate the standard deviation between releases
+sol_sd <- c()
+for (i in 1:length(sol)) {
+  print(length(sol) - i)
+  sd <- sd(as.numeric(sol[[i]]), na.rm = T)
+  sol_sd <- c(sol_sd, sd)
+}
+data_versions$SDDiff <- sol_sd
+
+# Calculate the mean of usages
+usages_mean <- c()
+for (i in 1:length(data_versions$Usages)) {
+  print(length(data_versions$Usages) - i)
+  mean <- mean(as.numeric(data_versions$Usages[[i]]), na.rm = T)
+  usages_mean <- c(usages_mean, mean)
+}
+data_versions$MeanUsages <- usages_mean
+
+# Calculate the mean of dependencies
+dependencies_mean <- c()
+for (i in 1:length(data_versions$Dependencies)) {
+  print(length(data_versions$Dependencies) - i)
+  mean <- mean(as.numeric(data_versions$Dependencies[[i]]), na.rm = T)
+  dependencies_mean <- c(dependencies_mean, mean)
+}
+data_versions$MeanDependencies <- dependencies_mean
+
+# Calculate the mean of pageranks
+pageranks_mean <- c()
+for (i in 1:length(data_versions$PageRanks)) {
+  print(length(data_versions$PageRanks) - i)
+  mean <- mean(as.numeric(data_versions$PageRanks[[i]]), na.rm = T)
+  pageranks_mean <- c(pageranks_mean, mean)
+}
+data_versions$MeanPageranks <- pageranks_mean
+
+# Calculate the number of dependencies
+dependencies_total <- c()
+for (i in 1:length(data_versions$Dependencies)) {
+  print(length(data_versions$Dependencies) - i)
+  sum <- sum(as.numeric(data_versions$Dependencies[[i]]), na.rm = T)
+  dependencies_total <- c(dependencies_total, sum)
+}
+data_versions$NumDependencies <- dependencies_total
+
+# Calculate the number of usages
+usages_total <- c()
+for (i in 1:length(data_versions$Usages)) {
+  print(length(data_versions$Usages) - i)
+  sum <- sum(as.numeric(data_versions$Usages[[i]]), na.rm = T)
+  usages_total <- c(usages_total, sum)
+}
+data_versions$NumUsages <- usages_total
+
+# Save the dataset as an R object
+save(data_versions, file = "DatasetFinal/data_versions.RData")
+
+```
+
+### Load the tidy data
+
+```{r}
+load("DatasetFinal/data_versions.RData")
+```
+
+### Split the data into four groups
+
+```{r}
+filtered <- NULL
+
+# libraries with oly one version released 
+libraries_single_version <- data_versions %>% 
+  filter(NumVersions == 1)
+dim(libraries_single_version)
+filtered <- dplyr::anti_join(data_versions, libraries_single_version, by = "Library")
+
+# libraries with mored that one version but released the same day 
+libraries_single_day <- filtered %>% 
+  filter(NumVersions >= 1 & (MeanDiff == 0 | SDDiff == 0))
+dim(libraries_single_day)
+sum(libraries_single_day$NumVersions)
+filtered <- dplyr::anti_join(filtered, libraries_single_day, by = "Library")
+
+# libraries that have between 1 and 4 versions released 
+libraries_betw1and5_versions <- filtered %>% 
+  filter(NumVersions > 1 & NumVersions < 5)
+dim(libraries_betw1and5_versions)
+sum(libraries_betw1and5_versions$NumVersions)
+filtered <- dplyr::anti_join(filtered, libraries_betw1and5_versions, by = "Library")
+
+# libraries that have between 5 and 200 versions released 
+libraries_betw5and200_versions <- filtered %>% 
+  filter(NumVersions >= 5 & NumVersions <= 200)
+dim(libraries_betw5and200_versions)
+sum(libraries_betw5and200_versions$NumVersions)
+filtered <- dplyr::anti_join(filtered, libraries_betw5and200_versions, by = "Library")
+
+# libraries that have more than 200 versions released 
+libraries_more200_versions <- filtered %>% 
+  filter(NumVersions > 200)
+dim(libraries_more200_versions)
+sum(libraries_more200_versions$NumVersions)
+
+```

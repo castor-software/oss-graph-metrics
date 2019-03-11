@@ -1,0 +1,36 @@
+"0","```r
+G.degrees <- data$DUsages
+
+# Let's count the frequencies of each degree
+G.degree.histogram <- as.data.frame(table(G.degrees))
+
+# Need to convert the first column to numbers, otherwise
+# the log-log thing will not work (that's fair...)
+G.degree.histogram[,1] <- as.numeric(G.degree.histogram[,1])
+
+# Now, plot it!
+ggplot(G.degree.histogram, aes(x = G.degrees, y = Freq)) +
+  # geom_step() +
+  geom_line() +
+  # artifacts with this number of dependencies
+  scale_x_continuous(\"Degree\",
+                     trans = \"log10\") +
+  # how many of them
+  scale_y_continuous(\"Frequency ()\",
+                     trans = \"log10\") 
+
+occur = as.vector(table(data$DUsages))
+occur = occur/sum(occur)
+p = occur/sum(occur)
+y = rev(cumsum(rev(p)))
+x = as.numeric(names(table(data$DUsages)))
+plot(x, y, log=\"y\", type=\"l\", xlab = \"Degree\", ylab = \"Fraction\")
+
+occur = as.vector(table(data$TUsages))
+occur = occur/sum(occur)
+p = occur/sum(occur)
+y = rev(cumsum(rev(p)))
+x = as.numeric(names(table(data$TUsages)))
+# plot(x, y, log=\"y\", type=\"l\", xlab = \"Degree\", ylab = \"Fraction\")
+
+```"

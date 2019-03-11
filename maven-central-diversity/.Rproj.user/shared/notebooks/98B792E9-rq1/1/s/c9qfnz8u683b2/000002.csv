@@ -1,0 +1,50 @@
+"0","```r
+
+read_csv(\"DatasetFinal/time_releases_all.csv\")
+
+# Filter different kind of projects
+unique_release <- time_releases_all %>% filter(Versions == 1)
+dim(junk_projects)
+
+medium_release <- time_releases_all %>% filter(Versions > 1 & Versions <= 10)
+dim(useful_projects)
+
+large_release <- time_releases_all %>% filter(Versions > 10)
+dim(useful_projects)
+
+# make the density plot
+useful_projects %>%
+  ggplot(aes(Mean)) +
+  geom_density() +
+  # geom_freqpoly(bins = 30) +
+  xlab(\"timespan between releases (days)\") +
+  ylab(\"number of libraries\")
+
+# make the box plot
+large_release %>% ggplot(aes(x = \"\", y = Mean)) +
+  xlab(\"Projects\") +
+  # geom_violin(fill = \"deepskyblue\") +
+  geom_violin() +
+  geom_boxplot(width=0.1, outlier.shape = NA) +
+  # stat_summary(fun.y=mean, geom=\"point\", size=3, color=\"red\") +
+  ylab(\"timespan between releases (days)\")
+
+medium_release %>% ggplot(aes(x = \"\", y = Mean)) +
+  xlab(\"Projects\") +
+  # geom_violin(fill = \"deepskyblue\") +
+  geom_violin() +
+  geom_boxplot(width=0.1, outlier.shape = NA) +
+  # stat_summary(fun.y=mean, geom=\"point\", size=3, color=\"red\") +
+  ylab(\"timespan between releases (days)\")
+
+
+# plot versions vs usages
+useful_projects %>% 
+  ggplot(aes(x=SumUsages, y = Versions)) +
+  # geom_text(aes(label=Library), check_overlap = T, vjust = -1, hjust=1) +
+  geom_point() +
+  xlab(\"sum of library usages\") +
+  ylab(\"number of versions\")
+
+
+```"

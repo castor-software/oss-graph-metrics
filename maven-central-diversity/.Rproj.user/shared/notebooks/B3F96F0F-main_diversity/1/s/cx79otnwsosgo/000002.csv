@@ -1,0 +1,12 @@
+"0","```r
+
+library(\"tidyverse\")
+library(\"stringr\")
+library(\"igraph\")
+library(\"poweRlaw\")
+library(\"wesanderson\")
+library(\"xtable\")
+library(\"diverse\")
+theme_set(theme_bw())
+
+```"

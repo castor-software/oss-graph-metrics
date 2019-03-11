@@ -1,0 +1,32 @@
+"0","```r
+time_to_release$durations <- as.character(time_to_release$durations)
+durations <- time_to_release$durations
+durations_conc <- paste(durations, collapse = '')
+durations_gsub <- gsub(\"]\", \",\", durations_conc)
+durations_gsub2 <- gsub(\"\\[\", \"\", durations_gsub)
+durations_gsub3 <- str_split(durations_gsub2, \",\")
+dataframe <- data.frame(durations_gsub3[[1]])
+colnames(dataframe) <- c(\"Releases\")
+dataframe$Releases <- as.numeric(dataframe$Releases)
+
+# make the density plot
+dataframe %>% 
+  ggplot(aes(Releases)) +
+  geom_freqpoly(bins = 30) +
+  xlab(\"timespan between releases (days)\") +
+  ylab(\"number of libraries\")
+
+# make the box plot
+ggplot(stack(dataframe), aes(x = ind, y = values)) +
+  xlab(NULL) +
+  # geom_violin(fill = \"deepskyblue\") +
+  geom_violin() +
+  ylab(\"timespan between releases (days)\")
+
+# put in a table
+# - Libraries that release on the same day
+# - Libraries that have only one verision
+# - Libraries that released more than less than 100 versions
+# - Libraries that released more than 100 versions
+
+```"
