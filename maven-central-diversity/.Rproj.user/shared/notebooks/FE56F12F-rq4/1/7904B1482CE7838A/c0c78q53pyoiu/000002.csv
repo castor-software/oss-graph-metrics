@@ -1,0 +1,12 @@
+"0","metrics_all_filtered <- metrics_all %>%
+  mutate(Library = paste(groupId, artifactId, sep = "":""))
+mysubset <- libraries_betw5and200_versions %>% select(Library)
+metrics <- inner_join(mysubset, metrics_all_filtered, by = ""Library"")
+additional_variables <- data %>% 
+  mutate(coordinates= paste(GroupId, ArtifactId, Version, sep = "":"")) %>% 
+  select(coordinates, DUsages, Dependencies) %>% 
+  rename(usages = DUsages, dependencies = Dependencies)
+metrics <- inner_join(metrics, additional_variables)
+"
+"2","Joining, by = ""coordinates""
+"

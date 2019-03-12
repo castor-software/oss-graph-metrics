@@ -1,0 +1,104 @@
+---
+title: "Evolution of libraries and versions"
+output: html_notebook
+---
+
+```{r}
+# import required packages
+library(tidyverse)
+library(lubridate)
+library(latex2exp)
+library(latex2exp)
+theme_set(theme_bw())
+```
+
+
+```{r}
+# read the data
+data <- read_csv("DatasetFinal/data.csv")
+```
+
+## Introduction
+
+This notebook describes the evolution of Maven Central according to the number of new libraries and new versions added each month.
+
+### Evolution analysis
+
+Plot the monthly evolution of the number of new versions released on Maven Central. 
+
+```{r}
+# get a data frame with the number of new versions released each month
+df_new_versions <- data %>% 
+  select(GroupId, ArtifactId, Version, Release) %>% 
+  group_by(month = floor_date(Release, unit = "month")) %>%
+  summarize(MontlyReleases = n())
+
+# start from 2015 and remove the last month because it is incompleted 
+df_new_versions <- df_new_versions[10:171,]
+
+# plot the line graph
+df_new_versions %>% ggplot(aes(x = month, y = MontlyReleases)) + 
+  geom_line() + 
+  scale_x_date(date_breaks = "2 year", date_labels = "%Y") +
+  scale_y_log10(breaks = scales::trans_breaks("log10", function(x) 10^x),
+   labels = scales::trans_format("log10", scales::math_format(10^.x))) +
+   ylab(TeX("number of new versions ($log_{10}$ scale)")) +
+   annotation_logticks(sides = "l") +
+   xlab(NULL) 
+  
+```
+
+Plot the evolution of the number of new libraries released on Maven Central.
+
+```{r}
+# get a data frame with the number of new libraries released each month
+df_new_libraries <- data %>%
+  dplyr::select(GroupId, ArtifactId, Release) %>% 
+  unite(Library, GroupId, ArtifactId, sep = ":", remove = T) %>% # unite G and A to get the G:A tuple 
+  arrange(Release) %>% 
+  distinct(Library, .keep_all= TRUE) %>% # keep only the first release for each library
+  group_by(month = floor_date(Release, unit = "month")) %>%
+  summarize(MontlyReleases = n())
+
+# start from 2015 and remove the last month because it is incompleted 
+df_new_libraries <- df_new_libraries[10:171,]
+
+# plot the line graph
+df_new_libraries %>% 
+  ggplot(aes(x = month, y = MontlyReleases)) + 
+  geom_line() +
+  scale_x_date(date_breaks = "2 year", date_labels = "%Y") +
+  scale_y_log10(breaks = scales::trans_breaks("log10", function(x) 10^x),
+   labels = scales::trans_format("log10", scales::math_format(10^.x))) +
+   annotation_logticks(sides = "l") +
+   ylab(TeX("number of new libraries ($log_{10}$ scale)")) +
+   xlab(NULL) 
+
+```
+
+Put both lines in the same plot and prettify.
+
+```{r}
+df_new_versions$Type <- "new versions"
+df_new_libraries$Type <- "new libraries"
+df_bind <- rbind(df_new_versions, df_new_libraries)
+
+df_bind %>% ggplot(aes(x = month, y = MontlyReleases)) +
+  # geom_smooth(method='lm',formula=y~x) +
+  geom_line(aes(linetype = Type), size = 0.7) +
+  # geom_point(aes(shape = Type), alpha = 0.5) +
+  scale_x_date(date_breaks = "2 year", date_labels = "%Y") +
+  scale_y_log10(breaks = scales::trans_breaks("log10", function(x) 10 ^ x),
+    labels = scales::trans_format("log10", scales::math_format(10 ^ .x))
+  ) +
+  ylab(TeX("number of releases ($log_{10}$ scale)")) +
+  annotation_logticks(sides = "l") +
+  scale_color_manual(values = c("red", "blue")) +
+  scale_shape_manual(values = c(1, 2)) +
+  xlab(NULL) +
+  theme(legend.title=element_blank(),
+        legend.box.background = element_rect(colour = "black"),
+        legend.justification=c(1,-0.3), 
+        legend.position=c(0.95,0)
+        )
+```

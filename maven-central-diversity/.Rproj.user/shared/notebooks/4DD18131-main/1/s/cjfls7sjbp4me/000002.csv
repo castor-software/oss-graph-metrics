@@ -1,0 +1,18 @@
+"0","```r
+
+# Union Find
+data$UnionFind <- as.factor(data$UnionFind)
+summary(data$UnionFind)
+
+
+datatmp <- data %>% group_by(UnionFind) %>%
+  summarise(no_artifacts = length(UnionFind))
+
+datatmp$no_rows <- as.factor(datatmp$no_artifacts)
+datatmp <- datatmp %>% group_by(no_artifacts) %>%
+  summarise(clusters = length(no_artifacts)) %>% 
+  arrange(desc(no_artifacts))
+
+print(xtable(datatmp, type = \"latex\"), file = \"TexTables/table_union_find.tex\")
+
+```"

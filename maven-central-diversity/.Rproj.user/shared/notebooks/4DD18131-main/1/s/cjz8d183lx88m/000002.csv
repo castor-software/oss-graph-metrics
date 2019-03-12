@@ -1,0 +1,21 @@
+"0","```r
+
+data$GroupId <- as.character(data$GroupId)
+datatmp <- data %>% 
+  filter(grepl(\"^commons\", GroupId)) %>% 
+  filter(GroupId %in% c(\"commons-logging\", \"commons-io\", \"commons-codec\", \"commons-collections\", \"commons-lang\"))
+
+
+# Page Rank
+datatmp %>% 
+  ggplot(aes(Release, PageRank, color = GroupId, shape = GroupId)) + 
+  geom_line() +
+  geom_point(size = 2) +
+  geom_text(aes(label=ifelse(PageRank>5,as.character(Version),'')),hjust=0,vjust=0,show.legend = FALSE) +
+  xlab(\"Release Date\") +
+  theme(legend.position=\"right\") +
+  scale_fill_brewer(palette=\"Dark2\") + 
+  ylab(\"PR\")  + 
+  scale_fill_manual(\"legend_title\")
+
+```"

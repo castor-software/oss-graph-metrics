@@ -1,0 +1,147 @@
+---
+title: "Analysis of libraries that declare old dependencies"
+output: html_notebook
+---
+
+### Import required libraries
+
+```{r}
+library(tidyverse)
+library(latex2exp)
+library(scales)
+theme_set(theme_bw())
+dim(data_versions)
+
+```
+
+### Read the data
+
+```{r}
+data <- read_csv("Data/data.csv")
+dataUp <- read_csv("Data/areUpToDate_all.csv")
+load("Data/data_versions.RData")
+```
+
+### Split the data_versions into four groups
+
+```{r}
+# libraries with oly one version released 
+libraries_single_version <- data_versions %>% 
+  filter(NumVersions == 1)
+dim(libraries_single_version)[1]
+filtered <- dplyr::anti_join(data_versions, libraries_single_version, by = "Library")
+
+# libraries with mored that one version but released the same day 
+libraries_single_day <- data_versions %>% 
+  filter(MeanDiff == 0 | SDDiff == 0)
+dim(libraries_single_day)[1]
+filtered <- dplyr::anti_join(filtered, libraries_single_day, by = "Library")
+
+# libraries that have between 1 and 9 versions released 
+libraries_betw10and200_versions <- filtered %>% 
+  filter(NumVersions >= 10 & NumVersions <= 200)
+dim(libraries_betw10and200_versions)[1]
+
+# libraries that have more than 200 versions released 
+libraries_betw10and200_versions <- filtered %>% 
+  filter(NumVersions > 200)
+dim(libraries_betw10and200_versions)[1]
+
+```
+
+
+```{r}
+table(dataUp$hasNewer)
+
+# group by latest version
+data_latest<- dataUp %>% 
+  group_by(latest) %>% 
+  summarise(Providers=list(provider), hasNewers = list(hasNewer))
+dim(data_latest)[1]
+
+# Calculate the number of true
+hasNewers <- data_latest$hasNewers
+
+vecTrue <- c()
+vecFalse <- c()
+for (i in 1:length(hasNewers)) {
+  print(i)
+  numTrue <- 0
+  numFalse <- 0
+  for (j in 1:length(hasNewers[[i]])) {
+    if (hasNewers[[i]][j] == "true") {
+      numTrue <- numTrue + 1
+    } else{
+      numFalse <- numFalse + 1
+    }
+  }
+  vecFalse <- c(vecFalse, numFalse)
+  vecTrue <- c(vecTrue, numTrue)
+}
+
+data_latest$NumTrue <- vecTrue
+data_latest$NumFalse <- vecFalse
+
+# add colum if the library has at least one outdated dependency or not
+data_latest <- data_latest %>% mutate(hasOutdatedDeps = ifelse(NumTrue > 0, "yes", "no"))
+
+# get ratios 
+ratioTrue = sum(data_latest$NumTrue) / (sum(data_latest$NumTrue) + sum(data_latest$NumFalse))
+ratioFalse = sum(data_latest$NumFalse) / (sum(data_latest$NumTrue) + sum(data_latest$NumFalse))
+
+# data latest
+grouped_data <- data_latest
+grouped_data$Providers <- as.character(grouped_data$Providers)
+grouped_data$hasNewers <- as.character(grouped_data$hasNewers)
+
+write_csv(grouped_data, "data_latest.csv")
+
+# libraries with outdated dependencies 
+table(data_latest$hasOutdatedDep)
+
+# libraries with no dependencies
+data_latest %>% filter(Providers == "none") %>% nrow()
+
+```
+
+### Reading the data
+
+```{r}
+dataa <- read_csv("Data/data.csv")
+time_to_release <- read.csv("Data/timeToRelease.csv")
+versions <- read_csv("Data/upgrades-new.csv")
+metrics_all <- read_csv("Data/artifacts_metrics_all.csv")
+latest<- read_csv("Data/latest_versions.csv")
+uptd <- read_csv("Data/areUpToDate_all.csv")
+```
+
+
+
+```{r}
+library("ggpubr")
+
+libraries_betw10and200_versions %>% 
+  ggplot(aes(MeanDiff, MeanPageranks)) +
+  scale_y_log10(breaks = scales::trans_breaks("log10", function(x) 10^x),
+   labels = scales::trans_format("log10", scales::math_format(10^.x))) +
+  geom_point(alpha = 0.2)
+
+libraries_betw10and200_versions %>% 
+  ggplot(aes(MeanDiff, MeanUsages)) +
+  scale_y_log10(breaks = scales::trans_breaks("log10", function(x) 10^x),
+   labels = scales::trans_format("log10", scales::math_format(10^.x))) +
+  geom_point(alpha = 0.2)
+
+```
+
+```{r}
+# correlations between number of dependencies and number of versions
+libraries_betw10and200_versions %>% 
+  ggplot(aes(NumVersions, MeanPageranks)) +
+  scale_y_log10(breaks = scales::trans_breaks("log10", function(x) 10^x),
+   labels = scales::trans_format("log10", scales::math_format(10^.x))) +
+  geom_point(alpha = 0.2)
+```
+
+
+

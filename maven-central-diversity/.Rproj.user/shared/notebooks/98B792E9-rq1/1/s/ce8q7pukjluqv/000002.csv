@@ -1,0 +1,6 @@
+"0","```r
+library(tidyverse)
+library(latex2exp)
+library(scales)
+theme_set(theme_bw())
+```"

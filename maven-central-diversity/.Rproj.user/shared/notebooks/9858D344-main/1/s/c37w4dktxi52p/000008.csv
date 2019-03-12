@@ -1,0 +1,6 @@
+"0","occur = as.vector(table(data$DUsages))"
+"0","occur = occur/sum(occur)"
+"0","p = occur/sum(occur)"
+"0","y = rev(cumsum(rev(p)))"
+"0","x = as.numeric(names(table(data$DUsages)))"
+"0","plot(x, y, log=""y"", type=""l"", xlab = ""Degree"", ylab = ""Fraction"")"

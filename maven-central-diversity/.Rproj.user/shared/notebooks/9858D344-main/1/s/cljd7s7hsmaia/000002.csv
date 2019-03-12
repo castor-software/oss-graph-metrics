@@ -1,0 +1,7 @@
+"0","```r
+write_csv(data, \"DatasetFinal/data.csv\")
+
+```"
+"1","Error in write_csv(data, \"DatasetFinal/data.csv\") : 
+  could not find function \"write_csv\"
+"

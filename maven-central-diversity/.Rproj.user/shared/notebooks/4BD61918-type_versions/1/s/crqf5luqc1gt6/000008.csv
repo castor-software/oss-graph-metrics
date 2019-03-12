@@ -1,0 +1,16 @@
+"0","ggsave(filename = ""/home/cesarsv/Desktop/resized/dist_lifespan.pdf"", height = 2.5, width = 4,  units = c(""in""), device = ""pdf"")
+"
+"2","Warning messages:
+"
+"2","1: Unknown or uninitialised column: 'ActiveMajor'. 
+"
+"2","2: Unknown or uninitialised column: 'ActiveMajor'. 
+"
+"2","3: Unknown or uninitialised column: 'ActiveMajor'. 
+"
+"2","4: Unknown or uninitialised column: 'ActiveMajor'. 
+"
+"2","5: Unknown or uninitialised column: 'ActiveMajor'. 
+"
+"2","6: Unknown or uninitialised column: 'ActiveMajor'. 
+"

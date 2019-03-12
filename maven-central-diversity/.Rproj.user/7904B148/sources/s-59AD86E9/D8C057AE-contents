@@ -1,0 +1,281 @@
+---
+title: "Analysis of type of versions"
+output: html_notebook
+---
+
+```{r}
+library(tidyverse)
+library(rlang)
+data <- read_csv("DatasetFinal/data.csv")
+versions <- read_csv("DatasetFinal/upgrades-new.csv")
+```
+
+
+```{r}
+versions$r.type <- as.factor(versions$r.type)
+table(versions$r.type)
+
+# bar plot of release type
+versions %>% 
+  group_by(r.type) %>%
+  summarise(counts = n()) %>%
+  ggplot(aes(r.type, counts)) +
+  geom_bar(fill = "#0073C2FF", stat = "identity") +
+  geom_text(aes(label = counts), vjust = -0.3) +
+  xlab("version type")
+
+# pie chart of release type
+versions %>%
+  group_by(r.type) %>%
+  summarise(counts = n()) %>%
+  ggplot(aes(x = "", y = counts, fill = r.type)) +
+  geom_bar(stat = "identity", width = 1) +
+  coord_polar("y", start = 0) +
+  geom_text(aes(label = paste0(round(counts * 100 / 2183845, digits = 2 ), "%")), position = position_stack(vjust = 0.5)) +
+  scale_fill_manual(values = c("#33658A", "#F26419",  "#F6AE2D", "#2F4858")) +
+  labs(x = NULL, y = NULL, fill = NULL) +
+  theme_classic() + theme(
+    axis.line = element_blank(),
+    axis.text = element_blank(),
+    axis.ticks = element_blank(),
+    plot.title = element_text(hjust = 0.5, color = "#666666")
+  )
+```
+
+```{r}
+# rename the df
+versions <- versions %>% 
+  rename(Artifact = m.coordinates, ReleaseType = r.type) %>% 
+  select(-n.coordinates)
+
+# join the datasets
+data <- data %>% 
+  mutate(Artifact = paste(as.character(GroupId), as.character(ArtifactId), as.character(Version), sep=":"))
+
+data <- inner_join(data, versions, by = "Artifact") %>% 
+  rename(Coordinates = Artifact)
+
+```
+
+```{r}
+library(lubridate)
+df_new_versions <- data %>% 
+  select(GroupId, ArtifactId, Version, Release, ReleaseType) %>% 
+  group_by(month = floor_date(Release, unit = "year"), ReleaseType) %>%
+  summarize(MontlyReleases = n()) %>% 
+  arrange(month)
+
+# start from 2015 and remove the last month because it is incompleted 
+df_new_versions <- df_new_versions[1:511,]
+
+# plot the line graph
+df_new_versions %>% ggplot(aes(x = month, y = MontlyReleases, colour = ReleaseType)) + 
+  geom_line() + 
+  scale_x_date(date_breaks = "2 year", date_labels = "%Y") +
+  scale_y_log10(breaks = scales::trans_breaks("log10", function(x) 10^x),
+   labels = scales::trans_format("log10", scales::math_format(10^.x))) +
+   ylab(TeX("number of new artifacts ($log_{10}$ scale)")) +
+   annotation_logticks(sides = "l") +
+   xlab(NULL) 
+```
+
+```{r}
+data %>%
+  group_by(ReleaseType) %>%
+  summarise(
+    MeanPageRank = mean(PageRank),
+    SDPageRank = sd(PageRank),
+    MeanDirectUsages = mean(DUsages),
+    SDDirectUsages = sd(DUsages),
+    MeanDependencies = mean(Dependencies),
+    SDDependencies = sd(Dependencies)
+  )
+```
+
+```{r}
+# Distributions of direct usages
+data %>%
+  ggplot(aes(ReleaseType, DUsages)) +
+  geom_violin() +
+  scale_y_log10(
+    breaks = scales::trans_breaks("log10", function(x)
+      10 ^ x),
+    labels = scales::trans_format("log10", scales::math_format(10 ^ .x))
+  )
+
+# Distributions of Page Ranks
+data %>%
+  ggplot(aes(ReleaseType, PageRank)) +
+  geom_violin() +
+  scale_y_log10(
+    breaks = scales::trans_breaks("log10", function(x)
+      10 ^ x),
+    labels = scales::trans_format("log10", scales::math_format(10 ^ .x))
+  )
+
+```
+
+## Analysis at the library level
+
+```{r}
+# Preprocess the data to get the libraries and its versions
+new_data_versions <- data %>% 
+  dplyr::select(GroupId, ArtifactId, Version, DUsages, PageRank, Dependencies, Release, ReleaseType) %>% 
+  unite(Library, GroupId, ArtifactId, sep = ":", remove = F) %>% 
+  dplyr::select(Library, Version, DUsages, PageRank, Dependencies, Release, ReleaseType) %>%
+  arrange(Release) %>% 
+  group_by(Library) %>% 
+  summarise(NumVersions = n(), Usages = list(DUsages), PageRanks = list(PageRank), Dependencies = list(Dependencies), Releases = list(Release), ReleaseTypes = list(as.character(ReleaseType))) %>%
+  arrange(desc(NumVersions))
+
+# Calculate the percentages of 
+percentMajor <- c()
+percentMinor <- c()
+percentPatch <- c()
+percentUnknown <- c()
+for (i in 1:length(new_data_versions$ReleaseTypes)) {
+  print(length(new_data_versions$ReleaseTypes) - i)
+  TotalMajor <- 0
+  TotalMinor <- 0
+  TotalPatch <- 0
+  TotalUnknown <- 0
+  for (j in 1:length(new_data_versions$ReleaseTypes[[i]])) {
+    if (new_data_versions$ReleaseTypes[[i]][j] == "PATCH") {
+      TotalPatch <- TotalPatch + 1
+    } else if (new_data_versions$ReleaseTypes[[i]][j] == "MINOR") {
+      TotalMinor <- TotalMinor + 1
+    } else if (new_data_versions$ReleaseTypes[[i]][j] == "MAJOR") {
+      TotalMajor <- TotalMajor + 1
+    } else {
+      TotalUnknown <- TotalUnknown + 1
+    }
+  }
+  numver <- length(new_data_versions$ReleaseTypes[[i]])
+  percentMajor <- c(percentMajor, TotalMajor * 100 / numver)
+  percentMinor <- c(percentMinor, TotalMinor * 100 / numver)
+  percentPatch <- c(percentPatch, TotalPatch  * 100 / numver)
+  percentUnknown <- c(percentUnknown, TotalUnknown * 100 / numver)
+}
+
+new_data_versions$percentMajor <- percentMajor
+new_data_versions$percentMinor <- percentMinor
+new_data_versions$percentPatch <- percentPatch
+new_data_versions$percentUnknown <- percentUnknown
+
+tmp <- new_data_versions %>% 
+  select(Library, percentMajor, percentMinor, percentPatch)
+
+data_versions <- inner_join(data_versions,tmp, by = "Library")
+
+# how many major version are active in in Active libraries?
+libraries_betw5and200_versions
+active_libraries
+versions
+tmp <- metrics_all %>% mutate(Library = paste(groupId, artifactId, sep = ":"))
+tmp <- inner_join(tmp,active_libraries, by= "Library") %>% 
+  rename(Artifact = coordinates, isPassive = isPassive.x) %>% 
+  mutate(Status = ifelse(isPassive == "false", "active", "passive")) %>% 
+  select(Artifact, Status, Library)
+
+tmp <- inner_join(tmp, versions, by="Artifact") %>%
+  rename(Coordinates = Artifact) 
+
+df_versions <- inner_join(tmp, data, by = "Coordinates") %>% 
+  select(Coordinates, Library, Version, Status) %>% 
+  mutate(VersionMajor = substr(Version, 1, 1)) %>% 
+  filter(Status == "active") %>% 
+  group_by(Library) %>% 
+  summarise(ActiveMajor = list(VersionMajor)) 
+
+Majors <- c()
+for (i in 1:length(df_versions$ActiveMajor)) {
+  Majors <- c(Majors, length(unique(df_versions$ActiveMajor[i][[1]])))
+}
+
+df_versions$Majors <- Majors
+
+df_versions <- inner_join(df_versions, df_patterns, by = "Library") %>% 
+  select(Library, PAList, Majors)
+
+
+class(df_versions$PAList)
+
+count(df_versions, PAList, Majors) %>% 
+  arrange(desc(n))
+
+df_patterns
+
+tmp %>% 
+  filter(Status == "active") %>% 
+  group_by(Library) %>% 
+  summarise(count = n()) 
+
+tmp %>% 
+  filter(Status == "active") %>% 
+  group_by(Library) %>% 
+  count(ReleaseType) 
+
+table(tmp$Status, tmp$ReleaseType)
+
+tmp %>% count(Status, ReleaseType) %>% 
+  filter(is.na(Status) == F) %>% 
+ ggplot(aes(x = ReleaseType, y = n, fill = Status)) +
+  geom_bar(stat = "identity")
+
+inner_join(new_data_versions, active_libraries, by = "Library") %>% 
+  ggplot() +
+  geom_point(aes(percentMajor, NumVersions), size = 0.1) +
+  ylab("number of active versions in the library") +
+  xlab("percent of MAJOR releases")
+
+inner_join(new_data_versions, active_libraries, by = "Library") %>% 
+  ggplot() +
+  geom_histogram(aes(percentMajor)) +
+  xlab("percent of active MAJOR versions") +
+  ylab("number active libraries") 
+
+df_versions %>% count(as.factor(df_versions$Majors))
+df_versions %>%  filter(Majors == 2)
+ 
+df_versions
+df_patterns %>%  filter(Library == "org.springframework:spring-web")
+tmp <- inner_join(df_versions, df_patterns, by="Library")
+tmp %>% count(Patterns, Majors)
+
+```
+
+## Correlations
+
+```{r}
+tmp <- data_versions %>% 
+  select(
+    NumVersions,
+    NumDependencies,
+    NumUsages,
+    MeanDependencies,
+    MeanUsages,
+    MeanPageranks,
+    MeanDiff,
+    percentPatch,
+    percentMajor,
+    percentMinor
+  ) %>% filter(NumVersions >= 10 & NumVersions <= 200)
+M<-cor(tmp, method = "spearman")
+library(corrplot)
+corrplot(M, method="circle", type="upper")
+```
+
+```{r}
+tmp %>% select(percentPatch, percentMajor, percentMinor) %>% 
+  gather(key = "Type", value = "Percents") %>% 
+  ggplot(aes(x=Type, y = Percents, fill = Type)) +
+  geom_boxplot() +
+  xlab(NULL)
+
+tmp %>% 
+  ggplot(aes(x=MeanPageranks, y = percentMajor)) +
+  geom_point() 
+```
+
+
+

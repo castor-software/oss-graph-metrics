@@ -1,0 +1,9 @@
+"0","metrics %>%
+  select(groupId, artifactId, version, release) %>%
+  arrange(release) %>%
+  group_by(groupId, artifactId) %>%
+  dplyr::mutate(first = dplyr::first(release),
+                last = dplyr::last(release))
+"
+"2","Error in .f(.x[[i]], ...) : object 'release' not found
+"

@@ -1,0 +1,91 @@
+"0","```r
+time_to_release <- read.csv(\"DatasetFinal/timeToRelease.csv\")
+flink <- time_to_release %>% filter(groupId == \"org.apache.flink\")
+time_to_release <- flink
+time_to_release$durations <- as.character(time_to_release$durations)
+durations <- time_to_release$durations
+durations_conc <- paste(durations, collapse = '')
+durations_gsub <- gsub(\"]\", \",\", durations_conc)
+durations_gsub2 <- gsub(\"\\[\", \"\", durations_gsub)
+durations_gsub3 <- str_split(durations_gsub2, \",\")
+datafame <- data.frame(durations_gsub3[[1]])
+colnames(datafame) <- c(\"Releases\")
+datafame$Releases <- as.numeric(datafame$Releases)
+flink <- datafame
+flink$GroupID <- \"flink\"
+
+time_to_release <- read.csv(\"DatasetFinal/timeToRelease.csv\")
+commons <- time_to_release %>% filter(groupId == \"org.apache.commons\")
+time_to_release <- commons
+time_to_release$durations <- as.character(time_to_release$durations)
+durations <- time_to_release$durations
+durations_conc <- paste(durations, collapse = '')
+durations_gsub <- gsub(\"]\", \",\", durations_conc)
+durations_gsub2 <- gsub(\"\\[\", \"\", durations_gsub)
+durations_gsub3 <- str_split(durations_gsub2, \",\")
+datafame <- data.frame(durations_gsub3[[1]])
+colnames(datafame) <- c(\"Releases\")
+datafame$Releases <- as.numeric(datafame$Releases)
+commons <- datafame
+commons$GroupID <- \"commons\"
+
+time_to_release <- read.csv(\"DatasetFinal/timeToRelease.csv\")
+lucene <- time_to_release %>% filter(groupId == \"org.apache.lucene\")
+time_to_release <- lucene
+time_to_release$durations <- as.character(time_to_release$durations)
+durations <- time_to_release$durations
+durations_conc <- paste(durations, collapse = '')
+durations_gsub <- gsub(\"]\", \",\", durations_conc)
+durations_gsub2 <- gsub(\"\\[\", \"\", durations_gsub)
+durations_gsub3 <- str_split(durations_gsub2, \",\")
+datafame <- data.frame(durations_gsub3[[1]])
+colnames(datafame) <- c(\"Releases\")
+datafame$Releases <- as.numeric(datafame$Releases)
+lucene <- datafame
+lucene$GroupID <- \"lucene\"
+
+time_to_release <- read.csv(\"DatasetFinal/timeToRelease.csv\")
+streams <- time_to_release %>% filter(groupId == \"org.apache.streams\")
+time_to_release <- streams
+time_to_release$durations <- as.character(time_to_release$durations)
+durations <- time_to_release$durations
+durations_conc <- paste(durations, collapse = '')
+durations_gsub <- gsub(\"]\", \",\", durations_conc)
+durations_gsub2 <- gsub(\"\\[\", \"\", durations_gsub)
+durations_gsub3 <- str_split(durations_gsub2, \",\")
+datafame <- data.frame(durations_gsub3[[1]])
+colnames(datafame) <- c(\"Releases\")
+datafame$Releases <- as.numeric(datafame$Releases)
+streams <- datafame
+streams$GroupID <- \"streams\"
+
+time_to_release <- read.csv(\"DatasetFinal/timeToRelease.csv\")
+ignite <- time_to_release %>% filter(groupId == \"org.apache.ignite\")
+time_to_release <- ignite
+time_to_release$durations <- as.character(time_to_release$durations)
+durations <- time_to_release$durations
+durations_conc <- paste(durations, collapse = '')
+durations_gsub <- gsub(\"]\", \",\", durations_conc)
+durations_gsub2 <- gsub(\"\\[\", \"\", durations_gsub)
+durations_gsub3 <- str_split(durations_gsub2, \",\")
+datafame <- data.frame(durations_gsub3[[1]])
+colnames(datafame) <- c(\"Releases\")
+datafame$Releases <- as.numeric(datafame$Releases)
+ignite <- datafame
+ignite$GroupID <- \"ignite\"
+
+ridgeline <- bind_rows(flink, commons, lucene, streams, ignite)
+
+# library
+library(ggridges)
+
+ridgeline %>% filter(Releases == 1)
+
+# basic example
+ridgeline %>% ggplot(aes(x = Releases, y = GroupID, fill = GroupID)) +
+  geom_density_ridges() +
+  theme_ridges() + 
+  theme(legend.position = \"none\") +
+  xlab(\"Time between releases (in days)\")
+
+```"

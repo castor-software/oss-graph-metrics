@@ -1,0 +1,64 @@
+"0","```r
+# merge the data
+a <- dplyr::full_join(page_rank, louvain, by = \"artifact\")
+b <- dplyr::full_join(a, betweenness_centrality, by = \"artifact\")
+c <- dplyr::full_join(b, harmonic_centrality, by = \"artifact\")
+d <- dplyr::full_join(c, label_propagation, by = \"artifact\")
+e <- dplyr::full_join(d, direct_usages, by = \"artifact\")
+f <- dplyr::full_join(e, union_find, by = \"artifact\")
+# g <- dplyr::full_join(f, trans_usages, by = \"artifact\")
+# g <- dplyr::full_join(f, direct_usages, by = \"artifact\")
+
+h <- dplyr::full_join(f, direct_dependencies, by = \"artifact\")
+i <- dplyr::full_join(h, release_all, by = \"artifact\")
+
+# replace NAs
+i$direct_usages <- i$direct_usages %>% replace_na(0)
+# i$transitive_usages <- i$transitive_usages %>% replace_na(0)
+i$direct_dependencies <- i$direct_dependencies %>% replace_na(0)
+
+final_join <- i
+
+# split artifact into GroupId, ArtifactId and Version
+data <- cbind(as.data.frame(stringr::str_split_fixed(final_join$artifact, \":\", 3)), 
+              final_join$page_rank, 
+              final_join$community,
+              final_join$betweenness_centrality,
+              final_join$harmonic_centrality,
+              final_join$label, 
+              final_join$direct_usages, 
+              final_join$union_find,
+              # final_join$transitive_usages,
+              final_join$direct_dependencies,
+              final_join$release
+              )
+
+# type cast release to Date 
+data$`final_join$release` <- as.Date(format(as.Date(str_sub(data$`final_join$release`, 1, 10)),'%Y-%m-%d'), '%Y-%m-%d')
+
+# rename columns
+data <- data %>% dplyr::rename(
+  GroupId = V1,
+  ArtifactId = V2,
+  Version = V3,
+  Release = `final_join$release`,
+  PageRank = `final_join$page_rank`,
+  Dependencies = `final_join$direct_dependencies`,
+  DUsages = `final_join$direct_usages`,
+  # TUsages = `final_join$transitive_usages`,
+  Louvain = `final_join$community`,
+  BetwCentrality = `final_join$betweenness_centrality`,
+  HarmCentrality = `final_join$harmonic_centrality`,
+  UnionFind = `final_join$union_find`,
+  LabelProp = `final_join$label`
+  )
+
+# cluster variables to factors
+data$UnionFind <- as.factor(data$UnionFind )
+summary(data$UnionFind)
+
+# see the data
+View(data)
+dim(data)
+
+```"

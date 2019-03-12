@@ -1,0 +1,62 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+```{r}
+library("tidyverse")
+library("wesanderson")
+library("xtable")
+library(qcc)
+theme_set(theme_bw())
+```
+
+```{r}
+usage_data <- read.csv("Data2M/usages.csv")
+summary(usage_data)
+```
+
+```{r}
+# plot density
+usage_data %>% filter(usages > 10000) %>%
+  ggplot(aes(usages)) +  
+  geom_density()
+
+# cummulative sum
+usage_data %>% 
+  filter(usages > 100) %>%  
+  mutate(cusum = cumsum(usages)) %>% 
+  arrange(usages) %>% 
+  ggplot(aes(x=1:7228,cusum)) +
+    geom_line() +
+    xlab("artifacts") +
+    ylab("cummulative sum of usages")
+
+
+# select
+usage_data %>% sample_n(1000) %>% 
+  ggplot(aes(usages)) +
+  geom_density()
+
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

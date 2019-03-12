@@ -1,0 +1,139 @@
+---
+title: "RQ4: Does the number of active versions relate to the popularity of a library?"
+output: html_notebook
+---
+
+
+```{r}
+
+# compute the number of active and passive libraries
+metrics$isPassive <- as.factor(metrics$isPassive)
+passactlib <- metrics %>%
+  mutate(Library = paste(groupId, artifactId, sep = ":")) %>%
+  select(Library, isPassive) %>%
+  group_by(Library, isPassive) %>%
+  summarise (n = n()) %>%
+  mutate(freq = n / sum(n)) %>%
+  complete(Library, isPassive, fill = list(n = 0, freq = 0))
+passactlib$isPassive <- ifelse(passactlib$isPassive == "true", "passive", "active")
+
+# passive libraries
+passive_libraries <- passactlib %>%
+  filter(isPassive == "passive" & freq == 1)
+
+active_libraries <- passactlib %>%
+  filter(isPassive == "active" & freq != 0)
+
+df <- data_versions %>% 
+  select(Library, NumUsages)
+
+# Dormant libraries
+dormant_libraries <- inner_join(passive_libraries, df, by = "Library") %>% 
+  filter(NumUsages == 0)
+
+actives <- passactlib %>% filter(isPassive == "active") %>% rename(NumActive = n, FreqActive = freq) %>% select(-isPassive)
+
+passives <- passactlib %>% filter(isPassive == "passive") %>% rename(NumPassive = n, FreqPassive = freq) %>% select(-isPassive)
+libs <- inner_join(actives, passives, by = "Library") %>% mutate(NumVersions = NumActive + NumPassive)
+
+
+# plot dormant libraries vs number of versions
+dormant_versions <- inner_join(dormant_libraries, data_versions, by = "Library") %>% 
+  select(Library, NumVersions, PageRank) 
+actives_versions <- inner_join(actives, data_versions, by = "Library") %>% 
+  select(Library, NumVersions, PageRank) 
+passives_versions <- inner_join(passives, data_versions, by = "Library") %>% 
+  select(Library, NumVersions, PageRank) 
+
+# Histogram of 
+libs %>%
+  ggplot(aes(FreqActive)) +
+  # geom_violin() +
+  # geom_boxplot(width = 0.05) +
+  # coord_flip()
+   geom_histogram(bins = 30, aes(y = ..count.. / sum(..count..)), color="black", fill = "#CCCCCC") +
+    scale_y_continuous(limits=c(0, 0.13), labels = percent_format()) +
+   scale_x_continuous(labels = percent_format()) +
+   xlab("percentage of active versions") +
+   ylab("percentage of libraries")
+
+
+libs %>%
+  filter(FreqPassive == 0) %>% 
+  filter(FreqPassive > 0.75)
+dim(libs)
+  
+# plot the status vs number of versions
+active_libraries$Status <- "active"
+passive_libraries$Status <- "passive"
+dormant_libraries$Status <- "dormant"
+library_status <- rbind(dormant_libraries, rbind(active_libraries, passive_libraries)) %>% 
+  select(Library, Status)
+library_status <- inner_join(library_status, data_versions, by = "Library") %>%
+  select(Library, NumVersions, NumDependencies, Status, PageRank)
+
+# plot the status vs number of dependencies
+library_status %>% 
+  ggplot(aes(Status, NumDependencies)) +
+  geom_boxplot() +
+  coord_flip() +
+  scale_y_log10(
+    breaks = scales::trans_breaks("log10", function(x)
+      10 ^ x),
+    labels = scales::trans_format("log10", scales::math_format(10 ^ .x))
+  ) +
+  xlab(NULL) +
+  ylab("number of dependencies")
+
+# plot the status vs popularity
+library_status %>% 
+  ggplot(aes(Status, PageRank)) +
+  geom_boxplot() +
+  coord_flip() +
+  scale_y_log10(
+    breaks = scales::trans_breaks("log10", function(x)
+      10 ^ x),
+    labels = scales::trans_format("log10", scales::math_format(10 ^ .x))
+  )  +
+  xlab(NULL) +
+  ylab("popularity")
+
+# plot the status vs number of versions
+library_status %>% 
+  ggplot(aes(Status, NumVersions)) +
+  geom_violin() +
+  geom_boxplot() +
+  coord_flip() +
+  scale_y_log10(
+    breaks = scales::trans_breaks("log10", function(x)
+      10 ^ x),
+    labels = scales::trans_format("log10", scales::math_format(10 ^ .x))
+  ) +
+  xlab(NULL) +
+  ylab("number of versions")
+
+# do the most pop lib maintain multiple active versions?
+inner_join(active_libraries, data_versions, by="Library") %>% 
+  select(Library, PageRank, freq) %>% 
+  ggplot(aes(freq, PageRank)) +
+  geom_smooth() +
+  # geom_point() +
+  scale_x_continuous(labels = percent_format()) +
+  xlab("percentage of active versions") +
+  ylab("popularity of libraries")
+
+ggsave(filename = "/home/cesarsv/Desktop/resized/popularity_vs_percentage_of_active_versions.pdf", 
+       height = 2.5, width = 4,  units = c("in"), device = "pdf")
+
+corr_df <- inner_join(active_libraries, data_versions, by="Library") %>% 
+  select(Library, PageRank, freq)
+cor.test(corr_df$PageRank, corr_df$freq)
+
+  
+# number of versions vs number of dormant libraries
+library_status %>% 
+  filter(Status == "dormant") %>% 
+  select(NumVersions) %>% 
+  ggplot(aes(x = c(1:2923), y= NumVersions)) +
+  geom_smooth()
+```

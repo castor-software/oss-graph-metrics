@@ -1,0 +1,10 @@
+"0","libs %>%
+  filter(FreqPassive == 0) %>% 
+  filter(FreqPassive > 0.75)
+"
+"0","dim(libs)"
+"1","[1]"
+"1"," 73653"
+"1","     6"
+"1","
+"

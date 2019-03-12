@@ -1,0 +1,17 @@
+"0","```r
+dplot <- ddata %>% 
+  select(Artifact) %>% 
+  group_by(Artifact) %>% 
+  summarise(Versions = n())
+
+ddata$Artifact <- as.factor(ddata$Artifact)
+
+
+dplot$Artifact <- factor(dplot$Artifact, levels = dplot$Artifact[order(dplot$Versions, decreasing = T)])
+dplot %>%
+  filter(Versions > 1000) %>% 
+  ggplot(aes(Artifact, Versions)) + 
+  geom_point() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+```"

@@ -1,0 +1,14 @@
+"0","View(
+  metrics %>%
+    mutate(isNA = ifelse(is.na(fitness), 1, 0)) %>%
+    group_by(Library) %>%
+    summarise(fitnessList = list(fitness), sumNA = sum(isNA)) %>% 
+    filter(isNA == 0)
+)
+"
+"1","Error in "
+"1","View"
+"1"," : "
+"1","Evaluation error: object 'isNA' not found."
+"1","
+"

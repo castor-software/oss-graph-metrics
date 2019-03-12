@@ -1,0 +1,20 @@
+"0","```r
+library(stringi)
+library(proxy)
+library(sets)
+
+
+tmp <- ddata %>%
+  group_by(Artifact) %>% 
+  summarise(Count = n()) 
+
+View(tmp)
+
+guava <- read.csv(\"Diversity/guava.csv\")
+guava$users <- as.character(guava$users)
+
+a <- unique(as.list(strsplit(guava$users[1], \",\"))[[1]])
+b <- unique(as.list(strsplit(guava$users[2], \",\"))[[1]])
+
+
+```"

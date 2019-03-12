@@ -1,0 +1,25 @@
+---
+title: "RQ1"
+output: html_document
+---
+
+### Set up the required libraries and configurations
+
+```{r}
+library(tidyverse)
+library(latex2exp)
+library(scales)
+library(rlang)
+theme_set(theme_bw())
+```
+
+### Read the data
+
+```{r}
+data <- read_csv("DatasetFinal/data.csv")
+time_to_release <- read.csv("DatasetFinal/timeToRelease.csv")
+versions <- read_csv("DatasetFinal/upgrades-new.csv")
+metrics_all <- read_csv("DatasetFinal/artifacts_metrics_all.csv")
+latest<- read_csv("DatasetFinal/latest_versions.csv")
+uptd <- read_csv("DatasetFinal/areUpToDate_all.csv")
+```

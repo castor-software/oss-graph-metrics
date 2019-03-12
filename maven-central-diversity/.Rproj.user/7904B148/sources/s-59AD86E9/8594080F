@@ -1,0 +1,24 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1548010222520.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "530850063",
+    "id" : "8594080F",
+    "lastKnownWriteTime" : 1548026698,
+    "last_content_update" : 1548029174822,
+    "path" : "~/Documents/papers/maven-miner-experiments/data_analysis_rq2.Rmd",
+    "project_path" : "data_analysis_rq2.Rmd",
+    "properties" : {
+        "chunk_output_type" : "inline",
+        "cursorPosition" : "4,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled2"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

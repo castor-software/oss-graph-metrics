@@ -1,0 +1,7 @@
+"0","```r
+library(\"tidyverse\")
+library(\"wesanderson\")
+library(\"xtable\")
+library(qcc)
+theme_set(theme_bw())
+```"

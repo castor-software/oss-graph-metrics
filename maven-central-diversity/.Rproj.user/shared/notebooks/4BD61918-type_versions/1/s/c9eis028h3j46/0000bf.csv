@@ -1,0 +1,22 @@
+"0","df_patterns %>%  filter(Library == ""org.springframework:spring-web"")
+"
+"2","Warning messages:
+"
+"2","1: Unknown or uninitialised column: 'ActiveMajor'. 
+"
+"2","2: Unknown or uninitialised column: 'ActiveMajor'. 
+"
+"2","3: Unknown or uninitialised column: 'ActiveMajor'. 
+"
+"2","4: Unknown or uninitialised column: 'ActiveMajor'. 
+"
+"2","5: Unknown or uninitialised column: 'ActiveMajor'. 
+"
+"2","6: Unknown or uninitialised column: 'ActiveMajor'. 
+"
+"2","7: Unknown or uninitialised column: 'ActiveMajor'. 
+"
+"2","8: Unknown or uninitialised column: 'ActiveMajor'. 
+"
+"2","9: Unknown or uninitialised column: 'ActiveMajor'. 
+"

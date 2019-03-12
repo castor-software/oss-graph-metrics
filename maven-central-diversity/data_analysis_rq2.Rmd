@@ -1,0 +1,105 @@
+---
+title: "RQ2: How are the active versions distributed among the different releases of a library?"
+output: html_notebook
+---
+
+
+
+```{r}
+library(tidyverse)
+library(latex2exp)
+library(scales)
+theme_set(theme_bw())
+```
+
+### Distribution of active, passive and dormant versions
+
+```{r}
+# df_patterns <- metrics %>%
+#   filter(is.na(isPassive) == F) %>% 
+#   mutate(Library = paste(groupId, artifactId, sep = ":")) %>%
+#   mutate(PA = ifelse(isPassive == "true", "P", "A")) %>%
+#   group_by(Library) %>%
+#   arrange(releaseDate) %>%
+#   summarise(PAList = list(PA), dates = list(releaseDate))
+
+# position of the active versions
+PAList <- df_patterns$PAList
+PosA <- c()
+PosP <- c()
+for (i in 1:length(PAList)) {
+  PALib <- PAList[i][[1]]
+  for (j in 1:length(PALib)) {
+    if (PALib[j] == "A") {
+      PosA <- c(PosA, j / length(PALib))
+    }
+    # else{#is passive
+    #   PosP <- c(PosP, j / length(PALib))
+    # }
+  }
+}
+
+a <- character(0)
+patterns_file <- patterns_file %>% filter(Patterns != "")
+PAList <- patterns_file$newlistPass
+PosA <- c()
+PosP <- c()
+for (i in 1:length(PAList)) {
+   print(i)
+  PALib <- PAList[i][[1]]
+  for (j in 1:length(PALib)) {
+    if (PALib[j] == "A") {
+      PosA <- c(PosA, j / length(PALib))
+    }
+    # else{#is passive
+    # PosP <- c(PosP, j / length(PALib))
+    # }
+  }
+}
+  
+data.frame(PosA = PosA) %>% 
+  ggplot(aes(PosA)) +
+  geom_histogram() +
+geom_histogram(bins = 30, color="black", fill = "#CCCCCC") +
+   ylab("count") +
+   xlab("relative position of active versions")
+
+ggsave(filename = "Figures/hist_pos_active_versions.pdf", 
+       height = 2.5, width = 4,  units = c("in"), device = "pdf")
+
+data.frame(PosA = PosA) %>% 
+  filter(PosA == 1)
+
+
+write_csv(passive[1:387,], "passive_non_dormant_libs.csv")
+
+```
+
+
+### Patterns search
+
+```{r}
+
+patterns_file <- read_csv("Data/patterns.csv")
+patterns_file <- patterns_file %>% select(library, listPass) %>% rename(Library = library)
+patterns_file <- inner_join(patterns_file, libraries_betw5and200_versions, by = "Library") 
+patterns_file$newlistPass <- substring(patterns_file$listPass, 2, nchar(patterns_file$listPass)-1)
+patterns_file$newlistPass <- gsub("true", "P", patterns_file$newlistPass)
+patterns_file$newlistPass <- gsub("false", "A", patterns_file$newlistPass)
+patterns_file$newlistPass <- strsplit(patterns_file$newlistPass, ",")
+# get the patterns
+patterns <- c()
+for (i in 1:length(patterns_file$newlistPass)) {
+  patterns <- c(patterns, paste(rle(patterns_file$newlistPass[i][[1]])$values, collapse = ""))
+}
+patterns_file$Patterns <- patterns
+patterns_file$Patterns <- as.factor(patterns_file$Patterns)
+table(patterns_file$Patterns)
+count(patterns_file, Patterns) %>% arrange(desc(n))
+
+
+View(patterns_file %>% filter(Patterns == "APA") %>% select(Library, MeanPageranks, Patterns))
+
+xxx <- read_csv("Data/patterns.csv")
+View(xxx %>% filter(library == "com.google.guava:guava-jdk5"))
+```

@@ -1,0 +1,14 @@
+"0","```r
+# function to get the position of the version with the maximun number of usages
+list_maxs <- function(x) {
+  vector <- x[[1]]
+  maxs <- which(vector == max(vector))
+  return(ifelse(length(maxs) == 1, maxs/length(vector), NA))
+}
+# Analyze w.r.t number of usages
+usages <- filtered$Usages
+PosMaxUsages <- c()
+for(i in 1:length(usages)){
+  PosMaxUsages <- c(PosMaxUsages, list_maxs(usages[i]))
+}
+```"
