@@ -83,7 +83,7 @@ if __name__ == '__main__':
     java_projects_df = pd.read_csv('../graph_data/projects.csv')
     java_projects = tuple(java_projects_df['full_name'])
     # create the queue for 1 day
-    day_of_the_mounth = ( (2016, 1, day) for day in range(1,32) )
+    day_of_the_mounth = [ (2016, 1, day) for day in range(1,32) ]
     for day in tqdm(day_of_the_mounth):
         queue = [ (*day, hour) for hour in range(24) ]
         # define the task for the threads
@@ -98,6 +98,6 @@ if __name__ == '__main__':
         res = multi_threading(queue, 4, task)
         create_dir('./raw')
         data_of_the_day = list(reduce(list.__add__, res.values()))
-        print(len(data_of_the))
+        print(len(data_of_the_day))
         with open('./raw/%d-%d-%d.json' % day, mode='w') as outfile:
             json.dump( data_of_the_day, outfile)
