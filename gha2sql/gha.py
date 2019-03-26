@@ -83,7 +83,7 @@ def get_schema():
     return [ element['name'] for element in schema ]
 
 def download_day(year, month, day, java_projects):
-    queue = [ (year, month, day, hour) for hour in range(3) ]
+    queue = [ (year, month, day, hour) for hour in range(24) ]
     # define the task for the threads
     event_black_list = ('WatchEvent')
     def task(year, mounth, day, hour):
