@@ -1,6 +1,7 @@
 import os
 import threading
 from tqdm import tqdm
+import json
 
 def create_dir(dir):
     """Create the dir if the dir does not exists
@@ -31,3 +32,12 @@ def multi_threading(queue, number_of_threads, task):
     for thread in threads:
         thread.join()
     return result
+
+
+def open_json(file):
+    """Read a json file and returns its content has a dict
+    """
+    with open(file) as f:
+        data = json.load(f)
+        return data
+    return None
