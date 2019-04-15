@@ -2,8 +2,8 @@
 
 Google BigQuery : 
 ```sql
-select projects.*,  release_count from `tx01-234015.java_projects.projects` projects
-LEFT JOIN (SELECT repo.name as repo_name, count(id) as release_count
+select projects.full_name,  release_count, release_dates from `tx01-234015.java_projects.projects` projects
+LEFT JOIN (SELECT repo.name as repo_name, count(id) as release_count, ARRAY_AGG(JSON_EXTRACT(payload, '$.release.published_at')) as release_dates
 FROM `tx01-234015.GHA.java_2018`
 WHERE type='ReleaseEvent'
 GROUP BY repo.name) releases
