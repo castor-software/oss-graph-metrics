@@ -1,0 +1,7649 @@
+[
+  {
+    "full_name": "iluwatar/java-design-patterns",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "elastic/elasticsearch",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "ReactiveX/RxJava",
+    "release_count": "16",
+    "release_dates": [
+      "\"2018-06-22T07:39:48Z\"",
+      "\"2018-02-15T20:24:06Z\"",
+      "\"2018-09-06T07:31:30Z\"",
+      "\"2018-02-24T10:18:47Z\"",
+      "\"2018-10-23T09:13:18Z\"",
+      "\"2018-05-06T14:49:15Z\"",
+      "\"2018-05-23T07:38:00Z\"",
+      "\"2018-12-31T09:58:25Z\"",
+      "\"2018-07-31T07:30:17Z\"",
+      "\"2018-07-23T07:22:11Z\"",
+      "\"2018-03-23T16:51:18Z\"",
+      "\"2018-03-20T15:37:37Z\"",
+      "\"2018-04-27T09:10:30Z\"",
+      "\"2018-03-21T16:44:50Z\"",
+      "\"2018-06-26T07:46:50Z\"",
+      "\"2018-03-31T15:29:07Z\""
+    ]
+  },
+  {
+    "full_name": "spring-projects/spring-boot",
+    "release_count": "18",
+    "release_dates": [
+      "\"2018-09-13T08:19:53Z\"",
+      "\"2018-08-21T11:13:05Z\"",
+      "\"2018-09-12T11:18:00Z\"",
+      "\"2018-10-16T16:14:43Z\"",
+      "\"2018-09-11T16:17:43Z\"",
+      "\"2018-07-31T09:18:29Z\"",
+      "\"2018-10-16T10:19:28Z\"",
+      "\"2018-07-31T09:17:21Z\"",
+      "\"2018-05-09T18:26:53Z\"",
+      "\"2018-11-09T20:49:42Z\"",
+      "\"2018-10-16T18:01:52Z\"",
+      "\"2018-07-31T09:16:03Z\"",
+      "\"2018-11-30T10:01:10Z\"",
+      "\"2018-10-30T10:50:21Z\"",
+      "\"2018-06-14T21:15:01Z\"",
+      "\"2018-10-17T15:30:37Z\"",
+      "\"2018-11-29T11:34:42Z\"",
+      "\"2018-11-30T04:52:58Z\""
+    ]
+  },
+  {
+    "full_name": "kdn251/interviews",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "square/retrofit",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "square/okhttp",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "google/guava",
+    "release_count": "9",
+    "release_dates": [
+      "\"2018-02-01T20:52:13Z\"",
+      "\"2018-08-01T23:02:00Z\"",
+      "\"2018-11-19T19:52:28Z\"",
+      "\"2018-05-31T14:31:07Z\"",
+      "\"2018-10-18T18:51:15Z\"",
+      "\"2018-05-23T19:51:23Z\"",
+      "\"2018-04-26T11:16:17Z\"",
+      "\"2018-04-25T22:53:55Z\"",
+      "\"2018-03-15T18:44:26Z\""
+    ]
+  },
+  {
+    "full_name": "Snailclimb/JavaGuide",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "spring-projects/spring-framework",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "PhilJay/MPAndroidChart",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-10-29T19:11:17Z\""
+    ]
+  },
+  {
+    "full_name": "bumptech/glide",
+    "release_count": "3",
+    "release_dates": [
+      "\"2018-02-02T15:42:27Z\"",
+      "\"2018-08-16T17:10:41Z\"",
+      "\"2018-02-01T16:59:08Z\""
+    ]
+  },
+  {
+    "full_name": "apache/incubator-dubbo",
+    "release_count": "5",
+    "release_dates": [
+      "\"2018-04-02T03:13:45Z\"",
+      "\"2018-07-26T09:38:34Z\"",
+      "\"2018-09-11T10:03:43Z\"",
+      "\"2018-06-07T01:27:03Z\"",
+      "\"2018-11-23T02:51:28Z\""
+    ]
+  },
+  {
+    "full_name": "airbnb/lottie-android",
+    "release_count": "13",
+    "release_dates": [
+      "\"2018-08-14T04:50:41Z\"",
+      "\"2018-09-04T02:04:49Z\"",
+      "\"2018-08-04T20:16:16Z\"",
+      "\"2018-08-05T18:13:35Z\"",
+      "\"2018-09-24T07:11:06Z\"",
+      "\"2018-08-04T20:54:15Z\"",
+      "\"2018-08-13T02:50:11Z\"",
+      "\"2018-09-06T16:54:50Z\"",
+      "\"2018-08-04T21:16:15Z\"",
+      "\"2018-08-29T14:39:54Z\"",
+      "\"2018-08-04T21:08:14Z\"",
+      "\"2018-08-04T20:03:49Z\"",
+      "\"2018-08-14T01:32:58Z\""
+    ]
+  },
+  {
+    "full_name": "JakeWharton/butterknife",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Blankj/AndroidUtilCode",
+    "release_count": "44",
+    "release_dates": [
+      "\"2018-10-26T11:48:12Z\"",
+      "\"2018-12-06T08:03:27Z\"",
+      "\"2018-04-03T13:58:44Z\"",
+      "\"2018-04-09T02:31:04Z\"",
+      "\"2018-03-10T10:39:05Z\"",
+      "\"2018-08-08T07:34:35Z\"",
+      "\"2018-06-01T09:26:32Z\"",
+      "\"2018-05-25T08:10:41Z\"",
+      "\"2018-04-23T12:24:58Z\"",
+      "\"2018-06-15T06:18:57Z\"",
+      "\"2018-09-07T01:26:32Z\"",
+      "\"2018-12-29T11:19:43Z\"",
+      "\"2018-06-25T09:14:48Z\"",
+      "\"2018-07-17T13:12:00Z\"",
+      "\"2018-12-24T13:11:37Z\"",
+      "\"2018-12-24T02:47:39Z\"",
+      "\"2018-10-16T08:36:00Z\"",
+      "\"2018-12-18T10:21:49Z\"",
+      "\"2018-03-05T09:46:08Z\"",
+      "\"2018-05-25T07:58:09Z\"",
+      "\"2018-08-30T13:42:31Z\"",
+      "\"2018-02-12T14:08:01Z\"",
+      "\"2018-03-20T17:07:20Z\"",
+      "\"2018-08-04T23:40:00Z\"",
+      "\"2018-04-10T09:00:20Z\"",
+      "\"2018-06-29T06:10:45Z\"",
+      "\"2018-08-10T09:50:42Z\"",
+      "\"2018-06-01T09:27:08Z\"",
+      "\"2018-04-16T08:32:43Z\"",
+      "\"2018-03-10T10:40:35Z\"",
+      "\"2018-09-13T03:12:56Z\"",
+      "\"2018-07-31T13:14:07Z\"",
+      "\"2018-03-29T12:52:04Z\"",
+      "\"2018-05-02T08:44:15Z\"",
+      "\"2018-11-20T16:45:52Z\"",
+      "\"2018-03-05T08:01:17Z\"",
+      "\"2018-05-15T09:08:01Z\"",
+      "\"2018-08-08T07:26:57Z\"",
+      "\"2018-12-16T18:41:39Z\"",
+      "\"2018-08-09T06:10:46Z\"",
+      "\"2018-08-26T07:06:34Z\"",
+      "\"2018-10-24T07:30:28Z\"",
+      "\"2018-03-17T06:58:48Z\"",
+      "\"2018-04-17T11:01:35Z\""
+    ]
+  },
+  {
+    "full_name": "proxyee-down-org/proxyee-down",
+    "release_count": "13",
+    "release_dates": [
+      "\"2018-09-30T05:06:38Z\"",
+      "\"2018-09-29T13:36:40Z\"",
+      "\"2018-09-07T08:02:56Z\"",
+      "\"2018-11-09T05:45:21Z\"",
+      "\"2018-08-31T09:51:00Z\"",
+      "\"2018-09-29T09:50:27Z\"",
+      "\"2018-09-10T05:55:43Z\"",
+      "\"2018-11-02T09:07:18Z\"",
+      "\"2018-09-10T07:08:12Z\"",
+      "\"2018-09-19T08:51:32Z\"",
+      "\"2018-09-03T10:05:09Z\"",
+      "\"2018-11-01T09:21:05Z\"",
+      "\"2018-10-12T08:44:14Z\""
+    ]
+  },
+  {
+    "full_name": "square/leakcanary",
+    "release_count": "3",
+    "release_dates": [
+      "\"2018-07-25T16:32:38Z\"",
+      "\"2018-07-25T16:33:07Z\"",
+      "\"2018-10-17T00:42:13Z\""
+    ]
+  },
+  {
+    "full_name": "zxing/zxing",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-09-11T14:03:09Z\"",
+      "\"2018-05-29T15:28:12Z\""
+    ]
+  },
+  {
+    "full_name": "greenrobot/EventBus",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-08-27T12:44:37Z\""
+    ]
+  },
+  {
+    "full_name": "crossoverJie/JCSprout",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "netty/netty",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "skylot/jadx",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-08-26T19:03:05Z\"",
+      "\"2018-03-25T09:37:09Z\""
+    ]
+  },
+  {
+    "full_name": "ReactiveX/RxAndroid",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-02-12T21:19:29Z\"",
+      "\"2018-08-16T14:33:27Z\""
+    ]
+  },
+  {
+    "full_name": "alibaba/fastjson",
+    "release_count": "6",
+    "release_dates": [
+      "\"2018-03-15T09:34:42Z\"",
+      "\"2018-10-01T03:53:23Z\"",
+      "\"2018-08-05T07:03:48Z\"",
+      "\"2018-02-05T07:21:53Z\"",
+      "\"2018-11-18T09:44:28Z\"",
+      "\"2018-11-29T12:13:14Z\""
+    ]
+  },
+  {
+    "full_name": "Netflix/Hystrix",
+    "release_count": "4",
+    "release_dates": [
+      "\"2018-11-16T22:48:32Z\"",
+      "\"2018-11-09T23:30:23Z\"",
+      "\"2018-11-16T17:50:50Z\"",
+      "\"2018-11-10T00:02:55Z\""
+    ]
+  },
+  {
+    "full_name": "scwang90/SmartRefreshLayout",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-02-05T11:18:19Z\""
+    ]
+  },
+  {
+    "full_name": "square/picasso",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "CymChad/BaseRecyclerViewAdapterHelper",
+    "release_count": "9",
+    "release_dates": [
+      "\"2018-02-02T05:44:55Z\"",
+      "\"2018-08-13T06:16:45Z\"",
+      "\"2018-05-08T14:13:07Z\"",
+      "\"2018-09-18T05:39:46Z\"",
+      "\"2018-12-03T14:09:37Z\"",
+      "\"2018-08-30T09:08:56Z\"",
+      "\"2018-03-22T01:59:18Z\"",
+      "\"2018-05-09T03:15:30Z\"",
+      "\"2018-04-09T15:17:49Z\""
+    ]
+  },
+  {
+    "full_name": "nostra13/Android-Universal-Image-Loader",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "alibaba/druid",
+    "release_count": "4",
+    "release_dates": [
+      "\"2018-03-11T14:14:57Z\"",
+      "\"2018-02-05T02:13:47Z\"",
+      "\"2018-02-11T09:21:48Z\"",
+      "\"2018-05-27T13:05:41Z\""
+    ]
+  },
+  {
+    "full_name": "facebook/fresco",
+    "release_count": "3",
+    "release_dates": [
+      "\"2018-10-16T10:33:10Z\"",
+      "\"2018-07-23T09:14:17Z\"",
+      "\"2018-02-08T12:00:33Z\""
+    ]
+  },
+  {
+    "full_name": "libgdx/libgdx",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "google/gson",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "chrisbanes/PhotoView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "SeleniumHQ/selenium",
+    "release_count": "10",
+    "release_dates": [
+      "\"2018-08-16T15:53:28Z\"",
+      "\"2018-04-12T18:52:54Z\"",
+      "\"2018-04-12T18:54:14Z\"",
+      "\"2018-04-12T18:53:42Z\"",
+      "\"2018-08-16T15:51:32Z\"",
+      "\"2018-12-19T20:46:40Z\"",
+      "\"2018-08-16T15:52:18Z\"",
+      "\"2018-12-19T20:45:27Z\"",
+      "\"2018-12-19T20:46:17Z\"",
+      "\"2018-04-12T18:54:53Z\""
+    ]
+  },
+  {
+    "full_name": "Tencent/tinker",
+    "release_count": "4",
+    "release_dates": [
+      "\"2018-06-25T03:12:18Z\"",
+      "\"2018-09-26T07:17:39Z\"",
+      "\"2018-04-09T04:52:27Z\"",
+      "\"2018-03-26T03:08:09Z\""
+    ]
+  },
+  {
+    "full_name": "android10/Android-CleanArchitecture",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "shuzheng/zheng",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "lgvalle/Material-Animations",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "google/ExoPlayer",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "eugenp/tutorials",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "doocs/advanced-java",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "jenkinsci/jenkins",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "ctripcorp/apollo",
+    "release_count": "9",
+    "release_dates": [
+      "\"2018-07-29T10:56:14Z\"",
+      "\"2018-10-06T13:58:02Z\"",
+      "\"2018-03-30T06:23:47Z\"",
+      "\"2018-03-28T05:35:32Z\"",
+      "\"2018-12-09T06:46:31Z\"",
+      "\"2018-03-25T07:05:37Z\"",
+      "\"2018-08-09T15:35:43Z\"",
+      "\"2018-10-13T11:11:27Z\"",
+      "\"2018-11-01T14:04:16Z\""
+    ]
+  },
+  {
+    "full_name": "ityouknow/spring-boot-examples",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "hdodenhof/CircleImageView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "TheAlgorithms/Java",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "apache/kafka",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "DrKLO/Telegram",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "bazelbuild/bazel",
+    "release_count": "23",
+    "release_dates": [
+      "\"2018-09-21T12:58:35Z\"",
+      "\"2018-11-12T15:39:13Z\"",
+      "\"2018-05-23T11:47:13Z\"",
+      "\"2018-10-29T14:41:28Z\"",
+      "\"2018-04-30T08:58:37Z\"",
+      "\"2018-10-31T14:52:30Z\"",
+      "\"2018-10-15T08:40:35Z\"",
+      "\"2018-03-07T10:54:35Z\"",
+      "\"2018-06-01T13:39:21Z\"",
+      "\"2018-07-17T12:42:48Z\"",
+      "\"2018-04-11T16:09:14Z\"",
+      "\"2018-06-08T12:32:06Z\"",
+      "\"2018-11-19T16:32:32Z\"",
+      "\"2018-11-30T14:53:07Z\"",
+      "\"2018-02-15T09:09:56Z\"",
+      "\"2018-02-01T08:49:08Z\"",
+      "\"2018-07-16T14:25:07Z\"",
+      "\"2018-06-26T12:19:12Z\"",
+      "\"2018-07-31T17:30:07Z\"",
+      "\"2018-09-14T10:46:19Z\"",
+      "\"2018-02-23T16:21:45Z\"",
+      "\"2018-12-19T13:58:55Z\"",
+      "\"2018-08-13T16:04:30Z\""
+    ]
+  },
+  {
+    "full_name": "hankcs/HanLP",
+    "release_count": "11",
+    "release_dates": [
+      "\"2018-03-23T16:19:18Z\"",
+      "\"2018-03-15T23:40:00Z\"",
+      "\"2018-07-02T09:43:44Z\"",
+      "\"2018-08-25T22:38:48Z\"",
+      "\"2018-02-16T18:06:21Z\"",
+      "\"2018-08-13T17:14:38Z\"",
+      "\"2018-04-14T19:03:19Z\"",
+      "\"2018-06-25T06:56:30Z\"",
+      "\"2018-07-02T09:45:33Z\"",
+      "\"2018-11-11T04:29:41Z\"",
+      "\"2018-04-01T19:55:54Z\""
+    ]
+  },
+  {
+    "full_name": "winterbe/java8-tutorial",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "signalapp/Signal-Android",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "jfeinstein10/SlidingMenu",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "b3log/symphony",
+    "release_count": "15",
+    "release_dates": [
+      "\"2018-06-13T04:01:21Z\"",
+      "\"2018-11-22T03:19:14Z\"",
+      "\"2018-12-07T00:45:40Z\"",
+      "\"2018-08-29T01:45:24Z\"",
+      "\"2018-09-06T01:06:02Z\"",
+      "\"2018-11-08T03:02:38Z\"",
+      "\"2018-02-07T02:32:58Z\"",
+      "\"2018-08-02T03:29:45Z\"",
+      "\"2018-10-24T01:51:52Z\"",
+      "\"2018-03-14T01:15:36Z\"",
+      "\"2018-04-10T00:39:46Z\"",
+      "\"2018-11-22T03:29:47Z\"",
+      "\"2018-07-12T02:20:13Z\"",
+      "\"2018-09-27T02:50:46Z\"",
+      "\"2018-05-25T01:21:04Z\""
+    ]
+  },
+  {
+    "full_name": "greenrobot/greenDAO",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "daimajia/AndroidSwipeLayout",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "alibaba/arthas",
+    "release_count": "3",
+    "release_dates": [
+      "\"2018-11-28T13:45:24Z\"",
+      "\"2018-09-05T18:05:12Z\"",
+      "\"2018-09-26T05:14:48Z\""
+    ]
+  },
+  {
+    "full_name": "react-native-community/lottie-react-native",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "orhanobut/logger",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-03-24T05:07:52Z\""
+    ]
+  },
+  {
+    "full_name": "facebook/stetho",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "androidannotations/androidannotations",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "openzipkin/zipkin",
+    "release_count": "10",
+    "release_dates": [
+      "\"2018-03-17T07:05:47Z\"",
+      "\"2018-05-03T08:09:42Z\"",
+      "\"2018-02-26T02:47:57Z\"",
+      "\"2018-08-05T11:51:03Z\"",
+      "\"2018-04-08T01:54:32Z\"",
+      "\"2018-06-16T01:39:46Z\"",
+      "\"2018-03-27T06:05:09Z\"",
+      "\"2018-08-05T06:07:42Z\"",
+      "\"2018-07-07T06:49:37Z\"",
+      "\"2018-08-03T13:25:39Z\""
+    ]
+  },
+  {
+    "full_name": "EnterpriseQualityCoding/FizzBuzzEnterpriseEdition",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "deeplearning4j/deeplearning4j",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "loopj/android-async-http",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "daimajia/AndroidViewAnimations",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "realm/realm-java",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "mikepenz/MaterialDrawer",
+    "release_count": "9",
+    "release_dates": [
+      "\"2018-06-09T19:04:33Z\"",
+      "\"2018-10-06T15:02:40Z\"",
+      "\"2018-12-15T15:49:19Z\"",
+      "\"2018-02-04T14:46:20Z\"",
+      "\"2018-07-22T13:14:58Z\"",
+      "\"2018-02-07T23:05:08Z\"",
+      "\"2018-06-10T16:07:50Z\"",
+      "\"2018-09-22T16:32:36Z\"",
+      "\"2018-08-11T18:47:04Z\""
+    ]
+  },
+  {
+    "full_name": "JakeWharton/ViewPagerIndicator",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "mybatis/mybatis-3",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-03-11T16:46:36Z\""
+    ]
+  },
+  {
+    "full_name": "LMAX-Exchange/disruptor",
+    "release_count": "8",
+    "release_dates": [
+      "\"2018-02-26T19:56:47Z\"",
+      "\"2018-03-06T23:56:03Z\"",
+      "\"2018-09-01T23:57:00Z\"",
+      "\"2018-02-26T19:57:26Z\"",
+      "\"2018-02-04T02:56:51Z\"",
+      "\"2018-03-06T23:55:34Z\"",
+      "\"2018-09-01T23:54:36Z\"",
+      "\"2018-02-12T03:22:25Z\""
+    ]
+  },
+  {
+    "full_name": "Konloch/bytecode-viewer",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-03-22T04:43:20Z\"",
+      "\"2018-03-24T21:58:23Z\""
+    ]
+  },
+  {
+    "full_name": "wix/react-native-navigation",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-12-06T09:31:15Z\""
+    ]
+  },
+  {
+    "full_name": "liaohuqiu/android-Ultra-Pull-To-Refresh",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Curzibn/Luban",
+    "release_count": "7",
+    "release_dates": [
+      "\"2018-06-20T01:56:39Z\"",
+      "\"2018-06-20T02:28:44Z\"",
+      "\"2018-06-19T10:05:37Z\"",
+      "\"2018-07-17T07:54:37Z\"",
+      "\"2018-07-23T03:33:08Z\"",
+      "\"2018-06-19T10:11:37Z\"",
+      "\"2018-06-22T02:49:17Z\""
+    ]
+  },
+  {
+    "full_name": "Bigkoo/Android-PickerView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "pockethub/PocketHub",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "brettwooldridge/HikariCP",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Tencent/VasSonic",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-02-09T08:25:21Z\"",
+      "\"2018-03-27T09:02:19Z\""
+    ]
+  },
+  {
+    "full_name": "eclipse-vertx/vert.x",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "ksoichiro/Android-ObservableScrollView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "CarGuo/GSYVideoPlayer",
+    "release_count": "10",
+    "release_dates": [
+      "\"2018-06-30T07:34:22Z\"",
+      "\"2018-10-14T08:37:03Z\"",
+      "\"2018-05-23T09:10:32Z\"",
+      "\"2018-12-21T07:01:57Z\"",
+      "\"2018-03-02T14:05:18Z\"",
+      "\"2018-08-01T13:35:13Z\"",
+      "\"2018-05-11T13:44:59Z\"",
+      "\"2018-05-24T13:47:32Z\"",
+      "\"2018-05-23T08:51:34Z\"",
+      "\"2018-05-23T09:18:00Z\""
+    ]
+  },
+  {
+    "full_name": "alibaba/vlayout",
+    "release_count": "7",
+    "release_dates": [
+      "\"2018-02-28T03:21:14Z\"",
+      "\"2018-05-22T08:42:35Z\"",
+      "\"2018-07-31T07:51:05Z\"",
+      "\"2018-06-21T02:28:49Z\"",
+      "\"2018-09-12T07:11:07Z\"",
+      "\"2018-03-12T06:19:12Z\"",
+      "\"2018-05-17T10:57:15Z\""
+    ]
+  },
+  {
+    "full_name": "alibaba/ARouter",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "nathanmarz/storm",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "zhihu/Matisse",
+    "release_count": "3",
+    "release_dates": [
+      "\"2018-06-27T05:56:02Z\"",
+      "\"2018-08-07T01:50:06Z\"",
+      "\"2018-09-17T08:30:43Z\""
+    ]
+  },
+  {
+    "full_name": "arduino/Arduino",
+    "release_count": "3",
+    "release_dates": [
+      "\"2018-08-23T09:59:14Z\"",
+      "\"2018-12-06T12:53:32Z\"",
+      "\"2018-09-12T14:48:56Z\""
+    ]
+  },
+  {
+    "full_name": "navasmdc/MaterialDesignLibrary",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "wasabeef/recyclerview-animators",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "jeasonlzy/okhttp-OkGo",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "prestodb/presto",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "chrisbanes/Android-PullToRefresh",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "apache/hadoop",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "permissions-dispatcher/PermissionsDispatcher",
+    "release_count": "8",
+    "release_dates": [
+      "\"2018-12-30T10:42:50Z\"",
+      "\"2018-04-16T17:06:45Z\"",
+      "\"2018-12-24T15:05:46Z\"",
+      "\"2018-07-10T17:47:05Z\"",
+      "\"2018-06-25T03:57:23Z\"",
+      "\"2018-10-19T17:04:54Z\"",
+      "\"2018-07-11T17:10:58Z\"",
+      "\"2018-12-06T17:05:41Z\""
+    ]
+  },
+  {
+    "full_name": "lipangit/JiaoZiVideoPlayer",
+    "release_count": "7",
+    "release_dates": [
+      "\"2018-05-08T09:39:00Z\"",
+      "\"2018-03-08T11:15:38Z\"",
+      "\"2018-09-09T05:30:50Z\"",
+      "\"2018-11-17T10:58:28Z\"",
+      "\"2018-07-03T14:29:12Z\"",
+      "\"2018-09-02T06:52:10Z\"",
+      "\"2018-06-30T12:47:54Z\""
+    ]
+  },
+  {
+    "full_name": "vondear/RxTool",
+    "release_count": "29",
+    "release_dates": [
+      "\"2018-07-13T02:02:36Z\"",
+      "\"2018-07-09T07:34:23Z\"",
+      "\"2018-07-03T09:57:19Z\"",
+      "\"2018-09-11T01:27:08Z\"",
+      "\"2018-07-02T03:36:58Z\"",
+      "\"2018-06-12T05:20:21Z\"",
+      "\"2018-09-07T02:18:14Z\"",
+      "\"2018-08-31T02:53:28Z\"",
+      "\"2018-11-02T09:50:47Z\"",
+      "\"2018-07-18T07:33:12Z\"",
+      "\"2018-07-17T02:52:16Z\"",
+      "\"2018-09-05T02:15:03Z\"",
+      "\"2018-09-13T01:41:30Z\"",
+      "\"2018-06-25T08:29:30Z\"",
+      "\"2018-06-25T07:31:41Z\"",
+      "\"2018-07-13T02:45:24Z\"",
+      "\"2018-06-25T06:56:58Z\"",
+      "\"2018-07-09T08:06:19Z\"",
+      "\"2018-09-11T07:03:44Z\"",
+      "\"2018-06-12T03:32:45Z\"",
+      "\"2018-09-05T02:02:19Z\"",
+      "\"2018-08-13T02:58:15Z\"",
+      "\"2018-07-03T07:09:11Z\"",
+      "\"2018-09-11T01:07:51Z\"",
+      "\"2018-07-13T03:06:59Z\"",
+      "\"2018-07-13T01:53:46Z\"",
+      "\"2018-07-13T01:59:12Z\"",
+      "\"2018-07-02T07:41:50Z\"",
+      "\"2018-06-12T02:41:41Z\""
+    ]
+  },
+  {
+    "full_name": "macrozheng/mall",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "JeffLi1993/springboot-learning-example",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "mockito/mockito",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "dianping/cat",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "81813780/AVLoadingIndicatorView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "AppIntro/AppIntro",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Yalantis/uCrop",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "umano/AndroidSlidingUpPanel",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "aosp-mirror/platform_frameworks_base",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "redisson/redisson",
+    "release_count": "34",
+    "release_dates": [
+      "\"2018-10-06T09:52:24Z\"",
+      "\"2018-09-04T12:48:41Z\"",
+      "\"2018-06-14T19:34:22Z\"",
+      "\"2018-03-27T12:12:25Z\"",
+      "\"2018-07-19T09:34:35Z\"",
+      "\"2018-03-05T11:06:55Z\"",
+      "\"2018-10-06T09:52:14Z\"",
+      "\"2018-05-14T08:16:02Z\"",
+      "\"2018-03-27T12:12:35Z\"",
+      "\"2018-07-19T15:03:33Z\"",
+      "\"2018-06-02T08:03:43Z\"",
+      "\"2018-03-14T11:39:35Z\"",
+      "\"2018-05-14T08:15:54Z\"",
+      "\"2018-09-18T12:35:36Z\"",
+      "\"2018-02-15T08:31:24Z\"",
+      "\"2018-07-19T09:34:21Z\"",
+      "\"2018-11-01T19:58:46Z\"",
+      "\"2018-09-18T12:35:44Z\"",
+      "\"2018-11-23T14:29:58Z\"",
+      "\"2018-03-05T11:07:03Z\"",
+      "\"2018-03-14T11:39:26Z\"",
+      "\"2018-12-27T13:14:52Z\"",
+      "\"2018-09-04T12:48:51Z\"",
+      "\"2018-06-28T13:19:35Z\"",
+      "\"2018-06-28T13:19:43Z\"",
+      "\"2018-06-14T19:34:31Z\"",
+      "\"2018-11-23T14:30:09Z\"",
+      "\"2018-05-01T16:45:33Z\"",
+      "\"2018-02-15T08:31:28Z\"",
+      "\"2018-12-27T13:15:18Z\"",
+      "\"2018-11-01T19:58:32Z\"",
+      "\"2018-06-02T08:03:51Z\"",
+      "\"2018-05-01T16:45:22Z\"",
+      "\"2018-07-19T15:03:42Z\""
+    ]
+  },
+  {
+    "full_name": "naver/pinpoint",
+    "release_count": "7",
+    "release_dates": [
+      "\"2018-08-13T05:51:43Z\"",
+      "\"2018-03-30T04:51:48Z\"",
+      "\"2018-05-03T06:49:02Z\"",
+      "\"2018-12-14T04:30:11Z\"",
+      "\"2018-04-20T10:01:55Z\"",
+      "\"2018-09-14T05:06:22Z\"",
+      "\"2019-01-03T00:18:15Z\""
+    ]
+  },
+  {
+    "full_name": "dbeaver/dbeaver",
+    "release_count": "23",
+    "release_dates": [
+      "\"2018-05-27T21:30:54Z\"",
+      "\"2018-11-05T12:01:45Z\"",
+      "\"2018-09-23T21:41:59Z\"",
+      "\"2018-08-12T22:14:35Z\"",
+      "\"2018-12-09T21:41:19Z\"",
+      "\"2018-10-07T20:37:30Z\"",
+      "\"2018-05-13T21:58:37Z\"",
+      "\"2018-09-12T18:46:30Z\"",
+      "\"2018-04-02T07:21:06Z\"",
+      "\"2018-04-15T20:29:10Z\"",
+      "\"2018-04-29T21:10:27Z\"",
+      "\"2018-03-05T17:47:32Z\"",
+      "\"2018-07-29T21:50:44Z\"",
+      "\"2018-07-01T22:04:06Z\"",
+      "\"2018-02-18T20:28:15Z\"",
+      "\"2018-08-26T22:08:59Z\"",
+      "\"2018-09-12T18:49:43Z\"",
+      "\"2018-06-04T06:33:20Z\"",
+      "\"2018-06-17T20:58:26Z\"",
+      "\"2018-02-04T19:06:49Z\"",
+      "\"2018-07-15T20:51:08Z\"",
+      "\"2018-10-21T18:31:18Z\"",
+      "\"2018-03-19T12:14:56Z\""
+    ]
+  },
+  {
+    "full_name": "H07000223/FlycoTabLayout",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "YoKeyword/Fragmentation",
+    "release_count": "10",
+    "release_dates": [
+      "\"2018-02-05T15:24:56Z\"",
+      "\"2018-08-14T14:58:33Z\"",
+      "\"2018-05-17T09:31:20Z\"",
+      "\"2018-03-07T16:17:50Z\"",
+      "\"2018-08-14T15:02:47Z\"",
+      "\"2018-06-18T16:56:01Z\"",
+      "\"2018-03-26T11:56:15Z\"",
+      "\"2018-02-25T13:56:20Z\"",
+      "\"2018-03-08T07:00:09Z\"",
+      "\"2018-02-05T15:40:28Z\""
+    ]
+  },
+  {
+    "full_name": "roughike/BottomBar",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "chrisjenx/Calligraphy",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "oracle/graal",
+    "release_count": "22",
+    "release_dates": [
+      "\"2018-10-19T19:14:18Z\"",
+      "\"2018-06-20T09:53:33Z\"",
+      "\"2018-11-05T13:35:07Z\"",
+      "\"2018-06-20T09:58:14Z\"",
+      "\"2018-06-13T06:23:20Z\"",
+      "\"2018-06-20T09:59:34Z\"",
+      "\"2018-07-18T16:33:51Z\"",
+      "\"2018-06-20T10:35:42Z\"",
+      "\"2018-07-04T10:18:15Z\"",
+      "\"2018-06-06T11:20:37Z\"",
+      "\"2018-06-20T10:07:56Z\"",
+      "\"2018-04-17T13:25:54Z\"",
+      "\"2018-08-03T12:41:59Z\"",
+      "\"2018-07-02T13:57:43Z\"",
+      "\"2018-07-04T10:36:07Z\"",
+      "\"2018-06-20T13:31:51Z\"",
+      "\"2018-06-20T09:55:01Z\"",
+      "\"2018-12-05T18:14:26Z\"",
+      "\"2018-06-20T13:31:27Z\"",
+      "\"2018-09-03T14:43:53Z\"",
+      "\"2018-06-20T09:56:21Z\"",
+      "\"2018-07-04T09:53:20Z\""
+    ]
+  },
+  {
+    "full_name": "perwendel/spark",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "lingochamp/FileDownloader",
+    "release_count": "6",
+    "release_dates": [
+      "\"2018-02-05T11:39:48Z\"",
+      "\"2018-03-13T16:59:14Z\"",
+      "\"2018-04-20T15:14:00Z\"",
+      "\"2018-05-19T15:59:07Z\"",
+      "\"2018-08-03T08:15:47Z\"",
+      "\"2018-02-01T15:56:41Z\""
+    ]
+  },
+  {
+    "full_name": "tbruyelle/RxPermissions",
+    "release_count": "3",
+    "release_dates": [
+      "\"2018-07-10T21:15:23Z\"",
+      "\"2018-07-06T19:33:56Z\"",
+      "\"2018-07-06T17:13:49Z\""
+    ]
+  },
+  {
+    "full_name": "youth5201314/banner",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "apache/flink",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "wasabeef/glide-transformations",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Tencent/QMUI_Android",
+    "release_count": "1",
+    "release_dates": [
+      "\"2019-01-02T12:16:07Z\""
+    ]
+  },
+  {
+    "full_name": "junit-team/junit4",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-11-25T15:50:28Z\""
+    ]
+  },
+  {
+    "full_name": "google/agera",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-02-27T18:43:39Z\""
+    ]
+  },
+  {
+    "full_name": "Netflix/eureka",
+    "release_count": "12",
+    "release_dates": [
+      "\"2018-08-06T20:27:24Z\"",
+      "\"2018-11-12T17:55:06Z\"",
+      "\"2018-06-01T18:26:37Z\"",
+      "\"2018-11-14T21:56:58Z\"",
+      "\"2018-09-18T00:38:30Z\"",
+      "\"2018-03-21T18:31:46Z\"",
+      "\"2018-04-25T17:30:09Z\"",
+      "\"2018-02-21T01:01:51Z\"",
+      "\"2018-04-09T21:46:51Z\"",
+      "\"2018-10-26T01:05:33Z\"",
+      "\"2018-06-01T04:32:35Z\"",
+      "\"2018-06-26T00:13:10Z\""
+    ]
+  },
+  {
+    "full_name": "JakeWharton/ActionBarSherlock",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "xuxueli/xxl-job",
+    "release_count": "4",
+    "release_dates": [
+      "\"2018-11-09T01:59:46Z\"",
+      "\"2018-11-03T19:07:37Z\"",
+      "\"2018-02-22T10:25:44Z\"",
+      "\"2018-10-05T14:32:10Z\""
+    ]
+  },
+  {
+    "full_name": "googlesamples/easypermissions",
+    "release_count": "3",
+    "release_dates": [
+      "\"2018-08-06T16:49:37Z\"",
+      "\"2018-03-15T20:49:45Z\"",
+      "\"2018-09-24T16:46:18Z\""
+    ]
+  },
+  {
+    "full_name": "google/tink",
+    "release_count": "8",
+    "release_dates": [
+      "\"2018-07-27T20:01:04Z\"",
+      "\"2018-08-10T05:54:37Z\"",
+      "\"2018-08-01T21:33:07Z\"",
+      "\"2018-04-19T00:56:01Z\"",
+      "\"2018-11-16T20:42:32Z\"",
+      "\"2018-07-13T23:52:22Z\"",
+      "\"2018-11-16T14:20:55Z\"",
+      "\"2018-11-14T12:06:44Z\""
+    ]
+  },
+  {
+    "full_name": "koral--/android-gif-drawable",
+    "release_count": "6",
+    "release_dates": [
+      "\"2018-07-09T09:58:12Z\"",
+      "\"2018-07-09T01:47:06Z\"",
+      "\"2018-11-21T00:00:42Z\"",
+      "\"2018-03-24T20:27:37Z\"",
+      "\"2018-02-22T00:05:31Z\"",
+      "\"2018-07-17T01:18:08Z\""
+    ]
+  },
+  {
+    "full_name": "apache/rocketmq",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Netflix/zuul",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-08-08T15:41:27Z\""
+    ]
+  },
+  {
+    "full_name": "dropwizard/dropwizard",
+    "release_count": "18",
+    "release_dates": [
+      "\"2018-06-15T08:17:46Z\"",
+      "\"2018-02-09T12:02:26Z\"",
+      "\"2018-06-06T21:01:18Z\"",
+      "\"2018-10-01T07:33:59Z\"",
+      "\"2018-02-23T11:18:28Z\"",
+      "\"2019-01-05T13:37:35Z\"",
+      "\"2018-05-11T22:27:11Z\"",
+      "\"2018-10-01T07:32:45Z\"",
+      "\"2018-05-11T22:27:35Z\"",
+      "\"2018-07-02T07:18:32Z\"",
+      "\"2018-06-15T09:33:40Z\"",
+      "\"2018-06-25T19:41:46Z\"",
+      "\"2018-02-23T11:18:56Z\"",
+      "\"2018-03-14T20:59:33Z\"",
+      "\"2018-06-25T19:42:13Z\"",
+      "\"2018-02-23T11:17:45Z\"",
+      "\"2018-10-14T09:14:24Z\"",
+      "\"2018-06-25T19:42:39Z\""
+    ]
+  },
+  {
+    "full_name": "Netflix/SimianArmy",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "laobie/StatusBarUtil",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "square/dagger",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "apache/incubator-shardingsphere",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "cymcsg/UltimateRecyclerView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Bearded-Hen/Android-Bootstrap",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "react-native-community/react-native-camera",
+    "release_count": "10",
+    "release_dates": [
+      "\"2018-11-12T10:11:44Z\"",
+      "\"2018-12-12T14:06:23Z\"",
+      "\"2018-12-14T14:10:36Z\"",
+      "\"2018-11-19T20:41:21Z\"",
+      "\"2018-12-13T20:18:53Z\"",
+      "\"2018-12-05T16:40:32Z\"",
+      "\"2018-09-26T11:57:46Z\"",
+      "\"2018-11-12T10:22:34Z\"",
+      "\"2018-11-20T12:31:37Z\"",
+      "\"2018-12-13T09:46:00Z\""
+    ]
+  },
+  {
+    "full_name": "kaushikgopal/RxJava-Android-Samples",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "alibaba/atlas",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-11-23T04:39:42Z\"",
+      "\"2018-05-21T03:11:26Z\""
+    ]
+  },
+  {
+    "full_name": "jhy/jsoup",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "ChrisRM/material-theme-jetbrains",
+    "release_count": "4",
+    "release_dates": [
+      "\"2018-02-13T07:31:02Z\"",
+      "\"2018-02-13T07:28:10Z\"",
+      "\"2018-02-13T07:25:06Z\"",
+      "\"2018-04-26T19:56:47Z\""
+    ]
+  },
+  {
+    "full_name": "forezp/SpringCloudLearning",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "didi/VirtualAPK",
+    "release_count": "3",
+    "release_dates": [
+      "\"2018-05-22T07:26:40Z\"",
+      "\"2018-09-06T12:05:38Z\"",
+      "\"2018-07-03T02:47:59Z\""
+    ]
+  },
+  {
+    "full_name": "GcsSloop/AndroidNote",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "dyc87112/SpringBoot-Learning",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "astuetz/PagerSlidingTabStrip",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "JakeWharton/timber",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "trello/RxLifecycle",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-10-25T19:36:00Z\""
+    ]
+  },
+  {
+    "full_name": "JakeWharton/hugo",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "b3log/solo",
+    "release_count": "12",
+    "release_dates": [
+      "\"2018-07-26T02:21:10Z\"",
+      "\"2018-06-27T02:43:32Z\"",
+      "\"2018-03-06T14:05:22Z\"",
+      "\"2018-09-25T13:47:42Z\"",
+      "\"2018-12-11T02:21:57Z\"",
+      "\"2018-11-15T03:52:30Z\"",
+      "\"2018-09-17T08:49:45Z\"",
+      "\"2018-08-23T02:03:53Z\"",
+      "\"2018-09-16T14:48:40Z\"",
+      "\"2018-04-17T02:45:39Z\"",
+      "\"2018-10-10T03:03:59Z\"",
+      "\"2018-02-01T07:00:10Z\""
+    ]
+  },
+  {
+    "full_name": "geeeeeeeeek/WeChatLuckyMoney",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-04-14T03:35:00Z\""
+    ]
+  },
+  {
+    "full_name": "codecentric/spring-boot-admin",
+    "release_count": "6",
+    "release_dates": [
+      "\"2018-10-22T15:17:12Z\"",
+      "\"2018-11-11T15:58:34Z\"",
+      "\"2018-05-18T21:36:03Z\"",
+      "\"2018-11-05T08:36:39Z\"",
+      "\"2018-06-22T05:42:39Z\"",
+      "\"2018-07-31T20:39:08Z\""
+    ]
+  },
+  {
+    "full_name": "aritraroy/UltimateAndroidReference",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "hongyangAndroid/okhttputils",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "square/javapoet",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "hongyangAndroid/AndroidAutoLayout",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "facebook/buck",
+    "release_count": "11",
+    "release_dates": [
+      "\"2018-06-25T23:05:44Z\"",
+      "\"2018-07-23T20:42:00Z\"",
+      "\"2018-08-28T03:00:53Z\"",
+      "\"2018-02-16T20:33:28Z\"",
+      "\"2018-10-29T18:17:10Z\"",
+      "\"2018-03-26T21:21:48Z\"",
+      "\"2018-07-10T04:19:11Z\"",
+      "\"2018-09-24T22:00:53Z\"",
+      "\"2018-08-07T22:34:42Z\"",
+      "\"2018-10-22T17:36:22Z\"",
+      "\"2018-10-18T02:14:40Z\""
+    ]
+  },
+  {
+    "full_name": "pagehelper/Mybatis-PageHelper",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-09-04T14:02:54Z\"",
+      "\"2018-09-04T14:01:12Z\""
+    ]
+  },
+  {
+    "full_name": "material-components/material-components-android",
+    "release_count": "3",
+    "release_dates": [
+      "\"2018-11-15T13:41:19Z\"",
+      "\"2018-11-15T13:44:26Z\"",
+      "\"2018-12-12T21:38:31Z\""
+    ]
+  },
+  {
+    "full_name": "alibaba/fescar",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "pedant/sweet-alert-dialog",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "lecho/hellocharts-android",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "dropwizard/metrics",
+    "release_count": "7",
+    "release_dates": [
+      "\"2018-12-30T20:50:04Z\"",
+      "\"2018-12-30T20:46:26Z\"",
+      "\"2018-12-26T22:57:23Z\"",
+      "\"2018-02-06T11:41:51Z\"",
+      "\"2018-05-03T21:29:34Z\"",
+      "\"2018-12-26T22:58:08Z\"",
+      "\"2018-02-01T21:20:24Z\""
+    ]
+  },
+  {
+    "full_name": "daniulive/SmarterStreaming",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "medcl/elasticsearch-analysis-ik",
+    "release_count": "26",
+    "release_dates": [
+      "\"2018-07-26T00:02:56Z\"",
+      "\"2018-03-05T23:27:30Z\"",
+      "\"2018-07-18T13:06:14Z\"",
+      "\"2018-07-18T10:24:26Z\"",
+      "\"2018-02-09T04:36:02Z\"",
+      "\"2018-09-19T01:53:40Z\"",
+      "\"2018-02-09T04:35:43Z\"",
+      "\"2018-03-05T23:30:53Z\"",
+      "\"2018-10-15T08:06:04Z\"",
+      "\"2018-04-02T04:28:44Z\"",
+      "\"2018-11-20T13:37:59Z\"",
+      "\"2018-06-19T01:16:11Z\"",
+      "\"2018-04-02T04:29:23Z\"",
+      "\"2018-11-28T07:40:27Z\"",
+      "\"2018-09-18T07:56:53Z\"",
+      "\"2018-11-09T02:52:18Z\"",
+      "\"2018-11-09T03:06:22Z\"",
+      "\"2018-07-26T09:33:05Z\"",
+      "\"2018-12-12T15:10:10Z\"",
+      "\"2018-05-06T08:50:09Z\"",
+      "\"2018-08-26T02:07:52Z\"",
+      "\"2018-11-09T02:57:36Z\"",
+      "\"2018-02-09T04:16:58Z\"",
+      "\"2018-07-18T10:11:05Z\"",
+      "\"2018-07-26T10:04:57Z\"",
+      "\"2018-06-06T03:47:36Z\""
+    ]
+  },
+  {
+    "full_name": "mission-peace/interview",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "apache/incubator-skywalking",
+    "release_count": "7",
+    "release_dates": [
+      "\"2018-04-03T04:10:52Z\"",
+      "\"2018-10-17T02:39:16Z\"",
+      "\"2018-07-11T17:47:40Z\"",
+      "\"2018-09-12T14:19:04Z\"",
+      "\"2018-05-23T06:54:27Z\"",
+      "\"2018-12-25T06:37:00Z\"",
+      "\"2018-11-14T14:52:13Z\""
+    ]
+  },
+  {
+    "full_name": "lzyzsd/JsBridge",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "JessYanCoding/AndroidAutoSize",
+    "release_count": "11",
+    "release_dates": [
+      "\"2018-08-18T06:41:14Z\"",
+      "\"2018-11-22T03:49:30Z\"",
+      "\"2018-11-07T10:09:05Z\"",
+      "\"2018-10-30T11:01:17Z\"",
+      "\"2018-12-13T07:30:04Z\"",
+      "\"2018-10-11T09:09:52Z\"",
+      "\"2018-10-22T10:53:34Z\"",
+      "\"2018-08-29T08:04:21Z\"",
+      "\"2018-09-12T07:47:54Z\"",
+      "\"2018-08-19T05:32:45Z\"",
+      "\"2018-08-25T11:42:16Z\""
+    ]
+  },
+  {
+    "full_name": "GoogleContainerTools/jib",
+    "release_count": "29",
+    "release_dates": [
+      "\"2018-08-20T20:40:48Z\"",
+      "\"2018-06-29T14:07:54Z\"",
+      "\"2018-07-20T00:09:25Z\"",
+      "\"2018-07-06T19:07:06Z\"",
+      "\"2018-08-31T15:58:56Z\"",
+      "\"2018-06-06T17:55:46Z\"",
+      "\"2018-07-11T11:57:43Z\"",
+      "\"2018-12-19T20:07:06Z\"",
+      "\"2018-12-03T23:18:07Z\"",
+      "\"2018-07-11T15:35:36Z\"",
+      "\"2018-11-08T18:41:51Z\"",
+      "\"2018-06-28T22:03:48Z\"",
+      "\"2018-07-10T16:41:50Z\"",
+      "\"2018-09-26T17:51:28Z\"",
+      "\"2018-06-28T21:22:30Z\"",
+      "\"2018-08-31T16:45:02Z\"",
+      "\"2018-08-02T12:52:41Z\"",
+      "\"2018-07-09T13:47:41Z\"",
+      "\"2018-10-16T15:39:17Z\"",
+      "\"2018-12-19T18:52:38Z\"",
+      "\"2018-10-17T21:29:03Z\"",
+      "\"2018-06-19T16:39:50Z\"",
+      "\"2018-05-31T16:26:39Z\"",
+      "\"2018-10-08T14:35:52Z\"",
+      "\"2018-09-26T18:38:46Z\"",
+      "\"2018-08-01T19:25:13Z\"",
+      "\"2018-07-11T16:16:41Z\"",
+      "\"2018-11-08T16:13:11Z\"",
+      "\"2018-08-21T14:13:09Z\""
+    ]
+  },
+  {
+    "full_name": "googlesamples/android-testing",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "android-hacker/VirtualXposed",
+    "release_count": "26",
+    "release_dates": [
+      "\"2018-06-16T13:10:36Z\"",
+      "\"2018-06-26T05:33:40Z\"",
+      "\"2018-04-18T03:32:48Z\"",
+      "\"2018-10-15T13:30:38Z\"",
+      "\"2018-06-09T09:58:03Z\"",
+      "\"2018-03-14T04:21:02Z\"",
+      "\"2018-04-13T06:37:07Z\"",
+      "\"2018-09-01T09:52:39Z\"",
+      "\"2018-04-19T16:48:20Z\"",
+      "\"2018-07-05T05:45:25Z\"",
+      "\"2018-02-23T06:35:49Z\"",
+      "\"2018-03-20T06:14:31Z\"",
+      "\"2018-10-29T06:51:03Z\"",
+      "\"2018-04-10T14:59:06Z\"",
+      "\"2018-08-30T05:07:37Z\"",
+      "\"2018-05-30T05:31:12Z\"",
+      "\"2018-04-16T04:05:52Z\"",
+      "\"2018-03-21T06:30:04Z\"",
+      "\"2018-04-12T14:40:19Z\"",
+      "\"2018-03-29T16:25:38Z\"",
+      "\"2018-09-05T12:45:01Z\"",
+      "\"2018-04-03T03:37:51Z\"",
+      "\"2018-05-09T15:05:47Z\"",
+      "\"2018-03-19T17:33:43Z\"",
+      "\"2018-08-08T02:54:35Z\"",
+      "\"2018-03-04T10:53:25Z\""
+    ]
+  },
+  {
+    "full_name": "neo4j/neo4j",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "crazycodeboy/TakePhoto",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-04-02T12:15:15Z\""
+    ]
+  },
+  {
+    "full_name": "google/physical-web",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "OpenRefine/OpenRefine",
+    "release_count": "4",
+    "release_dates": [
+      "\"2018-11-29T02:58:37Z\"",
+      "\"2018-07-17T03:05:46Z\"",
+      "\"2018-11-07T13:51:04Z\"",
+      "\"2018-09-16T17:38:57Z\""
+    ]
+  },
+  {
+    "full_name": "DroidPluginTeam/DroidPlugin",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "stanfordnlp/CoreNLP",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "LitePalFramework/LitePal",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "koush/AndroidAsync",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "apache/zookeeper",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "koush/ion",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "ogaclejapan/SmartTabLayout",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "MyCATApache/Mycat-Server",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "pedrovgs/EffectiveAndroidUI",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "cats-oss/android-gpuimage",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "futuresimple/android-floating-action-button",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "ybq/Android-SpinKit",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "amitshekhariitbhu/Android-Debug-Database",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-06-23T06:04:36Z\"",
+      "\"2018-02-12T16:36:23Z\""
+    ]
+  },
+  {
+    "full_name": "hackware1993/MagicIndicator",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "LuckSiege/PictureSelector",
+    "release_count": "6",
+    "release_dates": [
+      "\"2018-02-01T04:52:42Z\"",
+      "\"2018-03-30T07:09:56Z\"",
+      "\"2018-03-08T02:17:42Z\"",
+      "\"2018-02-01T04:56:18Z\"",
+      "\"2018-03-30T04:54:17Z\"",
+      "\"2018-04-14T09:15:09Z\""
+    ]
+  },
+  {
+    "full_name": "qiurunze123/miaosha",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "pxb1988/dex2jar",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-04-02T08:26:05Z\"",
+      "\"2018-03-27T02:50:02Z\""
+    ]
+  },
+  {
+    "full_name": "didi/DoraemonKit",
+    "release_count": "4",
+    "release_dates": [
+      "\"2018-10-20T11:03:12Z\"",
+      "\"2018-10-22T14:53:45Z\"",
+      "\"2018-10-20T10:59:52Z\"",
+      "\"2018-10-31T03:37:49Z\""
+    ]
+  },
+  {
+    "full_name": "alibaba/Sentinel",
+    "release_count": "4",
+    "release_dates": [
+      "\"2018-10-30T07:32:03Z\"",
+      "\"2018-09-27T11:52:10Z\"",
+      "\"2018-12-14T07:11:51Z\"",
+      "\"2018-08-09T03:29:46Z\""
+    ]
+  },
+  {
+    "full_name": "facebook/litho",
+    "release_count": "12",
+    "release_dates": [
+      "\"2018-08-23T13:54:29Z\"",
+      "\"2018-02-15T17:50:19Z\"",
+      "\"2018-07-06T17:53:45Z\"",
+      "\"2018-06-19T15:17:50Z\"",
+      "\"2018-03-15T16:34:36Z\"",
+      "\"2018-10-18T18:43:51Z\"",
+      "\"2018-04-23T13:17:19Z\"",
+      "\"2018-07-20T08:52:37Z\"",
+      "\"2018-05-18T09:51:58Z\"",
+      "\"2018-12-11T13:10:47Z\"",
+      "\"2018-03-14T17:56:06Z\"",
+      "\"2018-11-22T20:06:41Z\""
+    ]
+  },
+  {
+    "full_name": "rey5137/material",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-06-23T02:14:41Z\""
+    ]
+  },
+  {
+    "full_name": "leolin310148/ShortcutBadger",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "nhaarman/ListViewAnimations",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "antoniolg/androidmvp",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "apereo/cas",
+    "release_count": "22",
+    "release_dates": [
+      "\"2018-10-08T21:19:42Z\"",
+      "\"2018-10-24T16:09:18Z\"",
+      "\"2018-12-29T00:15:52Z\"",
+      "\"2018-06-29T14:32:55Z\"",
+      "\"2018-09-14T18:04:18Z\"",
+      "\"2018-11-19T16:45:47Z\"",
+      "\"2018-05-26T14:46:23Z\"",
+      "\"2018-04-27T18:15:01Z\"",
+      "\"2018-05-26T21:58:19Z\"",
+      "\"2018-04-12T18:45:58Z\"",
+      "\"2018-08-24T17:35:35Z\"",
+      "\"2018-08-03T14:11:17Z\"",
+      "\"2018-08-25T09:38:25Z\"",
+      "\"2018-04-02T18:01:58Z\"",
+      "\"2018-07-27T13:37:36Z\"",
+      "\"2018-07-12T20:43:48Z\"",
+      "\"2018-02-15T15:25:13Z\"",
+      "\"2018-10-05T16:06:13Z\"",
+      "\"2018-12-01T18:00:21Z\"",
+      "\"2018-03-03T18:03:49Z\"",
+      "\"2018-02-09T19:25:50Z\"",
+      "\"2018-07-05T22:01:25Z\""
+    ]
+  },
+  {
+    "full_name": "rengwuxian/MaterialEditText",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "ikew0ng/SwipeBackLayout",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "swagger-api/swagger-core",
+    "release_count": "8",
+    "release_dates": [
+      "\"2018-09-19T15:03:08Z\"",
+      "\"2018-05-24T15:27:58Z\"",
+      "\"2018-04-16T13:31:29Z\"",
+      "\"2018-09-05T15:06:36Z\"",
+      "\"2018-08-09T15:38:36Z\"",
+      "\"2018-08-09T15:38:15Z\"",
+      "\"2018-03-26T15:50:08Z\"",
+      "\"2018-04-16T13:32:17Z\""
+    ]
+  },
+  {
+    "full_name": "singwhatiwanna/dynamic-load-apk",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "grpc/grpc-java",
+    "release_count": "14",
+    "release_dates": [
+      "\"2018-10-26T22:02:09Z\"",
+      "\"2018-12-18T17:35:45Z\"",
+      "\"2018-10-02T19:17:48Z\"",
+      "\"2018-07-26T22:34:49Z\"",
+      "\"2018-03-30T23:15:14Z\"",
+      "\"2018-10-26T21:04:18Z\"",
+      "\"2018-07-26T22:35:04Z\"",
+      "\"2018-12-06T00:05:36Z\"",
+      "\"2018-05-09T00:15:47Z\"",
+      "\"2018-12-10T18:31:54Z\"",
+      "\"2018-02-12T18:57:26Z\"",
+      "\"2018-07-31T18:17:56Z\"",
+      "\"2018-09-11T22:35:25Z\"",
+      "\"2018-02-16T00:10:07Z\""
+    ]
+  },
+  {
+    "full_name": "apache/storm",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "JakeWharton/u2020",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "shwenzhang/AndResGuard",
+    "release_count": "4",
+    "release_dates": [
+      "\"2018-09-26T19:11:16Z\"",
+      "\"2018-08-31T20:06:30Z\"",
+      "\"2018-09-26T19:43:10Z\"",
+      "\"2018-08-31T19:28:52Z\""
+    ]
+  },
+  {
+    "full_name": "springside/springside4",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "naman14/Timber",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "gyf-dev/ImmersionBar",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "ben-manes/caffeine",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-02-22T03:18:43Z\""
+    ]
+  },
+  {
+    "full_name": "google/android-classyshark",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-07-25T09:16:28Z\""
+    ]
+  },
+  {
+    "full_name": "Qihoo360/RePlugin",
+    "release_count": "3",
+    "release_dates": [
+      "\"2018-11-16T11:06:33Z\"",
+      "\"2018-08-10T11:10:10Z\"",
+      "\"2018-02-24T05:41:36Z\""
+    ]
+  },
+  {
+    "full_name": "Blankj/awesome-java-leetcode",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "asLody/VirtualApp",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "amlcurran/ShowcaseView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "janishar/mit-deep-learning-book-pdf",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "TeamNewPipe/NewPipe",
+    "release_count": "20",
+    "release_dates": [
+      "\"2018-04-14T09:33:45Z\"",
+      "\"2018-09-07T20:27:42Z\"",
+      "\"2018-06-04T19:19:47Z\"",
+      "\"2018-10-27T13:47:19Z\"",
+      "\"2018-04-01T20:01:42Z\"",
+      "\"2018-07-23T17:36:16Z\"",
+      "\"2018-05-25T16:42:28Z\"",
+      "\"2018-04-02T18:47:04Z\"",
+      "\"2018-06-03T10:44:56Z\"",
+      "\"2018-02-21T22:18:33Z\"",
+      "\"2018-02-21T10:46:19Z\"",
+      "\"2018-09-04T15:51:03Z\"",
+      "\"2018-05-04T14:30:07Z\"",
+      "\"2018-07-21T12:38:01Z\"",
+      "\"2018-09-07T19:55:23Z\"",
+      "\"2018-03-12T14:59:41Z\"",
+      "\"2018-03-24T10:27:05Z\"",
+      "\"2018-02-21T22:33:10Z\"",
+      "\"2018-03-25T09:25:51Z\"",
+      "\"2018-07-22T12:15:12Z\""
+    ]
+  },
+  {
+    "full_name": "emilsjolander/StickyListHeaders",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "daimajia/NumberProgressBar",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "google/j2objc",
+    "release_count": "5",
+    "release_dates": [
+      "\"2018-04-23T22:18:39Z\"",
+      "\"2018-09-10T13:45:58Z\"",
+      "\"2018-09-10T13:50:08Z\"",
+      "\"2018-04-19T00:13:23Z\"",
+      "\"2018-11-27T20:53:10Z\""
+    ]
+  },
+  {
+    "full_name": "hs-web/hsweb-framework",
+    "release_count": "8",
+    "release_dates": [
+      "\"2018-10-10T03:04:32Z\"",
+      "\"2018-12-19T06:16:46Z\"",
+      "\"2018-06-07T10:28:44Z\"",
+      "\"2018-06-07T11:48:50Z\"",
+      "\"2018-10-12T10:50:28Z\"",
+      "\"2018-09-21T08:45:15Z\"",
+      "\"2018-12-19T06:18:54Z\"",
+      "\"2018-06-07T14:47:38Z\""
+    ]
+  },
+  {
+    "full_name": "eclipse/che",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "vinc3m1/RoundedImageView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Justson/AgentWeb",
+    "release_count": "3",
+    "release_dates": [
+      "\"2018-03-06T15:12:28Z\"",
+      "\"2018-02-25T14:50:56Z\"",
+      "\"2018-02-25T14:44:04Z\""
+    ]
+  },
+  {
+    "full_name": "daimajia/AndroidImageSlider",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "evant/gradle-retrolambda",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "zaproxy/zaproxy",
+    "release_count": "44",
+    "release_dates": [
+      "\"2018-10-16T11:51:33Z\"",
+      "\"2018-12-10T10:47:18Z\"",
+      "\"2018-02-19T11:18:34Z\"",
+      "\"2018-12-03T15:50:19Z\"",
+      "\"2018-08-06T09:51:41Z\"",
+      "\"2018-10-29T10:19:56Z\"",
+      "\"2018-07-16T08:11:52Z\"",
+      "\"2018-02-12T10:43:52Z\"",
+      "\"2018-12-17T12:19:50Z\"",
+      "\"2018-05-29T13:03:50Z\"",
+      "\"2018-11-12T10:10:13Z\"",
+      "\"2018-03-12T10:41:34Z\"",
+      "\"2018-11-19T11:31:43Z\"",
+      "\"2018-03-19T10:12:42Z\"",
+      "\"2018-09-03T08:51:09Z\"",
+      "\"2018-08-20T09:29:27Z\"",
+      "\"2018-09-11T08:14:03Z\"",
+      "\"2018-06-19T10:53:39Z\"",
+      "\"2018-05-22T09:04:16Z\"",
+      "\"2018-02-05T09:59:04Z\"",
+      "\"2018-10-22T13:04:30Z\"",
+      "\"2018-09-17T09:28:54Z\"",
+      "\"2018-12-31T11:32:20Z\"",
+      "\"2018-09-26T09:19:22Z\"",
+      "\"2018-10-08T08:55:27Z\"",
+      "\"2018-03-26T08:57:42Z\"",
+      "\"2018-05-14T08:43:56Z\"",
+      "\"2018-04-23T08:42:50Z\"",
+      "\"2018-06-05T08:32:08Z\"",
+      "\"2018-11-26T09:39:14Z\"",
+      "\"2018-03-05T09:50:11Z\"",
+      "\"2018-07-02T09:35:32Z\"",
+      "\"2018-07-09T09:29:28Z\"",
+      "\"2018-06-26T08:46:34Z\"",
+      "\"2018-05-08T08:26:10Z\"",
+      "\"2018-04-03T08:54:58Z\"",
+      "\"2018-02-26T09:42:40Z\"",
+      "\"2018-07-23T09:37:22Z\"",
+      "\"2018-10-01T08:41:27Z\"",
+      "\"2018-11-05T10:16:50Z\"",
+      "\"2018-08-14T10:05:29Z\"",
+      "\"2018-06-11T09:38:35Z\"",
+      "\"2018-08-28T09:06:32Z\"",
+      "\"2018-07-30T08:55:48Z\""
+    ]
+  },
+  {
+    "full_name": "antlr/antlr4",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-12-18T19:46:46Z\""
+    ]
+  },
+  {
+    "full_name": "lucasr/twoway-view",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "wyouflf/xUtils3",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "facebook/rebound",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "vipshop/vjtools",
+    "release_count": "7",
+    "release_dates": [
+      "\"2018-06-01T09:09:05Z\"",
+      "\"2018-12-12T08:07:30Z\"",
+      "\"2018-09-27T03:57:08Z\"",
+      "\"2018-12-20T02:15:25Z\"",
+      "\"2018-06-20T08:28:40Z\"",
+      "\"2018-08-16T10:57:31Z\"",
+      "\"2018-08-07T11:01:55Z\""
+    ]
+  },
+  {
+    "full_name": "airbnb/epoxy",
+    "release_count": "11",
+    "release_dates": [
+      "\"2018-09-06T14:15:06Z\"",
+      "\"2018-06-19T20:57:12Z\"",
+      "\"2018-09-26T18:53:51Z\"",
+      "\"2018-08-22T23:46:42Z\"",
+      "\"2018-08-24T01:46:56Z\"",
+      "\"2018-04-08T04:29:03Z\"",
+      "\"2018-04-18T20:07:59Z\"",
+      "\"2018-08-08T17:36:46Z\"",
+      "\"2018-06-28T01:02:31Z\"",
+      "\"2018-08-06T20:59:05Z\"",
+      "\"2018-10-18T15:36:28Z\""
+    ]
+  },
+  {
+    "full_name": "Nightonke/BoomMenu",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "firebase/quickstart-android",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Devlight/InfiniteCycleViewPager",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "TommyLemon/APIJSON",
+    "release_count": "23",
+    "release_dates": [
+      "\"2018-06-14T15:36:32Z\"",
+      "\"2018-08-20T14:36:02Z\"",
+      "\"2018-07-29T16:11:04Z\"",
+      "\"2018-02-04T13:55:49Z\"",
+      "\"2018-05-13T15:50:23Z\"",
+      "\"2018-05-13T10:10:44Z\"",
+      "\"2018-12-27T15:40:28Z\"",
+      "\"2018-06-18T12:19:03Z\"",
+      "\"2018-07-12T17:48:19Z\"",
+      "\"2018-12-10T15:59:55Z\"",
+      "\"2018-12-16T14:49:46Z\"",
+      "\"2018-12-09T14:51:47Z\"",
+      "\"2018-11-03T14:15:42Z\"",
+      "\"2018-05-13T10:39:40Z\"",
+      "\"2018-03-10T12:42:42Z\"",
+      "\"2018-02-04T08:23:33Z\"",
+      "\"2018-12-02T10:29:46Z\"",
+      "\"2018-06-07T17:02:06Z\"",
+      "\"2018-09-01T14:11:56Z\"",
+      "\"2018-11-18T14:43:38Z\"",
+      "\"2018-09-09T16:14:00Z\"",
+      "\"2018-08-26T11:28:24Z\"",
+      "\"2018-06-12T14:48:28Z\""
+    ]
+  },
+  {
+    "full_name": "square/otto",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "dmytrodanylyk/circular-progress-button",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "jgilfelt/SystemBarTint",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "yanzhenjie/AndPermission",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "davemorrissey/subsampling-scale-image-view",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-03-15T06:53:22Z\""
+    ]
+  },
+  {
+    "full_name": "kickstarter/android-oss",
+    "release_count": "6",
+    "release_dates": [
+      "\"2018-04-10T19:33:54Z\"",
+      "\"2018-05-25T21:19:54Z\"",
+      "\"2018-11-30T17:21:13Z\"",
+      "\"2018-03-28T16:50:57Z\"",
+      "\"2018-06-08T15:45:49Z\"",
+      "\"2018-04-25T19:38:05Z\""
+    ]
+  },
+  {
+    "full_name": "sqshq/piggymetrics",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "GrenderG/Toasty",
+    "release_count": "4",
+    "release_dates": [
+      "\"2018-12-09T14:21:14Z\"",
+      "\"2018-04-22T00:11:36Z\"",
+      "\"2018-04-22T00:25:23Z\"",
+      "\"2018-04-22T00:12:28Z\""
+    ]
+  },
+  {
+    "full_name": "sparklemotion/nokogiri",
+    "release_count": "3",
+    "release_dates": [
+      "\"2018-12-17T15:20:33Z\"",
+      "\"2018-12-10T06:09:34Z\"",
+      "\"2019-01-04T15:35:39Z\""
+    ]
+  },
+  {
+    "full_name": "sockeqwe/mosby",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-12-17T16:14:14Z\""
+    ]
+  },
+  {
+    "full_name": "evernote/android-job",
+    "release_count": "12",
+    "release_dates": [
+      "\"2018-02-07T18:29:26Z\"",
+      "\"2018-02-08T11:01:24Z\"",
+      "\"2018-07-21T00:15:46Z\"",
+      "\"2018-06-10T23:51:45Z\"",
+      "\"2018-05-29T00:08:27Z\"",
+      "\"2018-10-21T00:51:15Z\"",
+      "\"2018-03-19T18:01:54Z\"",
+      "\"2018-09-24T06:01:49Z\"",
+      "\"2018-07-23T20:07:17Z\"",
+      "\"2018-05-28T02:04:17Z\"",
+      "\"2018-06-11T20:31:40Z\"",
+      "\"2018-07-25T04:11:59Z\""
+    ]
+  },
+  {
+    "full_name": "TooTallNate/Java-WebSocket",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-08-05T19:14:24Z\"",
+      "\"2018-03-05T19:06:03Z\""
+    ]
+  },
+  {
+    "full_name": "wyouflf/xUtils",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "apache/cassandra",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "alibaba/nacos",
+    "release_count": "12",
+    "release_dates": [
+      "\"2018-09-21T09:29:28Z\"",
+      "\"2018-09-28T04:09:31Z\"",
+      "\"2018-12-14T14:18:24Z\"",
+      "\"2018-10-19T10:54:38Z\"",
+      "\"2018-08-05T03:38:40Z\"",
+      "\"2018-12-18T10:07:24Z\"",
+      "\"2018-10-26T15:14:04Z\"",
+      "\"2018-12-07T10:06:57Z\"",
+      "\"2018-11-19T02:53:10Z\"",
+      "\"2018-09-15T05:44:45Z\"",
+      "\"2018-12-14T14:49:27Z\"",
+      "\"2018-12-11T09:49:34Z\""
+    ]
+  },
+  {
+    "full_name": "react-native-community/react-native-image-picker",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-12-11T17:06:46Z\"",
+      "\"2018-12-11T17:04:28Z\""
+    ]
+  },
+  {
+    "full_name": "aa112901/remusic",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "prolificinteractive/material-calendarview",
+    "release_count": "6",
+    "release_dates": [
+      "\"2018-08-15T17:38:04Z\"",
+      "\"2018-05-16T14:27:40Z\"",
+      "\"2018-07-06T20:32:57Z\"",
+      "\"2018-09-07T14:13:21Z\"",
+      "\"2018-07-23T20:13:17Z\"",
+      "\"2018-07-27T14:57:29Z\""
+    ]
+  },
+  {
+    "full_name": "frogermcs/InstaMaterial",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "smuyyh/BookReader",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "square/moshi",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "weibocom/motan",
+    "release_count": "3",
+    "release_dates": [
+      "\"2018-12-28T05:53:47Z\"",
+      "\"2018-12-19T07:18:17Z\"",
+      "\"2018-05-17T13:54:43Z\""
+    ]
+  },
+  {
+    "full_name": "JakeWharton/DiskLruCache",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "yixia/VitamioBundle",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "AsyncHttpClient/async-http-client",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "topjohnwu/Magisk",
+    "release_count": "46",
+    "release_dates": [
+      "\"2018-04-29T08:58:43Z\"",
+      "\"2018-09-01T15:17:11Z\"",
+      "\"2018-02-21T18:50:27Z\"",
+      "\"2018-07-19T10:20:07Z\"",
+      "\"2018-09-01T15:12:05Z\"",
+      "\"2018-07-18T12:30:23Z\"",
+      "\"2018-07-18T12:31:52Z\"",
+      "\"2018-07-18T12:32:48Z\"",
+      "\"2018-07-18T20:38:09Z\"",
+      "\"2018-07-18T12:33:26Z\"",
+      "\"2018-07-18T11:39:02Z\"",
+      "\"2018-03-18T04:59:47Z\"",
+      "\"2018-07-18T11:37:11Z\"",
+      "\"2018-07-18T11:43:16Z\"",
+      "\"2018-07-18T11:42:31Z\"",
+      "\"2018-07-18T11:42:56Z\"",
+      "\"2018-09-01T06:53:39Z\"",
+      "\"2018-07-18T12:32:12Z\"",
+      "\"2018-07-18T12:30:41Z\"",
+      "\"2018-07-18T12:34:15Z\"",
+      "\"2018-12-08T06:11:52Z\"",
+      "\"2018-07-18T12:29:21Z\"",
+      "\"2018-07-18T11:39:30Z\"",
+      "\"2018-09-01T06:55:43Z\"",
+      "\"2018-07-18T11:42:07Z\"",
+      "\"2018-12-08T06:11:00Z\"",
+      "\"2018-03-28T07:27:48Z\"",
+      "\"2018-07-18T12:30:01Z\"",
+      "\"2018-07-18T11:44:04Z\"",
+      "\"2018-07-18T12:29:42Z\"",
+      "\"2018-07-19T10:22:27Z\"",
+      "\"2018-07-18T11:43:40Z\"",
+      "\"2018-07-18T12:22:41Z\"",
+      "\"2018-07-07T23:01:41Z\"",
+      "\"2018-10-22T08:47:39Z\"",
+      "\"2018-07-18T12:33:08Z\"",
+      "\"2018-07-18T12:23:01Z\"",
+      "\"2018-02-13T00:05:26Z\"",
+      "\"2018-07-18T12:31:00Z\"",
+      "\"2018-07-18T12:32:30Z\"",
+      "\"2018-09-21T02:59:34Z\"",
+      "\"2018-07-18T11:38:24Z\"",
+      "\"2018-03-11T01:33:14Z\"",
+      "\"2018-07-18T21:15:05Z\"",
+      "\"2018-07-18T12:33:51Z\"",
+      "\"2018-09-21T02:58:51Z\""
+    ]
+  },
+  {
+    "full_name": "thinkaurelius/titan",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "alibaba/freeline",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "izzyleung/ZhihuDailyPurify",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Yalantis/Side-Menu.Android",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Trinea/android-common",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "claritylab/lucida",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "markzhai/AndroidPerformanceMonitor",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "MindorksOpenSource/android-interview-questions",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "ACRA/acra",
+    "release_count": "11",
+    "release_dates": [
+      "\"2018-02-07T02:33:57Z\"",
+      "\"2018-09-07T19:15:51Z\"",
+      "\"2018-02-18T00:55:15Z\"",
+      "\"2018-05-13T22:45:02Z\"",
+      "\"2018-12-21T02:38:57Z\"",
+      "\"2018-10-15T22:38:32Z\"",
+      "\"2018-03-21T18:45:42Z\"",
+      "\"2018-04-11T02:07:03Z\"",
+      "\"2018-03-21T19:14:02Z\"",
+      "\"2018-12-06T02:04:27Z\"",
+      "\"2018-07-02T14:58:12Z\""
+    ]
+  },
+  {
+    "full_name": "commonsguy/cw-omnibus",
+    "release_count": "4",
+    "release_dates": [
+      "\"2018-03-26T11:24:56Z\"",
+      "\"2018-08-13T11:43:05Z\"",
+      "\"2018-02-26T12:36:25Z\"",
+      "\"2018-06-04T11:33:10Z\""
+    ]
+  },
+  {
+    "full_name": "traex/RippleEffect",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "NLPchina/ansj_seg",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "gitpitch/gitpitch",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Activiti/Activiti",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "gabrielemariotti/cardslib",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "google/closure-compiler",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "XRecyclerView/XRecyclerView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "guardianproject/haven",
+    "release_count": "4",
+    "release_dates": [
+      "\"2018-07-03T20:14:19Z\"",
+      "\"2018-07-16T03:58:51Z\"",
+      "\"2018-07-06T13:12:28Z\"",
+      "\"2018-04-05T15:56:49Z\""
+    ]
+  },
+  {
+    "full_name": "facebook/facebook-android-sdk",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "etsy/AndroidStaggeredGrid",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Graylog2/graylog2-server",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "scribejava/scribejava",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "gocd/gocd",
+    "release_count": "11",
+    "release_dates": [
+      "\"2018-10-15T09:32:49Z\"",
+      "\"2018-12-19T12:23:26Z\"",
+      "\"2018-05-09T08:51:13Z\"",
+      "\"2018-06-11T05:05:51Z\"",
+      "\"2018-09-11T08:56:54Z\"",
+      "\"2018-09-04T09:38:55Z\"",
+      "\"2018-11-26T06:02:14Z\"",
+      "\"2018-04-19T09:30:34Z\"",
+      "\"2018-03-08T05:48:37Z\"",
+      "\"2018-05-11T10:53:28Z\"",
+      "\"2018-07-23T08:03:14Z\""
+    ]
+  },
+  {
+    "full_name": "processing/processing",
+    "release_count": "3",
+    "release_dates": [
+      "\"2018-03-14T01:45:41Z\"",
+      "\"2018-07-22T17:06:26Z\"",
+      "\"2018-07-01T18:30:23Z\""
+    ]
+  },
+  {
+    "full_name": "square/sqlbrite",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "java-native-access/jna",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "hongyangAndroid/FlowLayout",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "motianhuo/wechat",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "elasticjob/elastic-job-lite",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "pardom-zz/ActiveAndroid",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "NLPchina/elasticsearch-sql",
+    "release_count": "26",
+    "release_dates": [
+      "\"2018-09-15T12:41:11Z\"",
+      "\"2018-12-03T07:14:48Z\"",
+      "\"2018-06-18T08:52:48Z\"",
+      "\"2018-12-03T07:03:21Z\"",
+      "\"2018-03-03T03:44:46Z\"",
+      "\"2018-04-24T01:58:12Z\"",
+      "\"2018-02-10T13:57:31Z\"",
+      "\"2018-02-03T09:49:32Z\"",
+      "\"2018-09-24T08:37:03Z\"",
+      "\"2018-04-24T01:51:29Z\"",
+      "\"2018-09-24T08:40:26Z\"",
+      "\"2018-12-16T06:45:42Z\"",
+      "\"2018-03-25T10:33:57Z\"",
+      "\"2018-10-14T03:34:14Z\"",
+      "\"2018-08-10T11:00:51Z\"",
+      "\"2018-02-03T09:55:21Z\"",
+      "\"2018-07-30T02:32:40Z\"",
+      "\"2018-07-21T15:15:05Z\"",
+      "\"2018-12-03T07:16:59Z\"",
+      "\"2018-12-04T05:44:47Z\"",
+      "\"2018-02-10T14:06:04Z\"",
+      "\"2019-01-02T02:33:44Z\"",
+      "\"2018-03-25T10:37:02Z\"",
+      "\"2018-12-16T07:12:41Z\"",
+      "\"2018-03-03T03:49:01Z\"",
+      "\"2018-09-15T12:42:10Z\""
+    ]
+  },
+  {
+    "full_name": "lets-blade/blade",
+    "release_count": "4",
+    "release_dates": [
+      "\"2018-12-10T09:51:35Z\"",
+      "\"2018-10-17T03:28:04Z\"",
+      "\"2018-12-02T16:47:48Z\"",
+      "\"2018-11-26T09:33:36Z\""
+    ]
+  },
+  {
+    "full_name": "Clans/FloatingActionButton",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "wequick/Small",
+    "release_count": "3",
+    "release_dates": [
+      "\"2018-07-06T00:29:45Z\"",
+      "\"2018-04-24T13:41:33Z\"",
+      "\"2018-07-01T18:01:00Z\""
+    ]
+  },
+  {
+    "full_name": "knightliao/disconf",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "careercup/CtCI-6th-Edition",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "dm77/barcodescanner",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "go-lang-plugin-org/go-lang-idea-plugin",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "NanoHttpd/nanohttpd",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "chentao0707/SimplifyReader",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "careercup/ctci",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "linlinjava/litemall",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-12-03T07:39:52Z\""
+    ]
+  },
+  {
+    "full_name": "Devlight/NavigationTabBar",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "JakeWharton/NineOldAndroids",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "jwtk/jjwt",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "hanks-zyh/HTextView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "yarolegovich/DiscreteScrollView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "mcxiaoke/android-volley",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "wasabeef/richeditor-android",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "danielzeller/Depth-LIB-Android-",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "barteksc/AndroidPdfViewer",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "google/error-prone",
+    "release_count": "3",
+    "release_dates": [
+      "\"2018-04-19T00:16:50Z\"",
+      "\"2018-10-11T18:58:46Z\"",
+      "\"2018-04-20T22:36:22Z\""
+    ]
+  },
+  {
+    "full_name": "robolectric/robolectric",
+    "release_count": "21",
+    "release_dates": [
+      "\"2018-05-09T18:44:24Z\"",
+      "\"2018-10-05T21:16:32Z\"",
+      "\"2018-10-31T21:07:15Z\"",
+      "\"2018-12-07T20:03:55Z\"",
+      "\"2018-10-31T21:09:40Z\"",
+      "\"2018-10-25T02:51:15Z\"",
+      "\"2018-02-14T23:30:19Z\"",
+      "\"2018-03-16T20:21:35Z\"",
+      "\"2018-10-25T02:47:37Z\"",
+      "\"2018-10-23T16:52:49Z\"",
+      "\"2018-10-05T21:10:05Z\"",
+      "\"2018-05-14T23:44:21Z\"",
+      "\"2018-12-07T20:04:11Z\"",
+      "\"2018-12-13T01:10:09Z\"",
+      "\"2018-02-09T00:35:36Z\"",
+      "\"2018-11-30T21:30:48Z\"",
+      "\"2018-07-23T17:50:42Z\"",
+      "\"2018-12-07T20:03:59Z\"",
+      "\"2018-10-25T19:45:15Z\"",
+      "\"2018-11-10T01:35:55Z\"",
+      "\"2018-02-15T19:27:10Z\""
+    ]
+  },
+  {
+    "full_name": "h6ah4i/android-advancedrecyclerview",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-12-16T10:55:27Z\""
+    ]
+  },
+  {
+    "full_name": "huanghaibin-dev/CalendarView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "spring-projects/spring-mvc-showcase",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "uber/RIBs",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-02-12T18:19:25Z\""
+    ]
+  },
+  {
+    "full_name": "checkstyle/checkstyle",
+    "release_count": "35",
+    "release_dates": [
+      "\"2018-06-03T04:37:27Z\"",
+      "\"2018-06-03T04:37:26Z\"",
+      "\"2018-04-30T17:04:24Z\"",
+      "\"2018-06-03T04:37:42Z\"",
+      "\"2018-06-03T04:37:37Z\"",
+      "\"2018-06-03T04:37:36Z\"",
+      "\"2018-06-03T04:37:32Z\"",
+      "\"2018-06-03T04:37:41Z\"",
+      "\"2018-06-03T04:37:24Z\"",
+      "\"2018-10-04T15:47:19Z\"",
+      "\"2018-06-03T04:37:28Z\"",
+      "\"2018-06-03T04:37:39Z\"",
+      "\"2018-06-03T01:36:53Z\"",
+      "\"2018-06-03T04:37:34Z\"",
+      "\"2018-06-03T04:37:40Z\"",
+      "\"2018-06-03T04:37:30Z\"",
+      "\"2018-08-11T17:17:40Z\"",
+      "\"2018-06-03T04:37:41Z\"",
+      "\"2018-06-03T04:37:33Z\"",
+      "\"2018-06-30T16:34:36Z\"",
+      "\"2018-10-21T18:35:36Z\"",
+      "\"2018-06-03T04:37:34Z\"",
+      "\"2018-06-03T04:37:25Z\"",
+      "\"2018-06-03T04:37:32Z\"",
+      "\"2018-06-03T04:37:36Z\"",
+      "\"2018-06-03T04:37:40Z\"",
+      "\"2018-06-03T04:37:38Z\"",
+      "\"2018-06-03T04:37:35Z\"",
+      "\"2018-05-27T22:55:29Z\"",
+      "\"2018-06-03T04:37:37Z\"",
+      "\"2018-06-03T04:37:29Z\"",
+      "\"2018-12-30T12:52:00Z\"",
+      "\"2018-06-03T04:37:39Z\"",
+      "\"2018-06-03T04:37:31Z\"",
+      "\"2018-06-03T04:37:31Z\""
+    ]
+  },
+  {
+    "full_name": "andkulikov/Transitions-Everywhere",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "spring-cloud-incubator/spring-cloud-alibaba",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-12-21T16:15:51Z\""
+    ]
+  },
+  {
+    "full_name": "orhanobut/dialogplus",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Ramotion/folding-cell-android",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "joelittlejohn/jsonschema2pojo",
+    "release_count": "6",
+    "release_dates": [
+      "\"2018-02-01T23:25:57Z\"",
+      "\"2018-03-07T21:41:20Z\"",
+      "\"2018-09-22T19:50:30Z\"",
+      "\"2018-06-13T19:35:20Z\"",
+      "\"2018-06-12T19:04:10Z\"",
+      "\"2018-12-14T22:47:56Z\""
+    ]
+  },
+  {
+    "full_name": "gzu-liyujiang/AndroidPicker",
+    "release_count": "3",
+    "release_dates": [
+      "\"2018-06-01T09:51:44Z\"",
+      "\"2018-06-01T09:32:39Z\"",
+      "\"2018-10-31T09:49:19Z\""
+    ]
+  },
+  {
+    "full_name": "alibaba/UltraViewPager",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-03-27T03:51:50Z\"",
+      "\"2018-04-12T02:51:47Z\""
+    ]
+  },
+  {
+    "full_name": "ArthurHub/Android-Image-Cropper",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-04-06T14:02:25Z\"",
+      "\"2018-10-27T11:48:45Z\""
+    ]
+  },
+  {
+    "full_name": "square/android-times-square",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "aporter/coursera-android",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "jdamcd/android-crop",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "k9mail/k-9",
+    "release_count": "5",
+    "release_dates": [
+      "\"2018-02-24T23:50:47Z\"",
+      "\"2018-02-25T18:02:01Z\"",
+      "\"2018-03-11T02:07:39Z\"",
+      "\"2018-09-02T17:28:34Z\"",
+      "\"2018-04-02T04:31:30Z\""
+    ]
+  },
+  {
+    "full_name": "KeepSafe/TapTargetView",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-07-25T06:00:49Z\""
+    ]
+  },
+  {
+    "full_name": "AndroidBootstrap/android-bootstrap",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Meituan-Dianping/walle",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "lihengming/spring-boot-api-project-seed",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "zetbaitsu/Compressor",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "google/cameraview",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "jpush/aurora-imui",
+    "release_count": "12",
+    "release_dates": [
+      "\"2018-03-22T08:27:19Z\"",
+      "\"2018-03-22T08:35:43Z\"",
+      "\"2018-03-08T07:41:56Z\"",
+      "\"2018-04-23T02:05:23Z\"",
+      "\"2018-03-16T09:26:58Z\"",
+      "\"2018-09-11T07:31:53Z\"",
+      "\"2018-03-05T05:57:51Z\"",
+      "\"2018-04-16T05:50:01Z\"",
+      "\"2018-08-28T09:54:34Z\"",
+      "\"2018-03-05T06:16:27Z\"",
+      "\"2018-03-05T05:32:52Z\"",
+      "\"2018-03-22T10:04:19Z\""
+    ]
+  },
+  {
+    "full_name": "real-logic/aeron",
+    "release_count": "18",
+    "release_dates": [
+      "\"2018-11-25T16:33:58Z\"",
+      "\"2018-12-16T18:52:28Z\"",
+      "\"2018-02-24T14:51:50Z\"",
+      "\"2018-05-09T21:17:57Z\"",
+      "\"2018-07-03T20:33:01Z\"",
+      "\"2018-07-19T19:45:44Z\"",
+      "\"2018-04-24T03:15:40Z\"",
+      "\"2018-03-09T18:54:50Z\"",
+      "\"2018-04-29T15:27:18Z\"",
+      "\"2018-07-16T18:56:11Z\"",
+      "\"2018-02-28T19:20:09Z\"",
+      "\"2018-09-12T18:45:36Z\"",
+      "\"2018-07-30T20:51:31Z\"",
+      "\"2018-08-18T18:47:55Z\"",
+      "\"2018-07-07T15:30:43Z\"",
+      "\"2018-05-04T20:30:47Z\"",
+      "\"2018-10-29T22:31:45Z\"",
+      "\"2018-10-05T08:16:52Z\""
+    ]
+  },
+  {
+    "full_name": "alibaba/otter",
+    "release_count": "6",
+    "release_dates": [
+      "\"2018-10-29T08:39:57Z\"",
+      "\"2018-03-27T06:28:36Z\"",
+      "\"2018-06-07T03:21:06Z\"",
+      "\"2018-06-07T09:33:27Z\"",
+      "\"2018-09-04T05:49:37Z\"",
+      "\"2018-11-26T07:13:51Z\""
+    ]
+  },
+  {
+    "full_name": "haifengl/smile",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-02-26T02:38:13Z\"",
+      "\"2018-10-15T20:14:49Z\""
+    ]
+  },
+  {
+    "full_name": "Vedenin/useful-java-links",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "amitshekhariitbhu/RxJava2-Android-Samples",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "amitshekhariitbhu/Fast-Android-Networking",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-07-10T08:11:29Z\""
+    ]
+  },
+  {
+    "full_name": "hongyangAndroid/baseAdapter",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "alibaba/easyexcel",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-11-30T05:31:35Z\""
+    ]
+  },
+  {
+    "full_name": "castorflex/SmoothProgressBar",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Bigkoo/Android-ConvenientBanner",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "mikepenz/Android-Iconics",
+    "release_count": "5",
+    "release_dates": [
+      "\"2018-08-11T16:39:45Z\"",
+      "\"2018-09-15T12:59:28Z\"",
+      "\"2018-12-15T15:32:10Z\"",
+      "\"2018-08-11T16:39:50Z\"",
+      "\"2018-02-19T10:50:02Z\""
+    ]
+  },
+  {
+    "full_name": "baomidou/mybatis-plus",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "k0shk0sh/FastHub",
+    "release_count": "6",
+    "release_dates": [
+      "\"2018-03-30T12:29:33Z\"",
+      "\"2018-03-25T15:11:29Z\"",
+      "\"2018-03-25T14:35:55Z\"",
+      "\"2018-03-02T22:43:28Z\"",
+      "\"2018-02-18T22:56:59Z\"",
+      "\"2018-02-18T22:57:29Z\""
+    ]
+  },
+  {
+    "full_name": "lightbend/config",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Flipboard/bottomsheet",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "DreaminginCodeZH/Douya",
+    "release_count": "4",
+    "release_dates": [
+      "\"2018-02-01T05:22:39Z\"",
+      "\"2018-05-18T21:46:04Z\"",
+      "\"2018-04-13T05:29:27Z\"",
+      "\"2018-03-31T06:38:58Z\""
+    ]
+  },
+  {
+    "full_name": "OpenFeign/feign",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-08-16T00:05:11Z\"",
+      "\"2018-08-16T00:50:30Z\""
+    ]
+  },
+  {
+    "full_name": "alibaba/dexposed",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "mcxiaoke/packer-ng-plugin",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "diogobernardino/WilliamChart",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "apache/zeppelin",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "makovkastar/FloatingActionButton",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "wuhaoyu1990/MagicCamera",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Angel-ML/angel",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-12-03T03:18:46Z\"",
+      "\"2018-11-07T12:01:26Z\""
+    ]
+  },
+  {
+    "full_name": "liyifeng1994/ssm",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "kevin-wayne/algs4",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "TechEmpower/FrameworkBenchmarks",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-02-15T23:29:32Z\""
+    ]
+  },
+  {
+    "full_name": "rubensousa/RecyclerViewSnap",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-11-11T19:43:02Z\""
+    ]
+  },
+  {
+    "full_name": "JodaOrg/joda-time",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-10-27T18:50:47Z\"",
+      "\"2018-05-30T15:08:02Z\""
+    ]
+  },
+  {
+    "full_name": "sohutv/cachecloud",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "kyleduo/SwitchButton",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Alluxio/alluxio",
+    "release_count": "3",
+    "release_dates": [
+      "\"2018-03-28T20:43:21Z\"",
+      "\"2018-07-09T19:57:08Z\"",
+      "\"2018-09-27T23:58:02Z\""
+    ]
+  },
+  {
+    "full_name": "Yalantis/Phoenix",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "wdullaer/MaterialDateTimePicker",
+    "release_count": "9",
+    "release_dates": [
+      "\"2018-09-20T17:02:33Z\"",
+      "\"2018-04-28T13:56:15Z\"",
+      "\"2018-02-04T15:04:49Z\"",
+      "\"2018-07-02T19:05:35Z\"",
+      "\"2018-07-18T14:01:15Z\"",
+      "\"2018-03-10T16:26:15Z\"",
+      "\"2018-11-22T21:53:32Z\"",
+      "\"2018-10-09T10:12:33Z\"",
+      "\"2018-10-08T14:01:32Z\""
+    ]
+  },
+  {
+    "full_name": "HotBitmapGG/bilibili-android-client",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "bingoogolapple/BGARefreshLayout-Android",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "MindorksOpenSource/from-java-to-kotlin",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "yipianfengye/android-zxingLibrary",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "react-native-community/react-native-video",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "pedrovgs/AndroidWiFiADB",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "h2oai/h2o-3",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "flyway/flyway",
+    "release_count": "10",
+    "release_dates": [
+      "\"2018-10-24T11:50:26Z\"",
+      "\"2018-05-28T16:14:13Z\"",
+      "\"2018-06-20T13:13:44Z\"",
+      "\"2018-06-20T14:41:47Z\"",
+      "\"2018-05-24T16:13:00Z\"",
+      "\"2018-10-04T16:58:00Z\"",
+      "\"2018-07-04T07:54:07Z\"",
+      "\"2018-12-04T17:16:05Z\"",
+      "\"2018-11-26T11:49:02Z\"",
+      "\"2018-11-25T17:49:21Z\""
+    ]
+  },
+  {
+    "full_name": "yanzhenjie/SwipeRecyclerView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "roboguice/roboguice",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "wasabeef/Blurry",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "zo0r/react-native-push-notification",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-10-17T18:32:19Z\"",
+      "\"2018-07-31T08:57:19Z\""
+    ]
+  },
+  {
+    "full_name": "orientechnologies/orientdb",
+    "release_count": "22",
+    "release_dates": [
+      "\"2018-09-27T14:44:38Z\"",
+      "\"2018-02-05T14:25:29Z\"",
+      "\"2018-06-13T12:19:43Z\"",
+      "\"2018-06-13T12:19:05Z\"",
+      "\"2018-09-07T10:20:33Z\"",
+      "\"2018-03-02T15:53:31Z\"",
+      "\"2018-03-05T15:30:04Z\"",
+      "\"2018-02-05T16:04:44Z\"",
+      "\"2018-07-12T13:54:11Z\"",
+      "\"2018-08-14T13:59:58Z\"",
+      "\"2018-08-02T14:02:05Z\"",
+      "\"2018-05-19T06:17:23Z\"",
+      "\"2018-07-02T14:49:32Z\"",
+      "\"2018-09-14T09:58:56Z\"",
+      "\"2018-03-05T15:29:24Z\"",
+      "\"2018-06-06T12:47:07Z\"",
+      "\"2018-11-21T17:09:31Z\"",
+      "\"2018-10-25T16:13:23Z\"",
+      "\"2018-04-13T08:02:37Z\"",
+      "\"2018-12-10T17:24:11Z\"",
+      "\"2018-03-02T15:53:17Z\"",
+      "\"2019-01-02T14:31:06Z\""
+    ]
+  },
+  {
+    "full_name": "JetBrains/ideavim",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "grantland/android-autofittextview",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "nisrulz/android-tips-tricks",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "alibaba/jstorm",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "pili-engineering/PLDroidPlayer",
+    "release_count": "9",
+    "release_dates": [
+      "\"2018-06-04T05:50:11Z\"",
+      "\"2018-04-03T10:15:23Z\"",
+      "\"2018-02-09T09:41:53Z\"",
+      "\"2018-12-12T05:59:03Z\"",
+      "\"2018-04-13T09:41:16Z\"",
+      "\"2018-09-06T05:51:20Z\"",
+      "\"2018-09-06T05:29:07Z\"",
+      "\"2018-09-06T07:44:51Z\"",
+      "\"2018-03-09T07:24:27Z\""
+    ]
+  },
+  {
+    "full_name": "rengwuxian/RxJavaSamples",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Ashok-Varma/BottomNavigation",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-07-23T03:14:32Z\""
+    ]
+  },
+  {
+    "full_name": "Karumi/Dexter",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-06-21T10:51:28Z\""
+    ]
+  },
+  {
+    "full_name": "rest-assured/rest-assured",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "ximsfei/Android-skin-support",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "JoanZapata/android-iconify",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "jgilfelt/chuck",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "hugeterry/CoordinatorTabLayout",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "BoltsFramework/Bolts-Android",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "hibernate/hibernate-orm",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "google/grafika",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "mrniko/netty-socketio",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-02-26T06:06:20Z\""
+    ]
+  },
+  {
+    "full_name": "MindorksOpenSource/android-mvp-architecture",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "zouzg/mybatis-generator-gui",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Tencent/matrix",
+    "release_count": "2",
+    "release_dates": [
+      "\"2019-01-02T06:15:40Z\"",
+      "\"2019-01-02T06:12:56Z\""
+    ]
+  },
+  {
+    "full_name": "dyc87112/SpringCloud-Learning",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "jfoenixadmin/JFoenix",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "romandanylyk/PageIndicatorView",
+    "release_count": "3",
+    "release_dates": [
+      "\"2018-09-11T21:01:40Z\"",
+      "\"2018-11-06T19:54:25Z\"",
+      "\"2018-04-30T18:48:18Z\""
+    ]
+  },
+  {
+    "full_name": "paascloud/paascloud-master",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-03-27T04:46:28Z\""
+    ]
+  },
+  {
+    "full_name": "rubensousa/ViewPagerCards",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "baoyachi/StepView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "dinuscxj/LoadingDrawable",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "ChadCSong/ShineButton",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "jeasonlzy/ImagePicker",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "yanzhenjie/NoHttp",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Tencent/GT",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "socketio/socket.io-client-java",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "json-path/JsonPath",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "youlookwhat/CloudReader",
+    "release_count": "7",
+    "release_dates": [
+      "\"2018-10-29T12:47:09Z\"",
+      "\"2018-12-28T13:04:21Z\"",
+      "\"2018-08-29T08:09:47Z\"",
+      "\"2018-05-21T07:40:08Z\"",
+      "\"2018-05-18T04:05:12Z\"",
+      "\"2018-05-06T08:11:23Z\"",
+      "\"2018-12-06T01:42:44Z\""
+    ]
+  },
+  {
+    "full_name": "aurelhubert/ahbottomnavigation",
+    "release_count": "5",
+    "release_dates": [
+      "\"2018-12-19T10:02:53Z\"",
+      "\"2018-12-20T12:56:24Z\"",
+      "\"2018-12-20T08:31:54Z\"",
+      "\"2018-12-19T09:47:39Z\"",
+      "\"2019-01-02T16:56:58Z\""
+    ]
+  },
+  {
+    "full_name": "rabbitmq/rabbitmq-tutorials",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "OpenTSDB/opentsdb",
+    "release_count": "4",
+    "release_dates": [
+      "\"2018-12-17T01:08:47Z\"",
+      "\"2018-12-16T23:33:59Z\"",
+      "\"2018-05-22T00:27:14Z\"",
+      "\"2018-12-17T02:38:32Z\""
+    ]
+  },
+  {
+    "full_name": "TommyLemon/Android-ZBLibrary",
+    "release_count": "6",
+    "release_dates": [
+      "\"2018-08-11T17:52:00Z\"",
+      "\"2018-06-19T14:06:24Z\"",
+      "\"2018-07-01T10:01:53Z\"",
+      "\"2018-11-10T08:29:07Z\"",
+      "\"2018-03-17T15:57:54Z\"",
+      "\"2018-07-01T08:34:01Z\""
+    ]
+  },
+  {
+    "full_name": "jankotek/mapdb",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "termux/termux-app",
+    "release_count": "5",
+    "release_dates": [
+      "\"2018-06-24T00:04:17Z\"",
+      "\"2018-08-01T22:47:03Z\"",
+      "\"2018-07-01T22:15:46Z\"",
+      "\"2018-06-25T12:10:09Z\"",
+      "\"2018-06-14T22:35:34Z\""
+    ]
+  },
+  {
+    "full_name": "lcodecorex/TwinklingRefreshLayout",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "google/google-authenticator",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "PipelineAI/pipeline",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "timehop/sticky-headers-recyclerview",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "DuGuQiuBai/Java",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "luontola/retrolambda",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "keycloak/keycloak",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "nytimes/Store",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "openhab/openhab1-addons",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "puniverse/quasar",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-06-10T19:28:00Z\"",
+      "\"2018-11-02T18:13:29Z\""
+    ]
+  },
+  {
+    "full_name": "rockerhieu/emojicon",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "johncarl81/parceler",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "SonarSource/sonarqube",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "journeyapps/zxing-android-embedded",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "MiguelCatalan/MaterialSearchView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "CellularPrivacy/Android-IMSI-Catcher-Detector",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "baoyongzhang/SwipeMenuListView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "amirzaidi/Launcher3",
+    "release_count": "11",
+    "release_dates": [
+      "\"2018-08-26T11:58:13Z\"",
+      "\"2018-09-11T18:19:29Z\"",
+      "\"2018-07-17T15:36:38Z\"",
+      "\"2018-02-26T20:59:29Z\"",
+      "\"2018-03-10T22:15:18Z\"",
+      "\"2018-04-20T08:49:47Z\"",
+      "\"2018-03-30T11:19:48Z\"",
+      "\"2018-08-26T15:04:46Z\"",
+      "\"2018-08-07T14:04:35Z\"",
+      "\"2018-08-29T22:57:33Z\"",
+      "\"2018-08-29T21:52:14Z\""
+    ]
+  },
+  {
+    "full_name": "robinhood/ticker",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-12-06T06:05:35Z\"",
+      "\"2018-04-20T17:59:16Z\""
+    ]
+  },
+  {
+    "full_name": "springfox/springfox",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-06-24T05:05:40Z\"",
+      "\"2018-04-25T04:46:11Z\""
+    ]
+  },
+  {
+    "full_name": "react-native-community/react-native-svg",
+    "release_count": "10",
+    "release_dates": [
+      "\"2018-07-02T03:11:08Z\"",
+      "\"2018-09-15T16:35:55Z\"",
+      "\"2018-09-15T16:26:24Z\"",
+      "\"2018-02-03T19:10:34Z\"",
+      "\"2018-09-21T01:57:32Z\"",
+      "\"2018-02-15T10:04:22Z\"",
+      "\"2018-09-21T01:59:25Z\"",
+      "\"2018-09-15T18:31:40Z\"",
+      "\"2018-09-15T16:28:45Z\"",
+      "\"2018-09-15T16:27:16Z\""
+    ]
+  },
+  {
+    "full_name": "SplashCodes/JAViewer",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "yasserg/crawler4j",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Jacksgong/JKeyboardPanelSwitch",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-10-09T09:34:29Z\""
+    ]
+  },
+  {
+    "full_name": "avast/android-butterknife-zelezny",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "abel533/Mapper",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Manabu-GT/ExpandableTextView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "JesusFreke/smali",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "bluelinelabs/Conductor",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "xcc3641/SeeWeather",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "changmingxie/tcc-transaction",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "DingMouRen/LayoutManagerGroup",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Exrick/xmall",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "looly/hutool",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "tyrantgit/ExplosionField",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "spring-projects/spring-security-oauth",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "airbnb/DeepLinkDispatch",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "ryanhoo/StylishMusicPlayer",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "apache/incubator-heron",
+    "release_count": "12",
+    "release_dates": [
+      "\"2018-09-25T19:20:18Z\"",
+      "\"2018-08-15T15:35:56Z\"",
+      "\"2018-03-31T08:05:59Z\"",
+      "\"2018-08-21T19:03:19Z\"",
+      "\"2018-09-25T18:52:45Z\"",
+      "\"2018-09-26T17:11:27Z\"",
+      "\"2018-09-25T18:53:40Z\"",
+      "\"2018-10-16T17:32:39Z\"",
+      "\"2018-09-24T18:05:32Z\"",
+      "\"2018-04-01T07:27:59Z\"",
+      "\"2018-08-22T17:35:00Z\"",
+      "\"2018-08-21T18:54:29Z\""
+    ]
+  },
+  {
+    "full_name": "facebook/shimmer-android",
+    "release_count": "3",
+    "release_dates": [
+      "\"2018-08-01T21:25:39Z\"",
+      "\"2018-04-17T00:58:08Z\"",
+      "\"2019-01-05T00:59:51Z\""
+    ]
+  },
+  {
+    "full_name": "kikoso/android-stackblur",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "lsjwzh/RecyclerViewPager",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-05-04T14:44:11Z\""
+    ]
+  },
+  {
+    "full_name": "yigit/android-priority-jobqueue",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "xcltapestry/XCL-Charts",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "codeestX/GeekNews",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "firebase/FirebaseUI-Android",
+    "release_count": "6",
+    "release_dates": [
+      "\"2018-06-01T01:13:09Z\"",
+      "\"2018-10-24T14:18:25Z\"",
+      "\"2018-02-27T18:12:39Z\"",
+      "\"2018-03-28T20:21:29Z\"",
+      "\"2018-05-24T16:40:34Z\"",
+      "\"2018-12-14T19:36:06Z\""
+    ]
+  },
+  {
+    "full_name": "yangfuhai/ASimpleCache",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "mybatis/generator",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-07-04T22:13:23Z\""
+    ]
+  },
+  {
+    "full_name": "lzyzsd/CircleProgress",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "ongakuer/CircleIndicator",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-10-09T03:48:21Z\"",
+      "\"2018-10-13T10:36:48Z\""
+    ]
+  },
+  {
+    "full_name": "ivacf/archi",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "litesuits/android-common",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Atmosphere/atmosphere",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "actorapp/actor-platform",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "spring-projects/spring-security",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "orhanobut/hawk",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-04-03T13:09:14Z\""
+    ]
+  },
+  {
+    "full_name": "chrisbanes/ActionBar-PullToRefresh",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "dropbox/hackpad",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "bitcoinj/bitcoinj",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "bingoogolapple/BGABanner-Android",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "stleary/JSON-java",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-08-14T01:54:34Z\""
+    ]
+  },
+  {
+    "full_name": "bauerca/drag-sort-listview",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "spring-cloud/spring-cloud-netflix",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-10-16T12:13:08Z\"",
+      "\"2018-10-16T12:12:24Z\""
+    ]
+  },
+  {
+    "full_name": "dongjunkun/DropDownMenu",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "bluelinelabs/LoganSquare",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "qstumn/BadgeView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "yangfuhai/afinal",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "arimorty/floatingsearchview",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "pengjianbo/GalleryFinal",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Microsoft/malmo",
+    "release_count": "7",
+    "release_dates": [
+      "\"2018-11-06T09:13:55Z\"",
+      "\"2018-08-08T10:03:22Z\"",
+      "\"2018-03-22T17:38:30Z\"",
+      "\"2018-06-11T15:35:18Z\"",
+      "\"2018-11-05T09:47:54Z\"",
+      "\"2018-06-18T11:47:15Z\"",
+      "\"2018-08-08T12:31:25Z\""
+    ]
+  },
+  {
+    "full_name": "siacs/Conversations",
+    "release_count": "22",
+    "release_dates": [
+      "\"2018-06-14T06:47:09Z\"",
+      "\"2018-05-06T11:01:54Z\"",
+      "\"2018-09-04T06:30:41Z\"",
+      "\"2018-05-31T06:56:44Z\"",
+      "\"2018-09-04T06:31:26Z\"",
+      "\"2018-05-06T11:01:24Z\"",
+      "\"2018-05-06T10:59:28Z\"",
+      "\"2018-05-06T10:59:55Z\"",
+      "\"2018-05-31T06:57:24Z\"",
+      "\"2018-10-28T11:41:53Z\"",
+      "\"2018-10-28T11:42:14Z\"",
+      "\"2018-03-23T16:00:56Z\"",
+      "\"2018-05-06T11:00:56Z\"",
+      "\"2018-10-11T13:48:57Z\"",
+      "\"2018-10-28T11:41:41Z\"",
+      "\"2018-09-04T06:31:59Z\"",
+      "\"2018-05-06T11:00:22Z\"",
+      "\"2018-09-27T19:11:01Z\"",
+      "\"2018-10-05T10:59:34Z\"",
+      "\"2018-09-04T06:35:41Z\"",
+      "\"2018-09-04T06:31:03Z\"",
+      "\"2018-09-04T06:31:41Z\""
+    ]
+  },
+  {
+    "full_name": "ityouknow/spring-cloud-examples",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "gephi/gephi",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "tangqi92/Android-Tips",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "danikula/AndroidVideoCache",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-07-24T17:39:38Z\""
+    ]
+  },
+  {
+    "full_name": "bytedeco/javacv",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "andremion/Music-Player",
+    "release_count": "3",
+    "release_dates": [
+      "\"2018-02-14T14:34:55Z\"",
+      "\"2018-02-14T14:35:46Z\"",
+      "\"2018-02-14T14:31:03Z\""
+    ]
+  },
+  {
+    "full_name": "cjlin1/libsvm",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Meituan-Dianping/Robust",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-04-11T08:30:44Z\"",
+      "\"2018-04-19T02:26:06Z\""
+    ]
+  },
+  {
+    "full_name": "willowtreeapps/spruce-android",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "graphql-java/graphql-java",
+    "release_count": "5",
+    "release_dates": [
+      "\"2018-03-23T03:41:46Z\"",
+      "\"2018-06-05T05:45:18Z\"",
+      "\"2018-10-20T00:48:26Z\"",
+      "\"2018-09-03T01:15:34Z\"",
+      "\"2018-07-17T03:46:14Z\""
+    ]
+  },
+  {
+    "full_name": "bilibili/MagicaSakura",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "airbnb/native-navigation",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "seven332/EhViewer",
+    "release_count": "13",
+    "release_dates": [
+      "\"2018-12-19T06:52:17Z\"",
+      "\"2018-09-16T14:34:41Z\"",
+      "\"2018-12-21T11:42:04Z\"",
+      "\"2018-12-20T10:24:54Z\"",
+      "\"2018-02-10T08:14:41Z\"",
+      "\"2018-10-25T12:49:26Z\"",
+      "\"2018-06-04T04:35:15Z\"",
+      "\"2018-12-20T12:16:37Z\"",
+      "\"2018-03-26T14:51:05Z\"",
+      "\"2018-10-27T05:59:26Z\"",
+      "\"2019-01-05T07:02:33Z\"",
+      "\"2018-03-26T10:46:18Z\"",
+      "\"2019-01-04T11:05:13Z\""
+    ]
+  },
+  {
+    "full_name": "resilience4j/resilience4j",
+    "release_count": "5",
+    "release_dates": [
+      "\"2018-06-18T11:03:32Z\"",
+      "\"2018-07-09T12:20:14Z\"",
+      "\"2018-03-13T13:31:42Z\"",
+      "\"2018-03-15T12:08:08Z\"",
+      "\"2018-11-18T09:38:10Z\""
+    ]
+  },
+  {
+    "full_name": "huangyanbin/smartTable",
+    "release_count": "17",
+    "release_dates": [
+      "\"2018-02-12T05:28:23Z\"",
+      "\"2018-02-28T01:51:56Z\"",
+      "\"2018-02-24T06:26:57Z\"",
+      "\"2018-03-07T07:17:14Z\"",
+      "\"2018-02-11T03:38:17Z\"",
+      "\"2018-02-12T06:13:45Z\"",
+      "\"2018-02-08T06:59:02Z\"",
+      "\"2018-03-14T07:07:35Z\"",
+      "\"2018-02-07T05:59:55Z\"",
+      "\"2018-04-08T10:11:30Z\"",
+      "\"2018-02-07T08:44:15Z\"",
+      "\"2018-03-27T02:01:34Z\"",
+      "\"2018-04-10T10:57:56Z\"",
+      "\"2018-03-10T09:05:50Z\"",
+      "\"2018-03-26T09:40:52Z\"",
+      "\"2018-03-11T13:08:34Z\"",
+      "\"2018-02-12T06:33:37Z\""
+    ]
+  },
+  {
+    "full_name": "apache/pulsar",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-10-26T19:40:44Z\"",
+      "\"2019-01-03T22:33:22Z\""
+    ]
+  },
+  {
+    "full_name": "apache/groovy",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "keyboardsurfer/Crouton",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "tomakehurst/wiremock",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "crazycodeboy/react-native-splash-screen",
+    "release_count": "3",
+    "release_dates": [
+      "\"2018-05-29T06:59:30Z\"",
+      "\"2018-08-01T02:25:59Z\"",
+      "\"2018-07-10T05:41:04Z\""
+    ]
+  },
+  {
+    "full_name": "hitherejoe/animate",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Piasy/BigImageViewer",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "alamkanak/Android-Week-View",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "udacity/Sunshine-Version-2",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "daimajia/AndroidViewHover",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "vavr-io/vavr",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "stephanenicolas/robospice",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "awangdev/LintCode",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "gabrielemariotti/RecyclerViewItemAnimators",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "jgilfelt/android-viewbadger",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "nicolasgramlich/AndEngine",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "davideas/FlexibleAdapter",
+    "release_count": "9",
+    "release_dates": [
+      "\"2018-09-16T13:47:19Z\"",
+      "\"2018-05-01T12:16:54Z\"",
+      "\"2018-03-04T17:45:17Z\"",
+      "\"2018-03-17T15:29:33Z\"",
+      "\"2018-06-03T11:20:09Z\"",
+      "\"2018-03-11T15:03:46Z\"",
+      "\"2018-03-04T16:14:48Z\"",
+      "\"2018-03-22T23:24:28Z\"",
+      "\"2018-03-04T17:47:01Z\""
+    ]
+  },
+  {
+    "full_name": "shekhargulati/99-problems",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "hazelcast/hazelcast",
+    "release_count": "9",
+    "release_dates": [
+      "\"2018-07-27T09:37:42Z\"",
+      "\"2018-07-27T09:20:53Z\"",
+      "\"2018-07-27T09:38:01Z\"",
+      "\"2018-07-27T14:43:34Z\"",
+      "\"2018-10-26T13:54:58Z\"",
+      "\"2018-10-26T13:54:13Z\"",
+      "\"2018-10-26T13:55:15Z\"",
+      "\"2018-07-27T09:43:51Z\"",
+      "\"2018-07-27T09:38:23Z\""
+    ]
+  },
+  {
+    "full_name": "spring-projects/spring-petclinic",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "goldze/MVVMHabit",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-04-10T07:51:03Z\"",
+      "\"2018-10-08T05:45:55Z\""
+    ]
+  },
+  {
+    "full_name": "apache/tomcat",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "objectbox/objectbox-java",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-07-26T13:10:26Z\"",
+      "\"2018-08-16T14:06:23Z\""
+    ]
+  },
+  {
+    "full_name": "ragunathjawahar/android-saripaar",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "reactive-streams/reactive-streams-jvm",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "pedrovgs/DraggablePanel",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "junit-team/junit5",
+    "release_count": "11",
+    "release_dates": [
+      "\"2018-04-22T19:35:56Z\"",
+      "\"2018-04-29T18:57:04Z\"",
+      "\"2018-04-08T19:30:58Z\"",
+      "\"2018-02-04T19:11:43Z\"",
+      "\"2018-08-13T19:13:09Z\"",
+      "\"2018-09-11T05:34:51Z\"",
+      "\"2018-02-18T20:09:12Z\"",
+      "\"2018-12-23T18:55:31Z\"",
+      "\"2018-04-15T17:49:53Z\"",
+      "\"2018-11-25T19:47:08Z\"",
+      "\"2018-09-03T19:44:31Z\""
+    ]
+  },
+  {
+    "full_name": "ManuelPeinado/FadingActionBar",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "saulmm/Android-Material-Examples",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "apache/incubator-dubbo-spring-boot-project",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-06-21T13:39:07Z\""
+    ]
+  },
+  {
+    "full_name": "race604/FlyRefresh",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "yahoo/anthelion",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "MinecraftForge/MinecraftForge",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "jOOQ/jOOQ",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "jasonross/Nuwa",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Skykai521/StickerCamera",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "lovetuzitong/MultiImageSelector",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "psaravan/JamsMusicPlayer",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "sherxon/AlgoDS",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "databricks/learning-spark",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "sharish/ShimmerRecyclerView",
+    "release_count": "3",
+    "release_dates": [
+      "\"2018-04-09T03:32:16Z\"",
+      "\"2018-04-09T03:44:58Z\"",
+      "\"2018-04-09T03:36:52Z\""
+    ]
+  },
+  {
+    "full_name": "amulyakhare/TextDrawable",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "dmytrodanylyk/android-process-button",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "oblac/jodd",
+    "release_count": "13",
+    "release_dates": [
+      "\"2018-06-18T09:37:16Z\"",
+      "\"2018-08-18T14:58:18Z\"",
+      "\"2018-02-04T18:50:51Z\"",
+      "\"2018-10-01T08:54:32Z\"",
+      "\"2018-06-22T16:20:43Z\"",
+      "\"2018-04-16T09:50:54Z\"",
+      "\"2018-11-05T12:44:03Z\"",
+      "\"2018-02-04T17:51:59Z\"",
+      "\"2018-03-05T15:29:22Z\"",
+      "\"2018-02-18T15:56:55Z\"",
+      "\"2018-03-18T22:13:41Z\"",
+      "\"2018-03-09T21:19:25Z\"",
+      "\"2018-06-29T07:46:28Z\""
+    ]
+  },
+  {
+    "full_name": "jersey/jersey",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-04-10T12:30:04Z\""
+    ]
+  },
+  {
+    "full_name": "aws/aws-sdk-java",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "kevinsawicki/http-request",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "facebook/network-connection-class",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "rubensousa/PreviewSeekBar",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "zzz40500/GsonFormat",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "iammert/ScalingLayout",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-05-24T06:59:21Z\""
+    ]
+  },
+  {
+    "full_name": "sunfusheng/MarqueeView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "alipay/sofa-jarslink",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "yipianfengye/android-adDialog",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "JulienGenoud/android-percent-support-lib-sample",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "bilibili/boxing",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "donglua/PhotoPicker",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "CalebFenton/simplify",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "razerdp/BasePopup",
+    "release_count": "4",
+    "release_dates": [
+      "\"2018-09-21T06:36:56Z\"",
+      "\"2018-09-29T06:10:57Z\"",
+      "\"2018-09-29T04:59:58Z\"",
+      "\"2018-09-30T03:53:51Z\""
+    ]
+  },
+  {
+    "full_name": "Freeyourgadget/Gadgetbridge",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "brianway/java-learning",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "binIoter/GuideView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "luojilab/DDComponentForAndroid",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-02-06T08:27:20Z\"",
+      "\"2018-02-26T03:08:00Z\""
+    ]
+  },
+  {
+    "full_name": "zwwill/yanxuan-weex-demo",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "DylanVann/react-native-fast-image",
+    "release_count": "21",
+    "release_dates": [
+      "\"2018-05-06T01:16:53Z\"",
+      "\"2018-03-11T00:51:22Z\"",
+      "\"2018-04-22T01:14:19Z\"",
+      "\"2018-02-01T01:29:01Z\"",
+      "\"2018-05-06T01:25:52Z\"",
+      "\"2018-11-14T04:15:39Z\"",
+      "\"2018-03-18T12:25:30Z\"",
+      "\"2018-10-15T03:29:49Z\"",
+      "\"2018-05-06T01:15:54Z\"",
+      "\"2018-02-01T03:19:49Z\"",
+      "\"2018-03-08T04:34:30Z\"",
+      "\"2018-05-10T03:28:40Z\"",
+      "\"2018-10-16T03:56:58Z\"",
+      "\"2018-04-21T16:57:21Z\"",
+      "\"2018-11-06T06:44:49Z\"",
+      "\"2018-04-25T03:12:17Z\"",
+      "\"2018-05-06T07:51:31Z\"",
+      "\"2018-02-13T17:34:59Z\"",
+      "\"2018-05-10T03:26:13Z\"",
+      "\"2018-12-31T02:39:26Z\"",
+      "\"2018-05-06T03:42:50Z\""
+    ]
+  },
+  {
+    "full_name": "oldmanpushcart/greys-anatomy",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Netflix/ribbon",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-03-12T17:01:33Z\""
+    ]
+  },
+  {
+    "full_name": "CameraKit/blurkit-android",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-11-02T18:47:32Z\"",
+      "\"2018-11-02T18:59:31Z\""
+    ]
+  },
+  {
+    "full_name": "HoraApps/LeafPic",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "eirslett/frontend-maven-plugin",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "hmkcode/Android",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Jasonchenlijian/FastBle",
+    "release_count": "3",
+    "release_dates": [
+      "\"2018-04-30T14:53:54Z\"",
+      "\"2018-05-19T07:19:38Z\"",
+      "\"2018-05-22T04:55:59Z\""
+    ]
+  },
+  {
+    "full_name": "jfinal/jfinal",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "lygttpod/SuperTextView",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-08-14T10:01:39Z\"",
+      "\"2018-05-04T13:02:24Z\""
+    ]
+  },
+  {
+    "full_name": "SpecialCyCi/AndroidResideMenu",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "danylovolokh/VideoPlayerManager",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "owncloud/android",
+    "release_count": "10",
+    "release_dates": [
+      "\"2018-07-09T07:38:41Z\"",
+      "\"2018-11-19T11:48:13Z\"",
+      "\"2018-11-06T11:19:41Z\"",
+      "\"2018-03-16T13:17:06Z\"",
+      "\"2018-04-12T10:14:20Z\"",
+      "\"2018-02-01T07:59:18Z\"",
+      "\"2018-06-04T07:36:44Z\"",
+      "\"2018-10-15T10:09:36Z\"",
+      "\"2018-11-08T08:59:10Z\"",
+      "\"2018-09-12T11:41:56Z\""
+    ]
+  },
+  {
+    "full_name": "zzhoujay/RichText",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "openaphid/android-flip",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "apache/jmeter",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "vespa-engine/vespa",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "requery/requery",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-03-26T05:53:00Z\""
+    ]
+  },
+  {
+    "full_name": "hongyangAndroid/Highlight",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "yui/yuicompressor",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "googlemaps/android-maps-utils",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "jiangqqlmj/FastDev4Android",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "bytedeco/javacpp",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "square/flow",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "cryptomator/cryptomator",
+    "release_count": "40",
+    "release_dates": [
+      "\"2018-04-03T08:46:15Z\"",
+      "\"2018-07-06T15:37:15Z\"",
+      "\"2018-07-06T15:36:27Z\"",
+      "\"2018-06-17T21:28:06Z\"",
+      "\"2018-11-05T09:38:50Z\"",
+      "\"2018-07-11T14:15:51Z\"",
+      "\"2018-07-19T15:09:39Z\"",
+      "\"2018-07-09T15:58:19Z\"",
+      "\"2018-03-27T14:54:45Z\"",
+      "\"2018-11-05T09:48:42Z\"",
+      "\"2018-07-12T11:48:23Z\"",
+      "\"2018-04-03T08:46:06Z\"",
+      "\"2018-03-27T15:46:16Z\"",
+      "\"2018-07-17T16:42:35Z\"",
+      "\"2018-03-27T15:52:51Z\"",
+      "\"2018-10-31T15:25:51Z\"",
+      "\"2018-03-29T11:32:58Z\"",
+      "\"2018-04-06T14:35:40Z\"",
+      "\"2018-07-05T20:06:27Z\"",
+      "\"2018-03-30T12:19:25Z\"",
+      "\"2018-03-27T09:56:12Z\"",
+      "\"2018-07-10T12:54:58Z\"",
+      "\"2018-05-14T19:41:23Z\"",
+      "\"2018-07-12T13:03:05Z\"",
+      "\"2018-04-09T16:12:59Z\"",
+      "\"2018-07-23T19:09:23Z\"",
+      "\"2018-03-29T11:08:45Z\"",
+      "\"2018-07-09T17:06:12Z\"",
+      "\"2018-07-10T15:48:22Z\"",
+      "\"2018-03-28T16:08:15Z\"",
+      "\"2018-07-10T15:03:13Z\"",
+      "\"2018-07-12T09:07:14Z\"",
+      "\"2018-03-29T11:07:13Z\"",
+      "\"2018-03-29T11:33:33Z\"",
+      "\"2018-04-06T14:59:05Z\"",
+      "\"2018-10-15T12:44:19Z\"",
+      "\"2018-07-12T12:59:18Z\"",
+      "\"2018-07-19T16:18:03Z\"",
+      "\"2018-06-17T10:03:05Z\"",
+      "\"2018-05-24T12:19:02Z\""
+    ]
+  },
+  {
+    "full_name": "Ereza/CustomActivityOnCrash",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "thingsboard/thingsboard",
+    "release_count": "11",
+    "release_dates": [
+      "\"2018-10-16T15:07:06Z\"",
+      "\"2018-06-04T15:19:03Z\"",
+      "\"2018-06-12T11:55:32Z\"",
+      "\"2018-11-29T10:42:39Z\"",
+      "\"2018-10-08T17:41:33Z\"",
+      "\"2018-03-05T16:17:09Z\"",
+      "\"2018-07-19T13:33:32Z\"",
+      "\"2018-10-10T17:16:51Z\"",
+      "\"2018-05-28T17:01:48Z\"",
+      "\"2018-10-08T10:41:21Z\"",
+      "\"2018-06-01T13:14:30Z\""
+    ]
+  },
+  {
+    "full_name": "edmodo/cropper",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "code-troopers/android-betterpickers",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "xmuSistone/ViewpagerTransition",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "yhaolpz/FloatWindow",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-05-05T06:30:43Z\""
+    ]
+  },
+  {
+    "full_name": "pqpo/SmartCropper",
+    "release_count": "4",
+    "release_dates": [
+      "\"2018-09-11T06:04:16Z\"",
+      "\"2018-09-10T03:59:04Z\"",
+      "\"2018-09-11T06:08:30Z\"",
+      "\"2018-09-11T05:55:58Z\""
+    ]
+  },
+  {
+    "full_name": "crossoverJie/SSM",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "square/wire",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "mcxtzhang/SwipeDelMenuLayout",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "bisq-network/bisq",
+    "release_count": "4",
+    "release_dates": [
+      "\"2018-12-13T13:34:58Z\"",
+      "\"2018-11-12T21:36:03Z\"",
+      "\"2018-12-03T21:46:19Z\"",
+      "\"2018-12-13T13:01:51Z\""
+    ]
+  },
+  {
+    "full_name": "ming1016/study",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "JakeWharton/ThreeTenABP",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "rstudio/rstudio",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "qii/weiciyuan",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "phishman3579/java-algorithms-implementation",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "spring-projects/spring-data-examples",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "jfeinstein10/JazzyViewPager",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Yalantis/GuillotineMenu-Android",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "knowm/XChange",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "SimonVT/android-menudrawer",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "cglib/cglib",
+    "release_count": "4",
+    "release_dates": [
+      "\"2018-09-10T17:43:02Z\"",
+      "\"2018-10-28T14:55:04Z\"",
+      "\"2018-07-03T15:31:03Z\"",
+      "\"2018-12-11T19:35:40Z\""
+    ]
+  },
+  {
+    "full_name": "mzule/ActivityRouter",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "GitLqr/LQRWeChat",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "jhalterman/failsafe",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "sunfusheng/StickyHeaderListView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "raphw/byte-buddy",
+    "release_count": "32",
+    "release_dates": [
+      "\"2018-04-02T18:18:40Z\"",
+      "\"2018-04-27T16:12:37Z\"",
+      "\"2018-08-28T20:55:36Z\"",
+      "\"2018-08-27T19:31:04Z\"",
+      "\"2018-11-13T21:53:45Z\"",
+      "\"2018-03-28T08:44:41Z\"",
+      "\"2018-07-05T21:13:02Z\"",
+      "\"2018-09-08T19:33:09Z\"",
+      "\"2018-03-02T18:39:05Z\"",
+      "\"2018-05-04T18:01:26Z\"",
+      "\"2018-05-25T19:54:15Z\"",
+      "\"2018-08-06T19:32:31Z\"",
+      "\"2018-10-28T18:09:30Z\"",
+      "\"2018-04-28T08:41:40Z\"",
+      "\"2018-12-13T21:45:53Z\"",
+      "\"2018-08-03T15:50:31Z\"",
+      "\"2018-03-13T18:55:17Z\"",
+      "\"2018-07-23T22:08:10Z\"",
+      "\"2018-09-03T05:03:10Z\"",
+      "\"2018-09-29T20:09:10Z\"",
+      "\"2018-04-15T18:29:30Z\"",
+      "\"2018-10-15T20:46:43Z\"",
+      "\"2018-04-19T21:08:50Z\"",
+      "\"2018-04-15T20:33:43Z\"",
+      "\"2018-10-05T17:34:07Z\"",
+      "\"2018-04-02T18:18:22Z\"",
+      "\"2018-07-26T21:54:35Z\"",
+      "\"2018-03-02T17:26:33Z\"",
+      "\"2018-08-29T21:57:45Z\"",
+      "\"2018-04-20T13:14:17Z\"",
+      "\"2018-11-22T17:32:16Z\"",
+      "\"2018-04-18T20:07:40Z\""
+    ]
+  },
+  {
+    "full_name": "JakeWharton/scalpel",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Marswin/MarsDaemon",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "apache/beam",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "btraceio/btrace",
+    "release_count": "4",
+    "release_dates": [
+      "\"2018-04-06T07:39:30Z\"",
+      "\"2018-09-01T13:54:38Z\"",
+      "\"2018-12-17T13:18:10Z\"",
+      "\"2018-12-02T12:58:39Z\""
+    ]
+  },
+  {
+    "full_name": "Screetsec/TheFatRat",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "alipay/sofa-boot",
+    "release_count": "18",
+    "release_dates": [
+      "\"2018-10-11T05:19:51Z\"",
+      "\"2018-07-07T08:51:28Z\"",
+      "\"2018-12-07T09:36:34Z\"",
+      "\"2018-06-29T12:10:11Z\"",
+      "\"2018-09-27T08:41:17Z\"",
+      "\"2018-09-14T04:54:07Z\"",
+      "\"2018-10-25T03:29:39Z\"",
+      "\"2018-12-29T09:38:39Z\"",
+      "\"2018-11-09T03:30:30Z\"",
+      "\"2018-08-31T03:39:37Z\"",
+      "\"2018-04-19T02:36:13Z\"",
+      "\"2018-08-16T12:37:27Z\"",
+      "\"2018-10-11T14:28:30Z\"",
+      "\"2018-04-13T06:34:11Z\"",
+      "\"2018-05-31T02:15:49Z\"",
+      "\"2018-08-29T01:07:04Z\"",
+      "\"2018-05-04T04:08:38Z\"",
+      "\"2018-07-17T14:21:28Z\""
+    ]
+  },
+  {
+    "full_name": "Malinskiy/SuperRecyclerView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "pushtorefresh/storio",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-11-02T06:32:22Z\""
+    ]
+  },
+  {
+    "full_name": "LyndonChin/MasteringAndroidDataBinding",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "cyrilmottier/GreenDroid",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "eishay/jvm-serializers",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "BelooS/ChipsLayoutManager",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "w446108264/XhsEmoticonsKeyboard",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Tencent/MSEC",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "north2016/T-MVP",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "crossoverJie/cim",
+    "release_count": "1",
+    "release_dates": [
+      "\"2019-01-03T04:49:08Z\""
+    ]
+  },
+  {
+    "full_name": "apache/hbase",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "languagetool-org/languagetool",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "jprante/elasticsearch-jdbc",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "florent37/ExpectAnim",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "yusugomori/DeepLearning",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "luckybilly/CC",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "beworker/pinned-section-listview",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "kbastani/spring-cloud-microservice-example",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "geftimov/android-pathview",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "JohnPersano/SuperToasts",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Nightonke/WoWoViewPager",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "apache/cordova-android",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "stfalcon-studio/ChatKit",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "auth0/java-jwt",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Todd-Davies/ProgressWheel",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Teevity/ice",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "chennaione/sugar",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "saulmm/CoordinatorBehaviorExample",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "alibaba/cobar",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "mikepenz/FastAdapter",
+    "release_count": "11",
+    "release_dates": [
+      "\"2018-07-22T12:54:02Z\"",
+      "\"2018-08-11T18:14:34Z\"",
+      "\"2018-02-07T22:43:14Z\"",
+      "\"2018-04-01T21:12:51Z\"",
+      "\"2018-02-04T13:20:14Z\"",
+      "\"2018-09-22T13:34:29Z\"",
+      "\"2018-09-15T11:07:31Z\"",
+      "\"2018-09-27T08:41:32Z\"",
+      "\"2018-06-09T12:32:25Z\"",
+      "\"2018-09-15T10:48:48Z\"",
+      "\"2018-06-09T12:30:37Z\""
+    ]
+  },
+  {
+    "full_name": "ffay/lanproxy",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "JoanZapata/android-pdfview",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "youtube/api-samples",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "googlesamples/android-vision",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "RobotiumTech/robotium",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "dreamhead/moco",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "oguzbilgener/CircularFloatingActionMenu",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "johannilsson/android-pulltorefresh",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "MovingBlocks/Terasology",
+    "release_count": "4",
+    "release_dates": [
+      "\"2018-02-05T05:31:33Z\"",
+      "\"2018-10-06T03:32:34Z\"",
+      "\"2018-06-11T05:31:09Z\"",
+      "\"2018-10-25T03:02:26Z\""
+    ]
+  },
+  {
+    "full_name": "mihaip/dex-method-counts",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "yarolegovich/SlidingRootNav",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "TangoAgency/material-intro-screen",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "alibaba/Tangram-Android",
+    "release_count": "21",
+    "release_dates": [
+      "\"2019-01-02T05:57:43Z\"",
+      "\"2018-08-06T06:41:29Z\"",
+      "\"2018-06-21T02:35:31Z\"",
+      "\"2018-04-24T03:54:21Z\"",
+      "\"2018-12-26T03:44:05Z\"",
+      "\"2018-05-09T01:54:54Z\"",
+      "\"2018-08-29T02:13:42Z\"",
+      "\"2018-02-22T09:07:59Z\"",
+      "\"2018-03-11T13:50:20Z\"",
+      "\"2018-11-19T03:33:23Z\"",
+      "\"2018-02-07T09:39:12Z\"",
+      "\"2018-05-17T11:09:54Z\"",
+      "\"2018-02-28T02:56:40Z\"",
+      "\"2019-01-02T06:54:06Z\"",
+      "\"2018-09-13T03:52:59Z\"",
+      "\"2018-02-01T09:11:38Z\"",
+      "\"2018-03-16T06:32:32Z\"",
+      "\"2018-09-20T07:49:36Z\"",
+      "\"2018-05-11T08:07:30Z\"",
+      "\"2018-02-06T03:16:18Z\"",
+      "\"2018-06-15T06:53:35Z\""
+    ]
+  },
+  {
+    "full_name": "jd-alexander/LikeButton",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "chewiebug/GCViewer",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "saulmm/Material-Movies",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "abel533/MyBatis-Spring-Boot",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "google/google-java-format",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-05-25T01:39:55Z\""
+    ]
+  },
+  {
+    "full_name": "pedrovgs/Algorithms",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "MagicMashRoom/SuperCalendar",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "rovo89/XposedInstaller",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "fyhertz/libstreaming",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "google/binnavi",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "pentaho/pentaho-kettle",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "google/hover",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "bmelnychuk/AndroidTreeView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "quartz-scheduler/quartz",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "airbnb/airpal",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "glomadrian/Grav",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "apache/camel",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "hussien89aa/AndroidTutorialForBeginners",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Comcast/FreeFlow",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "balysv/material-menu",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "ronmamo/reflections",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "roncoo/roncoo-pay",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "uber/NullAway",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "florent37/DiagonalLayout",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "iwgang/CountdownView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "romainguy/ViewServer",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "path/android-priority-jobqueue",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "brianfrankcooper/YCSB",
+    "release_count": "6",
+    "release_dates": [
+      "\"2018-06-13T20:01:03Z\"",
+      "\"2018-03-28T05:06:10Z\"",
+      "\"2018-08-15T02:58:28Z\"",
+      "\"2018-03-28T05:03:35Z\"",
+      "\"2018-08-10T01:15:26Z\"",
+      "\"2018-05-24T05:14:30Z\""
+    ]
+  },
+  {
+    "full_name": "bin456789/Unblock163MusicClient-Xposed",
+    "release_count": "6",
+    "release_dates": [
+      "\"2018-09-30T13:41:18Z\"",
+      "\"2018-09-30T13:47:48Z\"",
+      "\"2018-02-12T18:15:31Z\"",
+      "\"2018-06-28T15:47:22Z\"",
+      "\"2018-02-12T16:05:13Z\"",
+      "\"2018-02-12T16:18:30Z\""
+    ]
+  },
+  {
+    "full_name": "LawnchairLauncher/Lawnchair",
+    "release_count": "10",
+    "release_dates": [
+      "\"2018-07-23T19:02:30Z\"",
+      "\"2018-07-23T19:01:01Z\"",
+      "\"2018-03-28T22:18:11Z\"",
+      "\"2018-06-10T18:10:30Z\"",
+      "\"2018-03-24T02:44:20Z\"",
+      "\"2018-03-24T02:22:16Z\"",
+      "\"2018-07-23T00:15:52Z\"",
+      "\"2018-03-24T02:01:35Z\"",
+      "\"2018-07-23T18:58:10Z\"",
+      "\"2018-07-23T00:10:56Z\""
+    ]
+  },
+  {
+    "full_name": "mpusher/mpush",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "wenmingvs/AndroidProcess",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "harjot-oberai/MusicDNA",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "pchmn/MaterialChipsInput",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "oracle/opengrok",
+    "release_count": "48",
+    "release_dates": [
+      "\"2018-12-10T19:18:20Z\"",
+      "\"2018-11-01T08:49:50Z\"",
+      "\"2018-09-05T12:59:33Z\"",
+      "\"2018-12-08T21:05:06Z\"",
+      "\"2018-08-10T12:25:17Z\"",
+      "\"2018-11-09T21:57:15Z\"",
+      "\"2018-09-04T13:51:10Z\"",
+      "\"2018-10-05T19:11:01Z\"",
+      "\"2018-11-12T16:06:29Z\"",
+      "\"2018-08-08T14:13:14Z\"",
+      "\"2018-05-30T09:15:41Z\"",
+      "\"2018-04-16T14:46:29Z\"",
+      "\"2018-10-08T12:38:23Z\"",
+      "\"2018-06-06T09:30:34Z\"",
+      "\"2018-02-13T18:04:09Z\"",
+      "\"2018-10-22T11:34:58Z\"",
+      "\"2018-10-05T19:09:35Z\"",
+      "\"2018-06-14T11:46:19Z\"",
+      "\"2018-10-18T10:53:01Z\"",
+      "\"2018-11-29T15:55:23Z\"",
+      "\"2018-12-03T17:08:33Z\"",
+      "\"2018-07-10T09:30:54Z\"",
+      "\"2018-10-03T13:21:49Z\"",
+      "\"2018-10-08T12:01:03Z\"",
+      "\"2018-10-23T12:31:15Z\"",
+      "\"2019-01-04T17:14:02Z\"",
+      "\"2018-10-05T08:07:34Z\"",
+      "\"2018-04-24T09:07:28Z\"",
+      "\"2018-10-15T13:29:21Z\"",
+      "\"2018-04-19T15:53:50Z\"",
+      "\"2018-10-05T16:15:51Z\"",
+      "\"2018-07-26T09:03:49Z\"",
+      "\"2018-07-09T13:19:57Z\"",
+      "\"2018-12-12T13:31:37Z\"",
+      "\"2018-07-10T14:48:28Z\"",
+      "\"2018-06-22T13:21:01Z\"",
+      "\"2018-07-19T09:33:37Z\"",
+      "\"2018-09-07T12:56:30Z\"",
+      "\"2018-08-15T09:11:20Z\"",
+      "\"2018-10-17T10:00:52Z\"",
+      "\"2018-10-05T15:00:24Z\"",
+      "\"2019-01-04T19:33:19Z\"",
+      "\"2018-11-19T11:01:14Z\"",
+      "\"2018-10-09T09:34:58Z\"",
+      "\"2018-05-09T16:01:46Z\"",
+      "\"2019-01-03T15:33:54Z\"",
+      "\"2018-11-02T15:18:18Z\"",
+      "\"2018-10-05T15:58:06Z\""
+    ]
+  },
+  {
+    "full_name": "sd6352051/NiftyDialogEffects",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "lizhangqu/CoreLink",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "500px/500px-android-blur",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "powermock/powermock",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-10-24T21:00:46Z\"",
+      "\"2018-02-24T10:20:59Z\""
+    ]
+  },
+  {
+    "full_name": "ozodrukh/CircularReveal",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "AriaLyy/Aria",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "TeamAmaze/AmazeFileManager",
+    "release_count": "17",
+    "release_dates": [
+      "\"2018-11-12T01:52:10Z\"",
+      "\"2018-10-15T02:49:03Z\"",
+      "\"2018-09-17T01:13:38Z\"",
+      "\"2018-11-05T02:45:37Z\"",
+      "\"2018-12-17T20:30:06Z\"",
+      "\"2018-10-08T02:38:55Z\"",
+      "\"2018-11-16T21:15:10Z\"",
+      "\"2018-09-24T02:33:49Z\"",
+      "\"2018-09-17T01:16:04Z\"",
+      "\"2018-07-01T17:37:49Z\"",
+      "\"2018-06-26T12:35:28Z\"",
+      "\"2018-11-16T05:28:57Z\"",
+      "\"2018-08-26T20:04:05Z\"",
+      "\"2018-10-23T03:28:03Z\"",
+      "\"2018-08-26T20:31:50Z\"",
+      "\"2018-09-30T20:50:42Z\"",
+      "\"2018-11-30T19:22:26Z\""
+    ]
+  },
+  {
+    "full_name": "seaswalker/spring-analysis",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Cleveroad/SlidingTutorial-Android",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "eclipse/jetty.project",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "jenkinsci/blueocean-plugin",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "flavioarfaria/KenBurnsView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "zhanglei-workspace/shopping-management-system",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "pnikosis/materialish-progress",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "nisrulz/sensey",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "apache/hive",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "githubwing/ZoomHeader",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "azkaban/azkaban",
+    "release_count": "14",
+    "release_dates": [
+      "\"2018-07-10T18:08:35Z\"",
+      "\"2018-12-12T21:39:45Z\"",
+      "\"2018-12-05T22:40:48Z\"",
+      "\"2018-08-17T18:39:06Z\"",
+      "\"2018-04-13T22:13:56Z\"",
+      "\"2018-05-17T20:31:00Z\"",
+      "\"2018-07-09T22:30:47Z\"",
+      "\"2018-12-04T18:39:43Z\"",
+      "\"2018-06-20T20:36:25Z\"",
+      "\"2018-02-13T18:58:48Z\"",
+      "\"2018-09-24T22:45:30Z\"",
+      "\"2018-08-22T17:36:12Z\"",
+      "\"2018-09-25T22:31:47Z\"",
+      "\"2018-02-27T23:20:31Z\""
+    ]
+  },
+  {
+    "full_name": "googlesamples/google-services",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "apache/ignite",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "ittianyu/BottomNavigationViewEx",
+    "release_count": "4",
+    "release_dates": [
+      "\"2018-09-29T08:52:41Z\"",
+      "\"2018-09-29T08:38:17Z\"",
+      "\"2018-09-29T07:37:24Z\"",
+      "\"2018-09-29T08:48:48Z\""
+    ]
+  },
+  {
+    "full_name": "apache/lucene-solr",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "JakeWharton/Telecine",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "mybatis/spring-boot-starter",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-03-14T19:05:27Z\""
+    ]
+  },
+  {
+    "full_name": "JackyAndroid/AndroidChromium",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Nightonke/CoCoin",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "eleme/UETool",
+    "release_count": "3",
+    "release_dates": [
+      "\"2018-05-20T02:12:59Z\"",
+      "\"2018-05-29T03:33:53Z\"",
+      "\"2018-05-24T02:40:56Z\""
+    ]
+  },
+  {
+    "full_name": "nanchen2251/RxJava2Examples",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "lingochamp/okdownload",
+    "release_count": "5",
+    "release_dates": [
+      "\"2018-11-05T07:36:33Z\"",
+      "\"2018-04-20T16:07:05Z\"",
+      "\"2018-05-16T16:03:36Z\"",
+      "\"2018-08-08T13:11:04Z\"",
+      "\"2018-04-06T02:51:19Z\""
+    ]
+  },
+  {
+    "full_name": "alipay/sofa-rpc",
+    "release_count": "17",
+    "release_dates": [
+      "\"2018-07-17T15:03:56Z\"",
+      "\"2018-08-17T02:30:13Z\"",
+      "\"2018-08-16T06:27:45Z\"",
+      "\"2018-06-27T14:22:43Z\"",
+      "\"2018-06-29T14:10:40Z\"",
+      "\"2018-05-31T02:57:37Z\"",
+      "\"2018-04-13T03:09:19Z\"",
+      "\"2018-09-27T03:52:46Z\"",
+      "\"2018-05-04T07:50:08Z\"",
+      "\"2018-05-31T04:00:44Z\"",
+      "\"2018-12-29T11:53:54Z\"",
+      "\"2018-04-18T18:05:39Z\"",
+      "\"2018-08-30T02:09:41Z\"",
+      "\"2018-07-17T13:22:21Z\"",
+      "\"2018-05-30T16:01:12Z\"",
+      "\"2018-10-26T02:20:28Z\"",
+      "\"2018-12-06T07:37:48Z\""
+    ]
+  },
+  {
+    "full_name": "ZieIony/Carbon",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "siyamed/android-shape-imageview",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "iPaulPro/Android-ItemTouchHelper-Demo",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "iSoron/uhabits",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-04-21T15:35:40Z\""
+    ]
+  },
+  {
+    "full_name": "aritraroy/PatternLockView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "konifar/android-material-design-icon-generator-plugin",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "crate/crate",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "WritingMinds/ffmpeg-android-java",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "linkedin/databus",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "simple-android-framework/android_design_patterns_analysis",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "moezbhatti/qksms",
+    "release_count": "50",
+    "release_dates": [
+      "\"2018-03-19T22:56:59Z\"",
+      "\"2018-09-08T20:32:53Z\"",
+      "\"2018-02-27T08:03:36Z\"",
+      "\"2018-02-15T00:43:26Z\"",
+      "\"2018-09-20T04:39:12Z\"",
+      "\"2018-04-02T05:36:29Z\"",
+      "\"2018-02-08T00:17:53Z\"",
+      "\"2018-04-21T00:37:53Z\"",
+      "\"2018-06-22T20:44:05Z\"",
+      "\"2018-07-01T06:45:22Z\"",
+      "\"2018-07-02T23:17:28Z\"",
+      "\"2018-03-10T00:30:20Z\"",
+      "\"2018-06-09T23:20:28Z\"",
+      "\"2018-06-06T20:48:50Z\"",
+      "\"2018-05-06T22:53:09Z\"",
+      "\"2018-06-11T03:02:12Z\"",
+      "\"2018-04-06T07:12:50Z\"",
+      "\"2018-03-01T03:22:35Z\"",
+      "\"2018-12-30T00:15:42Z\"",
+      "\"2018-04-30T22:46:13Z\"",
+      "\"2018-04-10T08:00:33Z\"",
+      "\"2018-04-23T05:01:57Z\"",
+      "\"2018-09-04T03:03:46Z\"",
+      "\"2018-07-28T09:10:35Z\"",
+      "\"2018-03-07T22:25:21Z\"",
+      "\"2018-07-12T21:16:18Z\"",
+      "\"2018-03-14T04:10:42Z\"",
+      "\"2018-06-10T23:20:12Z\"",
+      "\"2018-08-02T22:40:00Z\"",
+      "\"2018-09-04T05:56:18Z\"",
+      "\"2018-06-07T18:56:27Z\"",
+      "\"2018-03-01T03:21:48Z\"",
+      "\"2018-05-18T21:28:39Z\"",
+      "\"2018-07-23T21:51:36Z\"",
+      "\"2018-06-19T19:22:15Z\"",
+      "\"2018-08-07T06:34:09Z\"",
+      "\"2018-07-23T22:52:41Z\"",
+      "\"2018-09-07T03:44:49Z\"",
+      "\"2018-04-17T00:42:08Z\"",
+      "\"2018-04-03T07:31:14Z\"",
+      "\"2018-02-27T08:03:02Z\"",
+      "\"2018-04-02T07:11:31Z\"",
+      "\"2018-09-04T04:26:03Z\"",
+      "\"2018-05-29T13:53:42Z\"",
+      "\"2018-04-06T07:34:22Z\"",
+      "\"2018-08-13T21:41:50Z\"",
+      "\"2018-04-16T06:26:03Z\"",
+      "\"2018-04-07T08:43:10Z\"",
+      "\"2018-04-05T20:52:46Z\"",
+      "\"2018-12-26T23:32:48Z\""
+    ]
+  },
+  {
+    "full_name": "react-native-community/react-native-blur",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "bigbluebutton/bigbluebutton",
+    "release_count": "8",
+    "release_dates": [
+      "\"2018-08-16T17:47:22Z\"",
+      "\"2018-10-25T20:15:10Z\"",
+      "\"2018-11-21T21:12:52Z\"",
+      "\"2018-09-14T20:57:27Z\"",
+      "\"2018-07-31T21:09:12Z\"",
+      "\"2018-08-30T22:12:16Z\"",
+      "\"2018-07-08T00:07:53Z\"",
+      "\"2019-01-04T13:06:43Z\""
+    ]
+  },
+  {
+    "full_name": "dlew/joda-time-android",
+    "release_count": "6",
+    "release_dates": [
+      "\"2018-10-20T21:45:31Z\"",
+      "\"2018-10-28T00:03:38Z\"",
+      "\"2018-05-07T00:14:12Z\"",
+      "\"2019-01-03T22:31:35Z\"",
+      "\"2018-02-05T15:59:23Z\"",
+      "\"2018-03-26T13:55:36Z\""
+    ]
+  },
+  {
+    "full_name": "JZ-Darkal/AndroidHttpCapture",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "deathmarine/Luyten",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Twitter4J/Twitter4J",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "hyb1996/Auto.js",
+    "release_count": "6",
+    "release_dates": [
+      "\"2018-10-25T08:08:05Z\"",
+      "\"2018-06-03T13:46:36Z\"",
+      "\"2018-09-14T07:12:19Z\"",
+      "\"2018-02-27T14:19:48Z\"",
+      "\"2018-02-04T00:59:46Z\"",
+      "\"2018-12-01T05:35:25Z\""
+    ]
+  },
+  {
+    "full_name": "immutables/immutables",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "javaparser/javaparser",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "undertow-io/undertow",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "facebook/react-native-fbsdk",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-09-07T19:28:26Z\"",
+      "\"2018-12-09T07:35:02Z\""
+    ]
+  },
+  {
+    "full_name": "web3j/web3j",
+    "release_count": "10",
+    "release_dates": [
+      "\"2018-12-17T07:19:16Z\"",
+      "\"2018-12-17T07:18:29Z\"",
+      "\"2018-05-02T12:06:21Z\"",
+      "\"2018-07-25T14:50:57Z\"",
+      "\"2018-03-02T11:48:50Z\"",
+      "\"2018-04-30T08:05:41Z\"",
+      "\"2018-03-01T16:39:01Z\"",
+      "\"2018-04-30T20:53:34Z\"",
+      "\"2018-03-02T11:58:37Z\"",
+      "\"2018-04-30T08:06:41Z\""
+    ]
+  },
+  {
+    "full_name": "huazhiyuan2008/RecyclerViewCardGallery",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "guolindev/giffun",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "woxingxiao/BubbleSeekBar",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "code4craft/netty-learning",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "javaee-samples/javaee7-samples",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "jjoe64/GraphView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "lettuce-io/lettuce-core",
+    "release_count": "15",
+    "release_dates": [
+      "\"2018-09-07T06:59:26Z\"",
+      "\"2018-07-30T12:41:56Z\"",
+      "\"2018-03-27T12:21:10Z\"",
+      "\"2018-10-26T12:49:53Z\"",
+      "\"2018-05-08T06:26:21Z\"",
+      "\"2018-03-27T13:13:52Z\"",
+      "\"2018-07-30T13:10:00Z\"",
+      "\"2018-05-08T06:36:56Z\"",
+      "\"2018-09-19T11:49:43Z\"",
+      "\"2018-02-17T09:00:59Z\"",
+      "\"2018-09-19T19:59:49Z\"",
+      "\"2018-02-17T09:07:30Z\"",
+      "\"2018-05-14T15:19:27Z\"",
+      "\"2018-11-26T14:54:06Z\"",
+      "\"2018-10-12T18:22:22Z\""
+    ]
+  },
+  {
+    "full_name": "mxn21/FlowingDrawer",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "chanjarster/weixin-java-tools",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "android-cjj/JJSearchViewAnim",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "JackyAndroid/AndroidTVLauncher",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "mikepenz/AboutLibraries",
+    "release_count": "10",
+    "release_dates": [
+      "\"2018-02-08T10:36:30Z\"",
+      "\"2018-09-15T13:11:05Z\"",
+      "\"2018-07-14T10:55:00Z\"",
+      "\"2018-07-22T12:54:34Z\"",
+      "\"2018-04-02T04:54:53Z\"",
+      "\"2018-08-11T18:28:56Z\"",
+      "\"2018-04-01T20:35:23Z\"",
+      "\"2018-04-01T20:34:42Z\"",
+      "\"2018-02-06T10:28:16Z\"",
+      "\"2018-02-04T13:39:49Z\""
+    ]
+  },
+  {
+    "full_name": "LuckyJayce/ViewPagerIndicator",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-06-05T03:08:35Z\""
+    ]
+  },
+  {
+    "full_name": "CrawlScript/WebCollector",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "deano2390/MaterialShowcaseView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "aragozin/jvm-tools",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "r0adkll/Slidr",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "google/data-transfer-project",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "FinalTeam/RxGalleryFinal",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "h2oai/h2o-2",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "spockframework/spock",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "ldoublem/LoadingView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "amitshekhariitbhu/awesome-android-complete-reference",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "theDazzler/droidicon",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "markushi/android-ui",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "esoxjem/MovieGuide",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "square/tape",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "ata4/disunity",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "2dxgujun/AndroidTagGroup",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "qiujuer/Genius-Android",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-07-14T10:07:00Z\""
+    ]
+  },
+  {
+    "full_name": "bingoogolapple/BGABadgeView-Android",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Frank-Zhu/PullZoomView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "twitter/distributedlog",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "zaaach/CityPicker",
+    "release_count": "9",
+    "release_dates": [
+      "\"2018-12-07T03:51:24Z\"",
+      "\"2018-12-07T03:54:49Z\"",
+      "\"2018-12-07T03:40:02Z\"",
+      "\"2018-12-08T03:02:56Z\"",
+      "\"2018-12-08T03:09:27Z\"",
+      "\"2018-12-08T02:38:37Z\"",
+      "\"2018-12-04T08:07:35Z\"",
+      "\"2018-12-07T03:44:25Z\"",
+      "\"2018-12-07T03:39:05Z\""
+    ]
+  },
+  {
+    "full_name": "xinghongfei/LookLook",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "facebook/device-year-class",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "AntennaPod/AntennaPod",
+    "release_count": "4",
+    "release_dates": [
+      "\"2018-04-15T08:11:45Z\"",
+      "\"2018-10-21T07:45:19Z\"",
+      "\"2018-11-12T20:42:23Z\"",
+      "\"2018-02-05T06:02:08Z\""
+    ]
+  },
+  {
+    "full_name": "spring-projects/spring-loaded",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "daimajia/AnimationEasingFunctions",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "apache/shiro",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Prototik/HoloEverywhere",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "xmuSistone/CardSlidePanel",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "chenupt/SpringIndicator",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "google/volley",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-06-21T18:03:04Z\"",
+      "\"2018-07-16T19:41:38Z\""
+    ]
+  },
+  {
+    "full_name": "wildfly/wildfly",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "watabou/pixel-dungeon",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "florent37/ViewAnimator",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "AbrahamCaiJin/CommonUtilLibrary",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "chenBingX/SuperTextView",
+    "release_count": "7",
+    "release_dates": [
+      "\"2018-05-13T13:42:50Z\"",
+      "\"2018-11-05T18:31:07Z\"",
+      "\"2018-11-30T08:29:49Z\"",
+      "\"2018-05-13T13:38:50Z\"",
+      "\"2018-12-10T13:15:44Z\"",
+      "\"2018-11-05T14:05:44Z\"",
+      "\"2018-05-13T13:45:43Z\""
+    ]
+  },
+  {
+    "full_name": "zhou-you/RxEasyHttp",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "voldemort/voldemort",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "jaydenxiao2016/AndroidFire",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "balysv/material-ripple",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "google/rejoiner",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-08-08T14:33:08Z\"",
+      "\"2018-09-07T10:46:23Z\""
+    ]
+  },
+  {
+    "full_name": "JanusGraph/janusgraph",
+    "release_count": "5",
+    "release_dates": [
+      "\"2018-07-10T03:50:42Z\"",
+      "\"2018-10-03T00:55:34Z\"",
+      "\"2018-07-31T19:32:18Z\"",
+      "\"2018-10-03T00:00:19Z\"",
+      "\"2018-10-09T18:04:43Z\""
+    ]
+  },
+  {
+    "full_name": "zhouchaoyuan/excelPanel",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "bm-x/PhotoView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "stormzhang/9GAG",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "ltsopensource/light-task-scheduler",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "linyiqun/DataMiningAlgorithm",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "querydsl/querydsl",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-03-22T21:05:24Z\"",
+      "\"2018-03-22T21:06:03Z\""
+    ]
+  },
+  {
+    "full_name": "vikramkakkar/SublimePicker",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "iammert/MaterialIntroView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "guoguibing/librec",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "apache/incubator-pinot",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-12-06T22:43:24Z\""
+    ]
+  },
+  {
+    "full_name": "Yalantis/Euclid",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "VictorAlbertos/RxCache",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "alibaba/jvm-sandbox",
+    "release_count": "3",
+    "release_dates": [
+      "\"2018-10-13T13:57:41Z\"",
+      "\"2018-12-11T09:35:40Z\"",
+      "\"2018-10-21T17:56:37Z\""
+    ]
+  },
+  {
+    "full_name": "jdsjlzx/LRecyclerView",
+    "release_count": "8",
+    "release_dates": [
+      "\"2018-11-05T02:44:55Z\"",
+      "\"2018-11-05T10:05:27Z\"",
+      "\"2018-11-05T10:31:15Z\"",
+      "\"2018-10-10T10:03:00Z\"",
+      "\"2018-11-05T11:36:40Z\"",
+      "\"2018-11-09T15:55:11Z\"",
+      "\"2018-11-05T11:39:03Z\"",
+      "\"2018-11-16T08:05:51Z\""
+    ]
+  },
+  {
+    "full_name": "confluentinc/ksql",
+    "release_count": "11",
+    "release_dates": [
+      "\"2018-04-17T18:34:09Z\"",
+      "\"2018-02-21T23:33:33Z\"",
+      "\"2018-06-05T21:49:48Z\"",
+      "\"2018-02-22T00:16:10Z\"",
+      "\"2018-07-03T17:41:43Z\"",
+      "\"2018-07-31T21:05:50Z\"",
+      "\"2018-05-01T17:44:32Z\"",
+      "\"2018-02-21T21:43:37Z\"",
+      "\"2018-02-01T19:06:54Z\"",
+      "\"2018-02-21T11:28:12Z\"",
+      "\"2018-03-07T21:29:54Z\""
+    ]
+  },
+  {
+    "full_name": "code-mc/material-icon-lib",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-05-20T12:32:51Z\""
+    ]
+  },
+  {
+    "full_name": "square/mortar",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "android-cjj/BeautifulRefreshLayout",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "crazyandcoder/citypicker",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "AweiLoveAndroid/CommonDevKnowledge",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "avast/android-styled-dialogs",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "AltBeacon/android-beacon-library",
+    "release_count": "15",
+    "release_dates": [
+      "\"2018-07-04T17:20:30Z\"",
+      "\"2018-11-24T22:47:45Z\"",
+      "\"2018-10-03T21:49:17Z\"",
+      "\"2018-08-11T16:50:55Z\"",
+      "\"2018-09-01T15:43:11Z\"",
+      "\"2018-11-08T17:12:57Z\"",
+      "\"2018-11-07T20:34:02Z\"",
+      "\"2018-12-20T16:52:27Z\"",
+      "\"2018-12-11T15:43:30Z\"",
+      "\"2018-05-17T16:59:03Z\"",
+      "\"2018-10-08T00:45:56Z\"",
+      "\"2018-03-06T03:28:29Z\"",
+      "\"2018-03-05T22:19:31Z\"",
+      "\"2018-08-15T13:08:10Z\"",
+      "\"2018-06-01T17:50:39Z\""
+    ]
+  },
+  {
+    "full_name": "alibaba/DataX",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "xfumihiro/ViewInspector",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "zagum/Android-SwitchIcon",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-08-13T14:28:29Z\"",
+      "\"2018-03-29T15:22:52Z\""
+    ]
+  },
+  {
+    "full_name": "oasisfeng/condom",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "katzer/cordova-plugin-local-notifications",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "yqritc/RecyclerView-FlexibleDivider",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "soarcn/BottomSheet",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "tronprotocol/java-tron",
+    "release_count": "52",
+    "release_dates": [
+      "\"2018-05-18T14:31:59Z\"",
+      "\"2018-05-25T03:44:51Z\"",
+      "\"2018-08-20T09:31:59Z\"",
+      "\"2018-06-19T06:31:14Z\"",
+      "\"2018-06-20T06:04:30Z\"",
+      "\"2018-05-31T00:56:35Z\"",
+      "\"2018-05-31T08:00:10Z\"",
+      "\"2018-09-14T09:34:23Z\"",
+      "\"2018-10-11T17:00:14Z\"",
+      "\"2018-09-17T09:37:29Z\"",
+      "\"2018-08-30T06:34:31Z\"",
+      "\"2018-09-05T17:29:55Z\"",
+      "\"2018-05-31T07:57:33Z\"",
+      "\"2018-05-07T06:16:15Z\"",
+      "\"2018-09-05T14:35:03Z\"",
+      "\"2018-11-30T03:34:56Z\"",
+      "\"2018-06-06T11:40:57Z\"",
+      "\"2018-08-09T08:03:19Z\"",
+      "\"2018-08-29T13:09:31Z\"",
+      "\"2018-06-20T08:58:09Z\"",
+      "\"2018-04-20T12:07:54Z\"",
+      "\"2018-06-20T03:45:07Z\"",
+      "\"2018-09-17T09:54:26Z\"",
+      "\"2018-04-13T13:05:57Z\"",
+      "\"2018-05-10T12:02:59Z\"",
+      "\"2018-06-19T10:10:09Z\"",
+      "\"2018-06-19T10:09:30Z\"",
+      "\"2018-11-30T10:56:43Z\"",
+      "\"2018-06-06T11:40:08Z\"",
+      "\"2018-05-10T08:37:21Z\"",
+      "\"2018-06-22T06:14:25Z\"",
+      "\"2018-12-17T09:16:30Z\"",
+      "\"2018-06-20T09:42:55Z\"",
+      "\"2018-09-17T06:38:34Z\"",
+      "\"2018-03-29T10:03:25Z\"",
+      "\"2018-08-09T08:14:39Z\"",
+      "\"2018-09-17T02:56:18Z\"",
+      "\"2018-12-07T06:32:25Z\"",
+      "\"2018-08-09T08:10:00Z\"",
+      "\"2018-10-19T06:55:20Z\"",
+      "\"2018-12-07T08:37:47Z\"",
+      "\"2018-05-31T14:17:18Z\"",
+      "\"2018-12-24T09:33:34Z\"",
+      "\"2018-03-30T07:14:18Z\"",
+      "\"2018-07-30T13:58:16Z\"",
+      "\"2018-08-14T06:59:43Z\"",
+      "\"2018-11-28T14:40:07Z\"",
+      "\"2018-05-07T07:01:27Z\"",
+      "\"2018-09-10T06:11:56Z\"",
+      "\"2018-08-07T11:02:26Z\"",
+      "\"2018-03-31T04:06:32Z\"",
+      "\"2018-09-17T09:42:18Z\""
+    ]
+  },
+  {
+    "full_name": "yu199195/hmily",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "bastillion-io/Bastillion",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-12-13T21:16:50Z\""
+    ]
+  },
+  {
+    "full_name": "testcontainers/testcontainers-java",
+    "release_count": "22",
+    "release_dates": [
+      "\"2018-11-08T06:58:59Z\"",
+      "\"2018-11-26T20:58:40Z\"",
+      "\"2018-09-09T20:40:36Z\"",
+      "\"2018-09-23T20:09:05Z\"",
+      "\"2018-04-30T16:09:50Z\"",
+      "\"2019-01-02T13:40:05Z\"",
+      "\"2018-05-16T20:36:33Z\"",
+      "\"2018-12-28T19:38:34Z\"",
+      "\"2018-11-05T21:17:23Z\"",
+      "\"2018-07-10T21:13:04Z\"",
+      "\"2019-01-02T11:21:41Z\"",
+      "\"2018-04-07T16:43:52Z\"",
+      "\"2018-04-07T17:30:29Z\"",
+      "\"2019-01-02T13:33:27Z\"",
+      "\"2018-12-29T08:43:41Z\"",
+      "\"2018-09-25T09:53:37Z\"",
+      "\"2018-06-14T12:44:53Z\"",
+      "\"2019-01-02T13:36:43Z\"",
+      "\"2018-04-07T15:33:05Z\"",
+      "\"2018-04-20T08:29:27Z\"",
+      "\"2018-12-18T16:04:11Z\"",
+      "\"2018-08-05T20:59:11Z\""
+    ]
+  },
+  {
+    "full_name": "Zomato/AndroidPhotoFilters",
+    "release_count": "3",
+    "release_dates": [
+      "\"2018-11-22T08:44:32Z\"",
+      "\"2018-11-23T11:36:14Z\"",
+      "\"2018-11-22T08:43:50Z\""
+    ]
+  },
+  {
+    "full_name": "igreenwood/SimpleCropView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "tyzlmjj/PagerBottomTabStrip",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-09-10T03:55:23Z\"",
+      "\"2018-10-25T09:32:39Z\""
+    ]
+  },
+  {
+    "full_name": "mongodb/mongo-java-driver",
+    "release_count": "12",
+    "release_dates": [
+      "\"2018-05-02T15:07:04Z\"",
+      "\"2018-05-29T12:59:05Z\"",
+      "\"2018-11-07T13:51:13Z\"",
+      "\"2018-11-27T10:40:43Z\"",
+      "\"2018-02-13T20:06:06Z\"",
+      "\"2018-05-07T19:36:37Z\"",
+      "\"2018-05-29T12:55:02Z\"",
+      "\"2018-09-19T14:38:19Z\"",
+      "\"2018-02-02T15:47:45Z\"",
+      "\"2018-04-18T21:46:57Z\"",
+      "\"2018-08-20T14:38:17Z\"",
+      "\"2018-04-09T20:01:37Z\""
+    ]
+  },
+  {
+    "full_name": "Rukey7/MvpApp",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "elye/loaderviewlibrary",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "pmd/pmd",
+    "release_count": "9",
+    "release_dates": [
+      "\"2018-06-26T07:40:46Z\"",
+      "\"2018-02-25T09:11:22Z\"",
+      "\"2018-04-29T07:57:35Z\"",
+      "\"2018-02-25T09:30:40Z\"",
+      "\"2018-09-02T12:30:30Z\"",
+      "\"2018-03-26T07:26:58Z\"",
+      "\"2018-12-09T09:45:26Z\"",
+      "\"2018-10-28T16:03:05Z\"",
+      "\"2018-07-29T10:12:29Z\""
+    ]
+  },
+  {
+    "full_name": "Diolor/Swipecards",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "reactor/reactor-core",
+    "release_count": "17",
+    "release_dates": [
+      "\"2018-04-03T04:37:31Z\"",
+      "\"2018-02-27T15:42:42Z\"",
+      "\"2018-10-31T16:44:21Z\"",
+      "\"2018-10-31T16:35:49Z\"",
+      "\"2018-07-26T15:44:50Z\"",
+      "\"2018-09-21T12:45:24Z\"",
+      "\"2018-11-23T09:43:16Z\"",
+      "\"2018-06-13T12:10:23Z\"",
+      "\"2018-10-10T16:03:39Z\"",
+      "\"2018-09-12T14:27:32Z\"",
+      "\"2018-10-10T15:46:22Z\"",
+      "\"2018-02-15T14:33:11Z\"",
+      "\"2018-11-22T16:12:59Z\"",
+      "\"2018-09-12T14:56:12Z\"",
+      "\"2018-08-14T13:13:10Z\"",
+      "\"2018-05-04T20:48:34Z\"",
+      "\"2018-06-11T05:38:08Z\""
+    ]
+  },
+  {
+    "full_name": "grandcentrix/tray",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "hefuyicoder/ListenerMusicPlayer",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "fengjundev/Android-Skin-Loader",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Polidea/RxAndroidBle",
+    "release_count": "8",
+    "release_dates": [
+      "\"2018-05-30T10:34:26Z\"",
+      "\"2018-03-14T08:18:09Z\"",
+      "\"2018-09-04T09:32:27Z\"",
+      "\"2018-09-28T13:27:08Z\"",
+      "\"2018-12-28T17:44:20Z\"",
+      "\"2018-03-14T08:17:33Z\"",
+      "\"2018-09-04T09:31:49Z\"",
+      "\"2019-01-04T14:39:16Z\""
+    ]
+  },
+  {
+    "full_name": "chrisbanes/philm",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "florent37/CameraFragment",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "googlesamples/android-Camera2Basic",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "sockeqwe/AdapterDelegates",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-10-05T12:35:00Z\""
+    ]
+  },
+  {
+    "full_name": "wuyouzhuguli/SpringAll",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "prontera/spring-cloud-rest-tcc",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "reark/reark",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "AigeStudio/WheelPicker",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Dimezis/BlurView",
+    "release_count": "3",
+    "release_dates": [
+      "\"2018-09-22T18:35:39Z\"",
+      "\"2018-03-16T22:44:01Z\"",
+      "\"2018-02-22T12:19:49Z\""
+    ]
+  },
+  {
+    "full_name": "WVector/AppUpdate",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "JakeWharton/RxRelay",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "H07000223/FlycoDialog_Master",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "cSploit/android",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "LWJGL/lwjgl3",
+    "release_count": "3",
+    "release_dates": [
+      "\"2018-02-04T17:20:17Z\"",
+      "\"2018-07-30T16:47:27Z\"",
+      "\"2018-12-08T19:48:20Z\""
+    ]
+  },
+  {
+    "full_name": "vert-x3/vertx-examples",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "zjw-swun/AppMethodOrder",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "dmilicic/Android-Clean-Boilerplate",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "jiajunhui/PlayerBase",
+    "release_count": "6",
+    "release_dates": [
+      "\"2018-05-25T05:06:57Z\"",
+      "\"2018-05-27T07:58:36Z\"",
+      "\"2018-06-18T02:37:02Z\"",
+      "\"2018-08-14T10:33:03Z\"",
+      "\"2018-11-16T02:45:12Z\"",
+      "\"2018-06-04T05:40:00Z\""
+    ]
+  },
+  {
+    "full_name": "android-cjj/Android-MaterialRefreshLayout",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "codingapi/tx-lcn",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-03-11T14:38:47Z\""
+    ]
+  },
+  {
+    "full_name": "ThirtyDegreesRay/OpenHub",
+    "release_count": "4",
+    "release_dates": [
+      "\"2018-03-24T12:59:19Z\"",
+      "\"2018-02-01T07:37:01Z\"",
+      "\"2018-02-09T03:14:26Z\"",
+      "\"2018-02-08T08:28:14Z\""
+    ]
+  },
+  {
+    "full_name": "Ramotion/paper-onboarding-android",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "pwittchen/ReactiveNetwork",
+    "release_count": "8",
+    "release_dates": [
+      "\"2018-07-20T17:31:58Z\"",
+      "\"2018-12-01T13:37:43Z\"",
+      "\"2018-08-05T14:51:34Z\"",
+      "\"2018-06-24T18:42:40Z\"",
+      "\"2018-09-24T18:38:19Z\"",
+      "\"2018-02-11T19:14:26Z\"",
+      "\"2019-01-03T21:02:58Z\"",
+      "\"2018-06-24T18:46:44Z\""
+    ]
+  },
+  {
+    "full_name": "mcharmas/Android-ReactiveLocation",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "promeG/TinyPinyin",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "androidquery/androidquery",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "coobird/thumbnailator",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "twosigma/beakerx",
+    "release_count": "22",
+    "release_dates": [
+      "\"2018-09-04T04:44:34Z\"",
+      "\"2018-06-07T19:22:31Z\"",
+      "\"2018-07-03T22:11:59Z\"",
+      "\"2018-02-06T16:30:26Z\"",
+      "\"2018-05-01T04:10:08Z\"",
+      "\"2018-05-19T13:35:10Z\"",
+      "\"2018-05-02T22:09:46Z\"",
+      "\"2018-06-21T19:04:17Z\"",
+      "\"2018-07-05T17:43:22Z\"",
+      "\"2018-04-12T16:01:51Z\"",
+      "\"2018-03-12T23:51:02Z\"",
+      "\"2018-05-01T04:08:33Z\"",
+      "\"2018-05-31T20:01:20Z\"",
+      "\"2018-02-12T19:53:42Z\"",
+      "\"2018-04-10T18:09:35Z\"",
+      "\"2018-05-22T18:48:06Z\"",
+      "\"2018-06-21T17:56:42Z\"",
+      "\"2018-02-01T22:28:09Z\"",
+      "\"2018-06-20T16:55:46Z\"",
+      "\"2018-07-01T01:38:21Z\"",
+      "\"2018-05-29T22:21:24Z\"",
+      "\"2018-04-11T01:58:40Z\""
+    ]
+  },
+  {
+    "full_name": "jgilfelt/android-sqlite-asset-helper",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "kabouzeid/Phonograph",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "jackpal/Android-Terminal-Emulator",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "google/wycheproof",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "evrencoskun/TableView",
+    "release_count": "3",
+    "release_dates": [
+      "\"2018-05-13T19:25:53Z\"",
+      "\"2018-03-11T10:00:47Z\"",
+      "\"2018-05-06T13:11:59Z\""
+    ]
+  },
+  {
+    "full_name": "jboss-javassist/javassist",
+    "release_count": "6",
+    "release_dates": [
+      "\"2018-12-09T12:10:42Z\"",
+      "\"2018-10-31T16:13:09Z\"",
+      "\"2018-11-01T04:01:27Z\"",
+      "\"2018-10-05T09:08:06Z\"",
+      "\"2018-06-20T16:45:32Z\"",
+      "\"2018-07-01T17:33:56Z\""
+    ]
+  },
+  {
+    "full_name": "cymcsg/UltimateAndroid",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "yingLanNull/ShadowImageView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "square/keywhiz",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-11-09T23:29:26Z\""
+    ]
+  },
+  {
+    "full_name": "NLPIR-team/NLPIR",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "balsikandar/Android-Studio-Plugins",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "mcxtzhang/ZLayoutManager",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "LaiFeng-Android/SopCastComponent",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "lisawray/groupie",
+    "release_count": "3",
+    "release_dates": [
+      "\"2018-11-06T06:49:32Z\"",
+      "\"2018-11-06T07:43:27Z\"",
+      "\"2018-05-24T04:38:58Z\""
+    ]
+  },
+  {
+    "full_name": "BaronZ88/MinimalistWeather",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Naoki2015/CircleDemo",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Aspsine/SwipeToLoadLayout",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Red5/red5-server",
+    "release_count": "5",
+    "release_dates": [
+      "\"2018-04-02T14:28:46Z\"",
+      "\"2018-12-13T20:20:45Z\"",
+      "\"2018-04-10T00:29:16Z\"",
+      "\"2018-03-17T19:39:31Z\"",
+      "\"2018-06-05T15:14:40Z\""
+    ]
+  },
+  {
+    "full_name": "zcweng/ToggleButton",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Krupen/FabulousFilter",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "MindorksOpenSource/PRDownloader",
+    "release_count": "3",
+    "release_dates": [
+      "\"2018-04-25T11:29:08Z\"",
+      "\"2018-12-12T11:23:29Z\"",
+      "\"2018-04-19T07:52:45Z\""
+    ]
+  },
+  {
+    "full_name": "kiegroup/drools",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "mcharmas/android-parcelable-intellij-plugin",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "TheFinestArtist/FinestWebView-Android",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "sucese/android-open-source-project-analysis",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "tiann/understand-plugin-framework",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "527515025/springBoot",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "AnderWeb/discreteSeekBar",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "wordpress-mobile/WordPress-Android",
+    "release_count": "25",
+    "release_dates": [
+      "\"2018-06-06T13:29:27Z\"",
+      "\"2018-05-10T11:44:12Z\"",
+      "\"2018-08-16T07:37:30Z\"",
+      "\"2018-10-26T16:49:23Z\"",
+      "\"2018-08-03T08:43:23Z\"",
+      "\"2018-09-26T08:55:30Z\"",
+      "\"2018-04-24T20:05:20Z\"",
+      "\"2018-06-20T02:33:05Z\"",
+      "\"2018-11-07T10:36:02Z\"",
+      "\"2018-03-29T13:53:38Z\"",
+      "\"2018-12-18T16:47:37Z\"",
+      "\"2018-09-13T09:12:56Z\"",
+      "\"2018-03-15T07:42:42Z\"",
+      "\"2018-10-27T11:33:28Z\"",
+      "\"2018-07-05T14:41:57Z\"",
+      "\"2018-07-20T07:11:10Z\"",
+      "\"2018-02-12T08:02:09Z\"",
+      "\"2018-07-12T16:15:52Z\"",
+      "\"2018-08-02T09:10:10Z\"",
+      "\"2018-04-10T15:04:53Z\"",
+      "\"2018-10-26T16:52:34Z\"",
+      "\"2018-02-28T19:22:58Z\"",
+      "\"2018-08-31T13:07:38Z\"",
+      "\"2018-02-05T15:39:18Z\"",
+      "\"2018-05-22T19:45:05Z\""
+    ]
+  },
+  {
+    "full_name": "gjiazhe/PanoramaImageView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "steelkiwi/cropiwa",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "nutzam/nutz",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "MikeOrtiz/TouchImageView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "szerhusenBC/jwt-spring-security-demo",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-03-07T11:06:36Z\""
+    ]
+  },
+  {
+    "full_name": "fython/MaterialStepperView",
+    "release_count": "3",
+    "release_dates": [
+      "\"2018-03-02T16:42:41Z\"",
+      "\"2018-03-21T16:17:27Z\"",
+      "\"2018-03-21T16:12:36Z\""
+    ]
+  },
+  {
+    "full_name": "konmik/nucleus",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Devlight/NavigationTabStrip",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "EverythingMe/overscroll-decor",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "zhangkaitao/es",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "zzz40500/AndroidSweetSheet",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "floragunncom/search-guard",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "apache/kylin",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "bonnyfone/vectalign",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "frohoff/ysoserial",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Jude95/EasyRecyclerView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "PomepuyN/BlurEffectForAndroidDesign",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "tjerkw/Android-SlideExpandableListView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "jjdxmashl/jjdxm_ijkplayer",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "yanzhenjie/Album",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "alibaba/TProfiler",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "M66B/NetGuard",
+    "release_count": "43",
+    "release_dates": [
+      "\"2018-02-20T17:18:27Z\"",
+      "\"2018-06-26T11:56:48Z\"",
+      "\"2018-02-01T13:54:11Z\"",
+      "\"2018-09-11T15:10:38Z\"",
+      "\"2018-07-08T13:18:20Z\"",
+      "\"2018-10-22T06:39:03Z\"",
+      "\"2018-05-23T10:31:58Z\"",
+      "\"2018-02-08T16:47:55Z\"",
+      "\"2018-02-02T10:13:48Z\"",
+      "\"2018-02-04T11:44:10Z\"",
+      "\"2018-08-23T15:55:28Z\"",
+      "\"2018-05-22T06:57:44Z\"",
+      "\"2018-04-09T13:05:14Z\"",
+      "\"2018-02-06T14:42:20Z\"",
+      "\"2018-03-25T05:24:09Z\"",
+      "\"2018-03-22T09:17:38Z\"",
+      "\"2018-02-07T14:35:12Z\"",
+      "\"2018-03-18T06:53:54Z\"",
+      "\"2018-10-02T06:12:44Z\"",
+      "\"2018-09-29T13:07:46Z\"",
+      "\"2018-04-30T04:51:01Z\"",
+      "\"2018-02-06T10:55:06Z\"",
+      "\"2018-03-11T12:10:05Z\"",
+      "\"2018-10-17T13:42:03Z\"",
+      "\"2018-03-29T05:35:06Z\"",
+      "\"2018-02-06T17:52:58Z\"",
+      "\"2018-07-08T17:58:28Z\"",
+      "\"2018-12-07T13:11:48Z\"",
+      "\"2018-03-27T10:13:36Z\"",
+      "\"2018-08-02T04:33:21Z\"",
+      "\"2018-07-09T06:42:40Z\"",
+      "\"2018-02-02T19:12:37Z\"",
+      "\"2018-07-01T14:10:59Z\"",
+      "\"2018-02-03T08:54:52Z\"",
+      "\"2018-03-23T06:28:50Z\"",
+      "\"2018-11-17T16:45:34Z\"",
+      "\"2018-10-07T16:07:12Z\"",
+      "\"2018-10-07T06:39:23Z\"",
+      "\"2018-02-22T08:31:34Z\"",
+      "\"2018-02-04T08:11:28Z\"",
+      "\"2018-10-12T13:34:21Z\"",
+      "\"2018-03-28T06:03:54Z\"",
+      "\"2018-02-24T08:57:51Z\""
+    ]
+  },
+  {
+    "full_name": "FasterXML/jackson-databind",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "gouthampradhan/leetcode",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "spotify/helios",
+    "release_count": "35",
+    "release_dates": [
+      "\"2018-08-15T18:18:02Z\"",
+      "\"2018-09-24T19:50:00Z\"",
+      "\"2018-10-18T13:32:00Z\"",
+      "\"2018-09-25T20:04:27Z\"",
+      "\"2018-08-28T19:28:51Z\"",
+      "\"2018-03-18T23:27:44Z\"",
+      "\"2018-12-11T14:55:22Z\"",
+      "\"2018-12-14T20:13:20Z\"",
+      "\"2018-10-12T20:13:05Z\"",
+      "\"2018-02-21T21:44:42Z\"",
+      "\"2018-07-23T20:08:20Z\"",
+      "\"2018-06-11T16:10:31Z\"",
+      "\"2018-10-05T19:07:00Z\"",
+      "\"2018-06-14T14:19:57Z\"",
+      "\"2018-02-20T22:50:34Z\"",
+      "\"2018-10-08T22:11:38Z\"",
+      "\"2018-02-12T16:15:19Z\"",
+      "\"2018-10-11T17:47:32Z\"",
+      "\"2018-06-19T17:42:47Z\"",
+      "\"2018-10-18T17:55:04Z\"",
+      "\"2018-08-17T22:42:36Z\"",
+      "\"2018-10-17T20:43:52Z\"",
+      "\"2018-12-06T14:42:59Z\"",
+      "\"2018-12-14T19:57:17Z\"",
+      "\"2018-02-12T16:31:23Z\"",
+      "\"2018-09-28T20:18:26Z\"",
+      "\"2018-10-18T16:11:20Z\"",
+      "\"2018-05-21T14:56:32Z\"",
+      "\"2018-12-19T17:02:13Z\"",
+      "\"2018-09-06T15:31:13Z\"",
+      "\"2018-10-12T20:28:31Z\"",
+      "\"2018-07-11T17:31:40Z\"",
+      "\"2018-09-24T13:51:02Z\"",
+      "\"2018-06-05T21:54:54Z\"",
+      "\"2018-10-18T14:49:51Z\""
+    ]
+  },
+  {
+    "full_name": "java8/Java8InAction",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "JingYeoh/FragmentRigger",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "runelite/runelite",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-03-15T22:20:40Z\""
+    ]
+  },
+  {
+    "full_name": "Netflix/curator",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "uber/AutoDispose",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "rmtheis/android-ocr",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "nanchen2251/AiYaCompressHelper",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "jMonkeyEngine/jmonkeyengine",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-12-31T20:41:21Z\"",
+      "\"2018-12-23T04:55:08Z\""
+    ]
+  },
+  {
+    "full_name": "skyfishjy/android-ripple-background",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "JessYanCoding/ProgressManager",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "gotev/android-upload-service",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-02-22T05:41:05Z\""
+    ]
+  },
+  {
+    "full_name": "arcadefire/nice-spinner",
+    "release_count": "3",
+    "release_dates": [
+      "\"2018-12-03T16:53:30Z\"",
+      "\"2018-05-17T16:59:05Z\"",
+      "\"2018-12-21T14:53:20Z\""
+    ]
+  },
+  {
+    "full_name": "kymjs/KJFrameForAndroid",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "jamesdbloom/mockserver",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Yalantis/Horizon",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "baoyongzhang/android-PullRefreshLayout",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "code4craft/tiny-spring",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "addthis/stream-lib",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "lapism/MaterialSearchView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "KieronQuinn/PersistentSearch",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "guolindev/booksource",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "gongwen/MarqueeViewLibrary",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "jeasonlzy/NineGridView",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "elevenetc/TextSurface",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Mojang/brigadier",
+    "release_count": "1",
+    "release_dates": [
+      "\"2018-09-26T08:54:03Z\""
+    ]
+  },
+  {
+    "full_name": "spotify/docker-maven-plugin",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "ApmeM/android-flowlayout",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "niorgai/StatusBarCompat",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-12-12T10:20:03Z\"",
+      "\"2018-11-05T04:47:43Z\""
+    ]
+  },
+  {
+    "full_name": "ethereum/ethereumj",
+    "release_count": "8",
+    "release_dates": [
+      "\"2018-10-12T13:32:28Z\"",
+      "\"2018-06-15T09:35:35Z\"",
+      "\"2018-08-12T09:44:26Z\"",
+      "\"2018-04-07T04:30:20Z\"",
+      "\"2018-05-04T10:37:52Z\"",
+      "\"2018-03-21T16:04:02Z\"",
+      "\"2018-03-23T09:39:42Z\"",
+      "\"2018-11-19T13:18:07Z\""
+    ]
+  },
+  {
+    "full_name": "micronaut-projects/micronaut-core",
+    "release_count": "8",
+    "release_dates": [
+      "\"2018-06-28T15:53:34Z\"",
+      "\"2018-11-13T10:51:19Z\"",
+      "\"2018-12-19T10:19:01Z\"",
+      "\"2018-10-16T14:29:00Z\"",
+      "\"2018-10-23T15:06:34Z\"",
+      "\"2018-07-19T13:48:42Z\"",
+      "\"2018-05-29T19:56:57Z\"",
+      "\"2018-08-09T14:41:24Z\""
+    ]
+  },
+  {
+    "full_name": "ZHENFENG13/My-Blog",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "hustcc/JS-Sorting-Algorithm",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "huburt-Hu/NewbieGuide",
+    "release_count": "11",
+    "release_dates": [
+      "\"2018-05-28T07:08:19Z\"",
+      "\"2018-06-06T06:30:32Z\"",
+      "\"2018-12-11T05:51:21Z\"",
+      "\"2018-03-01T08:24:51Z\"",
+      "\"2018-06-29T05:10:24Z\"",
+      "\"2018-02-02T10:24:03Z\"",
+      "\"2018-02-25T09:10:30Z\"",
+      "\"2018-04-18T08:31:51Z\"",
+      "\"2018-07-09T06:12:52Z\"",
+      "\"2018-05-28T06:50:44Z\"",
+      "\"2018-08-07T02:26:23Z\""
+    ]
+  },
+  {
+    "full_name": "fqrouter/fqrouter",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Netflix/archaius",
+    "release_count": "13",
+    "release_dates": [
+      "\"2018-05-15T21:18:04Z\"",
+      "\"2018-08-15T16:46:59Z\"",
+      "\"2018-08-15T20:55:02Z\"",
+      "\"2018-05-07T20:25:30Z\"",
+      "\"2018-08-15T20:43:42Z\"",
+      "\"2018-08-15T20:30:56Z\"",
+      "\"2018-08-15T21:34:29Z\"",
+      "\"2018-08-15T20:32:18Z\"",
+      "\"2018-08-15T16:13:46Z\"",
+      "\"2018-05-08T15:45:39Z\"",
+      "\"2018-08-15T16:45:48Z\"",
+      "\"2018-08-15T21:48:35Z\"",
+      "\"2018-02-07T00:53:58Z\""
+    ]
+  },
+  {
+    "full_name": "white-cat/ThinkAndroid",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "novoda/android-demos",
+    "release_count": "2",
+    "release_dates": [
+      "\"2018-12-17T11:04:15Z\"",
+      "\"2018-12-17T11:03:28Z\""
+    ]
+  },
+  {
+    "full_name": "brianway/springmvc-mybatis-learning",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "seiginonakama/BlockCanaryEx",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "RomainPiel/Shimmer-android",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "tvbarthel/BlurDialogFragment",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "Wizcorp/phonegap-facebook-plugin",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "fanrunqi/MaterialLogin",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "linkedin/rest.li",
+    "release_count": null,
+    "release_dates": []
+  },
+  {
+    "full_name": "XunMengWinter/CircularAnim",
+    "release_count": "9",
+    "release_dates": [
+      "\"2018-08-01T13:07:36Z\"",
+      "\"2018-03-25T04:28:12Z\"",
+      "\"2018-03-25T04:16:04Z\"",
+      "\"2018-08-01T13:13:14Z\"",
+      "\"2018-05-13T08:33:47Z\"",
+      "\"2018-05-13T08:17:11Z\"",
+      "\"2018-08-01T12:41:00Z\"",
+      "\"2018-03-25T03:33:44Z\"",
+      "\"2018-11-22T05:11:04Z\""
+    ]
+  }
+]
