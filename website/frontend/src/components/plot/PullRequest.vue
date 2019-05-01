@@ -2,7 +2,7 @@
   <div class="hello">
     <h2>PR lifespan</h2>
     <GChart
-      type="LineChart"
+      type="ColumnChart"
       :data="chartData"
       :options="chartOptions"
     />
@@ -33,7 +33,7 @@ export default {
         ['Month', 'Lifespan (days)']
       ],
       chartOptions: {
-        curveType: 'function',
+        height: 350,
         chart: {
           title: 'Company Performance',
           subtitle: 'Sales, Expenses, and Profit: 2014-2017',

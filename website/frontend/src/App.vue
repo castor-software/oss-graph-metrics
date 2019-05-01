@@ -47,7 +47,7 @@ export default {
   data(){
     return {
       layout: [
-    	    {"x":0,"y":0,"w":5,"h":10,"i":"1","c":"PullRequest", "p":{repo:"BelooS/ChipsLayoutManager"} },
+        {"x":0,"y":0,"w":5,"h":10,"i":"1","c":"PullRequest", "p":{repo:"BelooS/ChipsLayoutManager"} },
     	],
       repo: 'elastic/elasticsearch'
     }

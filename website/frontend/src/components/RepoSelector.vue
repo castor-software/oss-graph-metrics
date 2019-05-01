@@ -2,7 +2,7 @@
   <vue-autosuggest
       :suggestions="filteredOptions"
       @selected="onRepoSelected"
-      :input-props="{id:'autosuggest__input', onInputChange:this.onInputChange, placeholder:'Do you feel lucky, punk?'}"
+      :input-props="{id:'autosuggest__input', onInputChange:this.onInputChange, placeholder:'Looking for a repo?'}"
   >
     <template slot-scope="{suggestion}">
       <span class="my-suggestion-item">{{suggestion.item}}</span>
