@@ -4,4 +4,5 @@ docker run --rm \
     -v "$PWD/notebook":/home/jovyan/work \
     -v "$PWD/data":/home/jovyan/work/data \
     -v "$PWD/figures":/home/jovyan/work/figures \
+    -v "$PWD/reports":/home/jovyan/work/reports \
     jupyter/datascience-notebook:9b06df75e445

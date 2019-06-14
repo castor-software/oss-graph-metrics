@@ -1,2 +1,5 @@
 /local/
 /.ipynb_checkpoints
+/.cache/
+/.ipython/
+/.jupyter/
